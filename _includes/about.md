@@ -1,4 +1,8 @@
-_Long version:_ My name is Robin Scheibler and I am a researcher
+_Long version:_ My name is Diego Di Carlo and ....
+
+
+Since October 2017 I am a Ph.D. Candidate at [Inria](http://www.inria.fr) in the [PANAMA team](https://team.inria.fr/panama/) of the [Inria Rennes](https://www.inria.fr/centre/rennes).
+
 focusing on data and signals.  My research interests have taken me from
 [proving theorems](/sparse_hadamard) to literally jumping in a cold
 mountain lake to [sample its water](/biodesign), checking for the presence

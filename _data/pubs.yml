@@ -17,7 +17,7 @@ thesis:
   - authors:
     - D. Di Carlo
     title: "Gaussian Framework for Interference Reduction in Live Recordings"
-    type: M.e. Thesis
+    type: M.Sc. Thesis
     institution: Universirá degli Studi di Padova
     year: 2017
     pdf: http://tesi.cab.unipd.it/56327/
@@ -27,7 +27,7 @@ thesis:
   - authors:
     - D. Di Carlo
     title: "Sequential Feature Selection: Algorithm and Applications for Audio Information Retrieval"
-    type: B.e. Thesis
+    type: B.Sc. Thesis
     institution: Universirá degli Studi di Padova
     year: 2014
     bibtex:
