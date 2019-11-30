@@ -8,7 +8,7 @@ section_id: music
 <div class='full parallax' style='background-image: url(images/banner_5.jpg); color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>
-      {% include section-header.html title="Portfolio" tagline="Things I made" color="#fff" class="big" %}
+      {% include section-header.html title="Music" tagline="Notes I play" color="#fff" class="big" %}
     </div>
   </div>
   <div class='four spacing'></div>
@@ -24,26 +24,26 @@ section_id: music
             <a data-cat='all' href='#'>All</a>
           </li>
           <li>
-            <a data-cat='algorithms' href='#'>Algorithms</a>
+            <a data-cat='jazz' href='#'>Jazz</a>
           </li>
           <li>
-            <a data-cat='audio' href='#'>Audio</a>
+            <a data-cat='metal' href='#'>Metal</a>
           </li>
           <li>
-            <a data-cat='hardware' href='#'>Hardware</a>
+            <a data-cat='electro' href='#'>Electronic</a>
           </li>
           <li>
-            <a data-cat='software' href='#'>Software</a>
+            <a data-cat='cover' href='#'>Cover</a>
           </li>
         </ul>
       </div>
 
       <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
 
-        {% for work in site.projects %}
+        {% for work in site.musics %}
           <li class="{{ work.klass }}">
             <a href='{{ work.url }}'>
-              <img alt="" src="{{ work.images }}" />
+              <img alt="" src="{{ work.avatar }}" height="280" width="280"/>
               <div class='overlay'>
                 <div class='thumb-info'>
                   <h3>{{ work.title }}</h3>

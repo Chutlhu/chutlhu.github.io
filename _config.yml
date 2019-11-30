@@ -14,7 +14,7 @@ github_username:  chutlhu
 linkedin_username: diegodicarlo
 avatar: images/avatar.jpg
 logo_header: images/logo-diego-bordered.png
-logo_footer: images/logo-diego-grey.png.png
+logo_footer: images/logo-diego-grey.png
 
 # Build settings
 markdown: kramdown
@@ -38,4 +38,6 @@ collections:
   projects:
     output: true
   pages:
+    output: true
+  musics:
     output: true
