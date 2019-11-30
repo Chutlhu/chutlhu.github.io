@@ -1,0 +1,143 @@
+@inproceedings{Scheibler2017,
+abstract =
+ {It is commonly believed that multipath hurts various audio process-ing algorithms.
+  At odds with this belief, we show that multipath infact helps sound source separation,
+  even with very simple propagation models.
+  Unlike most existing methods, we neither ignore theroom impulse responses, nor we attempt to estimate them fully.
+  Werather  assume  that  we  know  the  positions  of  a  few  virtual  micro-phones generated
+  by echoes and we show how this gives us enoughspatial diversity to get a performance boost over the anechoic case.
+  We show improvements for two standard algorithms—one that usesonly magnitudes of the transfer functions, and one that also uses thephases.
+  Concretely, we show that multichannel non-negative matrixfactorization aided with a small number of echoes beats the vanillavariant of the same algorithm, and that with magnitude informationonly, echoes enable separation where it was previously impossible},
+arxiv = {1711.06805},
+author = {Scheibler, Robin and Di Carlo, Diego and Deleforge, Antoine and Dokmanic, Ivan},
+doi = {10.1109/ICASSP.2018.8461345},
+journal = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+keywords = {Echoes,Multi-channel,NMF,Room geometry,Source separation},
+pages = {6897--6901},
+title = {{Separake: Source Separation with a Little Help from Echoes}},
+year = {2018},
+url = {https://github.com/fakufaku/separake},
+hal_id = {hal-01909531},
+}
+
+@inproceedings{DiCarlo2019,
+abstract =
+  {It is commonly observed that acoustic echoes hurt performance of sound source localization (SSL) methods.
+  We introduce the concept of microphone array augmentation with echoes (MIRAGE) and show how estimation of early-echo  characteristics can in fact benefit SSL.
+  We propose a learningbased scheme for echo estimation combined with a physicsbased scheme for echo aggregation.
+  In a simple scenario involving 2 microphones close to a reflective surface and one source,
+  we show using simulated data that the proposed approach performs similarly to a correlation-based method
+  in azimuth estimation while retrieving elevation as well from 2 microphones only, an impossible task in anechoic settings.},
+arxiv = {1906.08968},
+author = { Di Carlo, Diego and Deleforge, Antoine and Bertin, Nancy},
+booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+doi = {10.1109/ICASSP.2019.8683534},
+keywords = {Image Microphones,Sound Source Localization,Supervised Learning,TDOA Estimation},
+pages = {775--779},
+title = {{Mirage: 2D Source Localization Using Microphone Pair Augmentation with Echoes}},
+volume = {2019-May},
+year = {2019},
+url = {https://github.com/Chutlhu/MIRAGE},
+hal_id = {hal-01909531},
+}
+
+@inproceedings{Lebarbenchon2018,
+abstract={This short paper presents an efficient, flexible implementation of the SRP-PHAT  multichannel  sound  source  localization  method.   Themethod is evaluated on the single-source tasks of the LOCATA 2018development  dataset,  and  an  associated  Matlab  toolbox  is  madeavailable online},
+author = {Lebarbenchon, Romain and Camberlein, Ewen and Di Carlo, Diego and Deleforge, Antoine and Bertin, Nancy},
+arxiv = {1812.05901},
+pages = {2--3},
+title = {{Evaluation of an Open-Source Implementation of the Srp-Phat Algorithm Within the 2018 Locata Challenge}},
+booktitle = {LOCATA Challenge Workshop - a satellite event of International Workshop on Acoustic Signal Enhancement (IWAENC)},
+year = {2018},
+hal_id = {hal-02187964},
+}
+
+@inproceedings{DiCarlo2018,
+abstract =
+{Live concert recordings consist in long multitrack audio samples with significant interferences between channels.
+For audio engineering purposes, it is desirable to attenuate those interferences.
+Recently, we proposed an algorithm to this end based on Non-negative Matrix Factorization,
+that iteratively estimate the clean power spectral densities of the sources
+and the strength of each in each microphone signal, encoded in an interference matrix.
+Although it behaves well, this method is too demanding computationally
+for full-length concerts lasting more than one hour.
+In this paper, we show how random projections of the data can be leveraged
+for effective estimation of the parameters. Interference reduction with these ideas
+can be achieved on full-length live multi-track recordings in an acceptable
+time and could be used by sound engineers. We demonstrate the efficiency of this approach on
+real full-length live recordings from the Montreux Jazz Festival and also provide an implementation of the method.},
+author = {Di Carlo, Diego and Liutkus, Antoine and D{\'e}guernel, Ken},
+booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+doi = {10.1109/ICASSP.2018.8462621},
+keywords = {Compressive sensing,Interference reduction,Microphone leakage,Random projection,Source separation},
+pages = {736--740},
+title = {{Interference reduction on full-length live recordings}},
+volume = {2018-April},
+year = {2018},
+url = {https://github.com/Chutlhu/mirapie},
+hal_verision={v1},
+hal_id = {hal-01713889},
+}
+
+@inproceedings{DiCarlo2017,
+abstract = {In live multitrack recordings, each voice is usually captured by dedicated close microphones. Unfortunately, it is also captured in practice by other microphones intended for other sources, leading to so-called "interferences". Reducing this interference is desirable because it opens new perspectives for the engineering of live recordings. Hence, it has been the topic of recent research in audio processing. In this paper, we show how a Gaussian probabilistic framework may be set up for obtaining good isolation of the target sources. Doing so, we extend several state-of-the art methods by fixing some heuristic parts of their algorithms. As we show in a perceptual evaluation on real-world multitrack live recordings, the resulting principled techniques yield improved quality.},
+author = {Di Carlo, Diego and D{\'e}guernel, Ken and Liutkus, Antoine},
+booktitle = {AES International Conference on Semantic Audio},
+title = {{Gaussian framework for interference reduction in live recordings}},
+address = {Erlangen, Germany},
+volume = {22-24-June},
+year = {2017},
+url={https://github.com/Chutlhu/mirapie},
+hal_verision={v1},
+hal_id={hal-01515971},
+}
+
+@inproceedings{DiCarlo2014,
+  title={Automatic music “listening” for automatic music performance: a grandpiano dynamics classifier,”},
+  author={Di Carlo, Diego and Rod{\'a}, Antonio},
+  booktitle={Proceedings of the 1st International Workshop on Computer and Robotic Systems for Automatic Music Performance (SAMP 14)},
+  pages={1--8},
+  address={Venice},
+  year={2014}
+}
+
+@inproceedings{Grani2016gestural,
+  title={Gestural Control Of Wavefield synthesis},
+  author={Grani, Francesco and Di Carlo, Diego and Portillo, Jorge Madrid and Girardi, Matteo and Paisa, Razvan and Banas, Jian Stian and Vogiatzoglou, Iakovos and Overholt, Dan and Serafin, Stefania},
+  booktitle={Sound and Music Computing Conference (SMC)},
+  pages={185--192},
+  year={2016},
+  url={https://vbn.aau.dk/ws/portalfiles/portal/244887082/2016_Gestural_Control_Of_Wavefield_synthesis_SMC2016.pdf},
+}
+
+@article{Deleforge2019audio,
+  title={Audio-Based Search and Rescue With a Drone: Highlights From the IEEE Signal Processing Cup 2019 Student Competition [SP Competitions]},
+  author={Deleforge, Antoine and Di Carlo, Diego and Strauss, Martin and Serizel, Romain and Marcenaro, Lucio},
+  journal={IEEE Signal Processing Magazine},
+  volume={36},
+  number={5},
+  pages={138--144},
+  year={2019},
+  publisher={IEEE},
+  url={https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8827999}
+}
+
+@mastersthesis{DiCarlo2017master,
+  title = {Gaussian Framework for Interference Reduction in Live Recordings},
+  author = {Di Carlo, Diego and Orio, Nicola},
+  school = {Universit{\`a} degli Studi di Padova},
+  year = {2017},
+  keywords = {interference reduction, microphone leakage, bleeding, source separation, random projection, Non negative matrix factorisation NMF},
+  hal_id = {hal-01870918},
+  hal_verision = {v1},
+  url={https://github.com/Chutlhu/mirapie},
+  link={http://tesi.cab.unipd.it/56327/},
+}
+
+@mastersthesis{DiCarlo2014bachelor,
+  title = {Sequential Feature Selection: Algorithm and Applications for Audio Information Retrieval},
+  author = {Di Carlo, Diego},
+  school = {Universit{\`a} degli Studi di Padova},
+  year = {2014},
+}
+

@@ -1,19 +1,20 @@
 # Site settings
-title: Robin Scheibler
-email: robin.scheibler@epfl.ch
+title: Diego Di Carlo
+email: diego.di-carlo@inria.fr
 description: > # this means to ignore newlines until "baseurl:"
-  My name is Robin Scheibler and this is my site. You can find stuff about
+  My name is Diego Di Carlo and this is my site. You can find stuff about
   the research and projects I do.
 tldr_bio: >
-  TL;DR &mdash; I am Robin Scheibler, a researcher at
-  [Tokyo Metropolitan University](http://www.comp.sd.tmu.ac.jp/onolab/index-e.html)
-  working more often than not on audio processing and stuff.
-  I like coding and making hardware, and I like it open source.
+  Avangarde. Post. Currently Ph.D. Student.
+  With a wholehearted taste for Brutal Death Metal, Spiders and Cthulhu..
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: fakufakurevenge
-github_username:  fakufaku
-linkedin_username: robinscheibler
+twitter_username: chutlhu
+github_username:  chutlhu
+linkedin_username: diegodicarlo
+avatar: images/avatar.jpg
+logo_header: images/logo-diego-bordered.png
+logo_footer: images/logo-diego-grey.png.png
 
 # Build settings
 markdown: kramdown
@@ -26,13 +27,11 @@ plugins: [jekyll-paginate]
 
 socials:
   - icon: envelope
-    url: mailto:robin[dot]scheibler[at]gmail[dot]com
+    url: mailto:diego[dot]di-carlo[at]inria[dot]fr
   - icon: github
-    url: http://github.com/fakufaku
-  - icon: twitter
-    url: http://www.twitter.com/fakufakurevenge
+    url: http://github.com/chutlhu
   - icon: linkedin
-    url: http://www.linkedin.com/in/robinscheibler
+    url: http://www.linkedin.com/in/diego-di-carlo-b69460138/
 
 # I want to have a collection of projects
 collections:
