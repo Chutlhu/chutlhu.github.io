@@ -4,7 +4,7 @@ title: Curriculum Vitae
 section_id: cv
 ---
 
-<div class='full parallax' style='background-image: url(images/banner_2.jpg); color: #fff;'>
+<div class='full parallax' style='background-image: url(images/banners/goodgod.jpg); color: #fff;'>
   <div class='row'>
     <div class='twelve columns'>
       {% include section-header.html title="Curriculum vitae" color="#fff" tagline="Things I have been doing" class="big" %}
@@ -29,11 +29,18 @@ section_id: cv
       {% else %}
       <h4>{{job.company}}</h4>
       {% endif %}
-      <p>{{job.dates}}</p>
+      <p>{{job.location}}<br>{{job.dates}}</p>
     </div>
 
     <div class="medium-6 large-8 columns">
       <b>{{job.position}}</b> &mdash; {{job.description}}
+      {% if job.supervisors %}
+      <p><em>Supervisors:</em>
+      {% for supervisor in job.supervisors %}
+      {{supervisor}}
+      {% endfor %}
+      </p>
+      {% endif %}
     </div>
   </div>
   <div class='one spacing'></div>
@@ -54,14 +61,46 @@ section_id: cv
       <h4>{{school.degree}}</h4>
     </div>
     <div class="medium-6 large-8 columns">
-      <b>{{school.institution}}</b>, {{school.location}}, {{school.year}}<br>
+      <b>{{school.institution}}</b>, {{school.location}}, {{school.year}}.<br>
+      {% if school.description %}
+      <i>{{school.description}}</i><br>
+      {% endif %}
       {% if school.thesis %}
-      Thesis: {{school.thesis}}
-        {% if school.thesis_url %}
-        <span class="warning label">
-          <a href="{{ school.thesis_url }}">pdf</a>
-        </span>
+        Thesis: <i>{{school.thesis}}</i>
+        {% if school.supervisors %}<br>
+          Supervisors:
+          {% for supervisor in school.supervisors %}
+            {{supervisor}}
+          {% endfor %}
         {% endif %}
+        {% if school.keywords %}<br>
+          Keywords:
+          {% for keyword in school.keywords %}
+            <i>{{keyword}}</i>
+          {% endfor %}
+          {% endif %}
+        {% if school.thesis_url %}<br>
+          <span class="warning label">
+            <a href="{{ school.thesis_url }}">BibTex</a>
+          </span>
+          <span class="warning label">
+            <a href="{{ school.thesis_url }}">Abstract</a>
+          </span>
+          <span class="warning label">
+            <a href="{{ school.thesis_url }}">PDF</a>
+          </span>
+          <span class="warning label">
+            <a href="{{ school.thesis_url }}">Code</a>
+          </span>
+        {% endif %}
+      {% endif %}
+      {% if school.supervisors %}
+        {% unless school.thesis %}
+          Supervisors:
+          {% for supervisor in school.supervisors %}
+            {{supervisor}}
+          {% endfor %}
+        {% endunless %}
       {% endif %}
     </div>
   </div>

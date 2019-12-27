@@ -1,128 +1,144 @@
 work:
-  - company: Tokyo Metropolitan University
-    division: Ono Laboratory
-    location: Tokyo, Japan
-    dates: October 2017 - Present
-    position: Postdoctoral Fellow
-    description: We use sound-to-light conversion sensors to easily build large sound sensing arrays. Applications are in conventional audio processing and large scale monitoring.
+  - company: INRIA
+    url: https://team.inria.fr/multispeech/
+    division: Multispeech Team
+    location: Nancy, France
+    dates: October 2016 - May 2017
+    position: Research Internship (Erasmus Program)
+    description: Developing algorithms for Music Interference Reduction from a Guassian Process perspective. This method consider the case of full-length concert recordings.
+    supervisors:
+    - Antoine Liuktus.
 
-  - company: SAFECAST Japan
-    url: http://lcav.epfl.ch
-    location: Tokyo, Japan
-    dates: March 2011 - Present
-    position: bGeigie dude
-    description: Volunteer, designing, manufacturing and writing firmware for car-borne geo-tagged radiation measurement devices as part of a grass-root initiative to monitor fallout from the Fukushima Dai-ichi triple meltdown of March 2011. So far, 15 million measurement points have been collected using this system.
-
-  - company: EPFL
-    division: Audiovisual Communications Laboratory
-    url: http://lcav.epfl.ch
-    location: Lausanne, Switzerland
-    dates: April 2017 - September 2017
-    position: Postdoctoral Researcher
-    description: Supervision of students. Prospecting data providers and participants for the Data Jam Days 2017 event at EPFL. Research and experiments in array audio processing.
-
-  - company: EPFL
-    division: Audiovisual Communications Laboratory
-    url: http://lcav.epfl.ch
-    location: Lausanne, Switzerland
-    dates: September 2012 - March 2017
-    position: Research Assistant
-    description: Investigating how strucutral aspects of sound propagation, the echoes in a room for example, can provide more robust and efficient algorithms for problems such as beamforming, direction of arrival, or source separation. In a different line of work, I apply techniques from information theory and theoretical computer science to provide low-complexity algorithms for signal processing problems.
-
-  - company: NEC Corporation
-    division: Media & Information Processing Laboratory
-    url: http://www.nec.com/
-    location: Kawasaki, Japan
-    dates: January 2011 - August 2012
-    position: Temporary Research Staff
-    description: Development of new algorithms for single-microphone speech denoising techniques based on spectral subtraction for application in consumer electronics. Specifically, speech harmonics preservation, DCT-based spectral subtraction, wind noise suppression.
-
-  - company: IBM Research &mdash; Zürich
-    division: Systems Software Group
-    url: http://www.zurich.ibm.com
-    location: Rüschlikon, Switzerland
-    dates: February 2009 - September 2010
-    position: Research Intern
-    description: Developed algorithms for the computation of the continuous Haar, Fourier and cosine transforms of rectilinear polygons found in IC layouts. Derived the theoretical computational complexity. Implemented the algorithms in a lithography tool and benchmarked against discrete transforms.  Investigated the sparsity of the representation of the polygons in Haar basis and its application to the pattern analysis of IC layouts. Outcome resulted in scientific articles, highly optimized software and patents filing.  
-
-  - company: NEC Corporation
-    url: http://www.nec.com/
-    location: Kawasaki, Japan
-    division: System IP Core Laboratory
-    dates: March 2007 - January 2008
-    position: Research Intern 
-    description: Implementation in Matlab of a 3GPP compliant simulator to evaluate the performance of different interference mitigation algorithms.  Implementation and performance evaluation of QRD-RLS interference mitigation for Wideband CDMA on a CORDIC-based reconfigurable systolic array for software-defined radio (SDR) applications. The result of this work was presented at a domestic SDR conference in Nagano, Japan.
-
-  - company: EPFL
-    url: http://www.epfl.ch
-    location: Lausanne, Switzerland
-    division: Laboratory for computer Communications and Applications (LCA2)
-    dates: July 2006 - August 2008
-    position: Student Assistant
-    hidden: True
-    description: Worked on various research projects in ultra wide band (UWB) networking and wireless communications at the Laboratory for computer Communications and Applications. This projects included the debugging and extension of the ns-2 implementation of a dynamic channel coding MAC protocol for an UWB physical layer; The implementation in C and Matlab of different packet detection and timing acquisition algorithms for an Impulse Radio UWB (IR-UWB) test platform; Creation of a new timing acquisition error probabilistic model for IR-UWB that was further used in localization algorithms. 
+  - company: Zamperla s.r.l
+    url: https://www.zamperla.com/
+    location: Vicenza, Italy
+    dates: October 2014 - January 2016
+    position: R&D Engineer
+    description: Virtual reality on amusements rides and PC-to-PLC communication
+    supervisors:
+    - Francesco DeLuca.
 
 education:
-  - institution: EPFL
-    location: Lausanne, Switzerland
+  - institution: INRIA
+    location: Rennes, France
     degree: Ph.D. in Signal Processing
-    thesis: Rake, Peel, Sketch - The Signal Processing Pipeline Revisited
-    thesis_url: https://infoscience.epfl.ch/record/227937/files/EPFL_TH7651.pdf
-    year: 2017
-  - institution: EPFL
-    location: Lausanne, Switzerland
-    degree: M.Sc. in Communications Systems
-    thesis: Algorithms for the Computation of Continuous Transforms of Rectilinear Polygons
+    thesis: Work in progress
+    thesis_url: www.notavailableyet.com
+    supervisors:
+      - Antoine Deleforge,
+      - Nancy Bertin.
+    keywords:
+      - Auditory scene analysis,
+      - room impulse response,
+      - channel estimation,
+      - supervised learning,
+      - neural networks.
+    year: 3099
+
+  - institution: Bar-Ilan University
+    location: Tel Aviv, Isreal
+    degree: Exchange Program
+    year: 2019
+    description: 3-month visiting
+    supervisors:
+      - Sharon Gannot,
+      - Pinchas Tandeitnik.
+
+  - institution: Universitá degli Studi di Padova
+    location: Padova, Italy
+    degree: M.Sc. in Computer Engineering
+    thesis: Gaussian Processes for Music Interference Reduction
     thesis_url: /pdf/tech_2009_master_thesis.pdf
-    gpa: 5.78/6
-    year: 2009
-  - institution: EPFL
-    location: Lausanne, Switzerland
-    degree: B.Sc. in Communications Systems
-    gpa: 5.22/6
-    year: 2006
-  - institution: Royal Institute of Technology
-    location: Stockholm, Sweden
+    supervisors:
+      - Antoine Liuktus,
+      - Nicola Orio.
+    year: 2017
+
+  - institution: Inria
+    location: Nancy, France
     degree: Erasmus exchange
-    year: 2006
+    description: 6-months of Erasums+ Traineeship program where worked on my M.Sc Thesis.
+    supervisors:
+    - Antoine Liuktus.
+    year: 2017
+
+  - institution: Aalborg Universitet
+    location: Copenhagen, Denmark
+    degree: Erasmus exchange
+    description: 6-months of Erasmus+ for Studying program where I attended course of the M.Sc in Sound and Music Computing.
+    supervisors:
+      - Federico Avanzini,
+      - Stefania Serafin.
+    year: 2016
+
+  - institution: Universitá degli Studi di Padova
+    location: Padova, Italy
+    degree: B.Sc. in Information Engineering
+    thesis: "Sequential Feature Selection: Algorithms And Applications For Audio Information Retrieval"
+    supervisors:
+    - Antonio Rodá.
+    thesis_url: /pdf/tech_2009_master_thesis.pdf
+    year: 2014
 
 languages:
-  - language: French
+  - language: Italian
     level: Native
   - language: English
     level: Fluent
-  - language: Japanese
-    level: Fluent
-  - language: German
+  - language: French
     level: Conversational
-  - language: Swedish
-    level: Basic
 
 skills:
   - name: Expertise
     items:
-      - Signal processing,
-      - Optimization,
-      - Algorithms,
-      - Fourier,
-      - Embedded systems,
-      - Sensor networks,
-      - Stochastic modeling,
-      - Probability theory,
-      - Information theory
+    - Signal processing,
+    - Optimization,
+    - Algorithms,
+    - Fourier,
+    - Stochastic modeling,
+    - Probability theory,
+    - Information theory
 
   - name: Programming
     items:
-      - Python,
-      - C,
-      - C++,
-      - MATLAB,
-      - Latex,
-      - Eagle CAD,
-      - git
+    - Python,
+    - MATLAB,
+    - Latex,
+    - git,
+    - Liquid/HTML,
+    - Java,
+    - Android,
+    - PureData,
+    - Processing,
+    - Arduino.
 
-  - name: Operating Systems
+  - name: IDE, Tools
     items:
-      - Unix,
-      - Mac OS X,
-      - Windows
+    - Jupyter Notebooks,
+    - Pytorch,
+    - Weka,
+    - VSCode, Sublime and Atom,
+    - Vim and Tmux,
+    - Unity.
+
+  - name: Operating Systems and Applications
+    items:
+      - Linux,
+      - Windows and Office Suite,
+      - OAR Clusters,
+      - Prezi, Slides and Beamer,
+      - Gimp/Draw.io.
+
+  - name: DAW and Music Tools
+    items:
+    - Ableton,
+    - Reaper,
+    - PureData,
+    - Sonic Visualizer and Audacity,
+    - Renoise.
+
+achievements:
+  - name: asd
+  - items:
+      - asd
+      - asd

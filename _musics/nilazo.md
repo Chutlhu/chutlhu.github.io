@@ -10,17 +10,15 @@ banner: images/music/nilazo_banner2.jpg
 links:
   - icon: facebook
     url: https://www.facebook.com/pg/Nilazo-80974574682
+  - icon: myspace
+  - url: https://myspace.com/n39ilazo
 hidden: true
 ---
 
 *N'Ilazo* **are**
-- Matteo Scalchi: Guitar
-- Marco Billo: Keyboard/Synth
-- Sean Lucariello: Trumpet
-- Elia Gamba: Piano/Keyboard
-- Diego Di Carlo: Bass
-- Edoardo Maggiolo: Drums/Percussions
-- Stefano Perissinotto (Prs): Engineering
+- Cortez: Bass
+- Piertagnar: Drums
+- El Cartago: Guitar
 
 
 Discography:

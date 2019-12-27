@@ -17,8 +17,8 @@ logo_header: images/logo-diego-bordered.png
 logo_footer: images/logo-diego-grey.png
 
 # Build settings
-markdown: kramdown
-
+# markdown: kramdown
+markdown: CommonMarkGhPages
 
 paginate: 3
 paginate_path: "blog/page:num"
