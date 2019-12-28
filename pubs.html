@@ -3,9 +3,10 @@ layout: default
 title: Publications
 section_id: pubs
 image : banner_3.jpg
+file: papers
 ---
 
-<div class='full parallax' style='background-image: url(images/banner_3.jpg); color: #000;'>
+<div class='full parallax' style='background-image: url(images/banners/mandela.jpg); color: #000;'>
   <div class='row'>
     <div class='twelve columns'>
       {% include section-header.html title="Publications" color="#fff" tagline="Things I have been writing" class="big" %}
@@ -14,27 +15,29 @@ image : banner_3.jpg
   <div class='four spacing'></div>
 </div>
 
-<!-- <div class='full'>
+<div class='full'>
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html title="Journal Papers" %}
       <div class='spacing'></div>
     </div>
   </div>
-  {% for paper in site.data.pubs.journal %}
+  {% for paper in site.data.papers.article %}
   <div class='row'>
-    <div class='large-10 columns'>
-      {% for author in paper.authors %}
-      {{ author}},
-      {% endfor %}
-      <i>{{ paper.title }}</i>, in {{ paper.journal }},
+    <div class="small-1 columns" align="center">
+      {{ paper.year }}
+    </div>
+    <div class='large-9 columns'>
+      <b>{{ paper.title }}</b><br>
+      <em>{{ paper.author }}</em><br>
+      in {{ paper.journal }},
       Vol. {{ paper.volume }}, Num. {{ paper.number }},
-      pp. {{ paper.pages }}, {{ paper.year }}
+      pp. {{ paper.pages }}, {{ paper.year }}.
     </div>
     <div class='large-2 columns'>
       {% if paper.pdf %}
       <span class="warning label">
-        <a href="{{ paper.pdf }}">pdf</a>
+        <a href="{{ paper.url }}">pdf</a>
       </span>
       {% endif %}
       {% if paper.code %}
@@ -47,7 +50,7 @@ image : banner_3.jpg
   <div class='one spacing'></div>
   {% endfor %}
   <div class='three spacing'></div>
-</div> -->
+</div>
 
 <div class='full parallax' style='background: #f5f5f5'>
   <div class='row'>
@@ -56,22 +59,19 @@ image : banner_3.jpg
       <div class='spacing'></div>
     </div>
   </div>
-  {% for paper in site.data.pubs.conference %}
+  {% for paper in site.data.papers.inproceedings %}
   <div class='row'>
+    <div class="small-1 columns" align="center">
+      {{ paper.year }}
+    </div>
     <div class='large-10 columns'>
-      {% for author in paper.authors %}
-      {{ author}},
-      {% endfor %}
-      <br>
-      <i>{{ paper.title }}</i>, in {{ paper.booktitle }},
-      {% if paper.conference %}
-      {{ paper.conference }},
-      {% endif %}
-      {{ paper.location }},
+      <b>{{ paper.title }}</b><br>
+      <em>{{ paper.author }}</em><br>
+      in {{ paper.booktitle }},
       {% if paper.pages %}
       pp. {{ paper.pages }},
       {% endif %}
-      {{ paper.year }}
+      {{ paper.year }}.
     </div>
     <div class='large-2 columns'>
       {% if paper.pdf %}
@@ -113,20 +113,27 @@ image : banner_3.jpg
       <div class='spacing'></div>
     </div>
   </div>
-  {% for paper in site.data.pubs.thesis %}
+  {% for paper in site.data.papers.thesis %}
   <div class='row'>
-    <div class='large-10 columns'>
-      {% for author in paper.authors %}
-      {{ author}},
-      {% endfor %}
-      <i>{{ paper.title }}</i>, {{ paper.type }}, {{ paper.institution }}, {{ paper.year }}
+    <div class="small-1 columns" align="center">
+    {{ paper.year }}
+    </div>
+    <div class='large-9 columns'>
+      <b>{{ paper.title }}</b><br>
+      <em>{{ paper.author }}</em> - supervised by <em>{{ paper.advisor }}</em><br>
+      {{ paper.school }}, {{ paper.year }}.
     </div>
     <div class='large-2 columns'>
-      {% if paper.pdf %}
+    {% if paper.url %}
       <span class="warning label">
-        <a href="{{ paper.pdf }}">pdf</a>
+        <a href="{{ paper.url }}">PDF</a>
       </span>
-      {% endif %}
+    {% endif %}
+    {% if paper.code %}
+      <span class="alert label">
+        <a href="{{ paper.code }}">Code</a>
+      </span>
+    {% endif %}
     </div>
   </div>
   <div class='one spacing'></div>
