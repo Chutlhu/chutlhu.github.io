@@ -20,6 +20,30 @@ article:
   year: 2019
 
 inproceedings:
+- abstract: 'Acoustic echoes retrieval is a research topic that is gaining importance
+  in many speech and audio signal processing applications such as speech enhancement,
+   source separation, dereverberation and room geometry estimation.
+   This work proposes a novel approach to retrieve acoustic echoes timing *off-grid* and blindly,
+   i.e., from a stereophonic recording of an unknown sound source such as speech.
+   It builds on the recent framework of continuous dictionaries.
+   In contrast with existing methods, the proposed approach does not
+   rely on parameter tuning nor peak picking techniques by working directly
+   in the parameter space of interest. The accuracy and robustness of
+   the method are assessed on challenging simulated setups with
+   varying noise and reverberation levels and are compared to two state-of-the-art methods.'
+  arxiv: ''
+  author: 'Di Carlo, Diego and Elvira, Clement  and Deleforge, Antoine and Bertin, Nancy and Gibonval, Remi'
+  bibitem: ""
+  booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing
+    (ICASSP)
+  doi:
+  hal_id:
+  keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
+  pages:
+  title: 'BLASTER: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval'
+  url: https://gitlab.inria.fr/panama-team/blaster
+  volume: 2020-May
+  year: 2020
 - abstract: 'It is commonly observed that acoustic echoes hurt performance of sound
     source localization (SSL) methods.
     We introduce the concept of microphone array augmentation with echoes (MIRAGE)
@@ -56,7 +80,7 @@ inproceedings:
   hal_id: hal-01909531
   keywords: Image Microphones,Sound Source Localization,Supervised Learning,TDOA Estimation
   pages: 775--779
-  title: 'Mirage: 2D Source Localization Using Microphone Pair Augmentation with Echoes'
+  title: 'MIRAGE: 2D Source Localization Using Microphone Pair Augmentation with Echoes'
   url: https://github.com/Chutlhu/MIRAGE
   volume: 2019-May
   year: 2019
@@ -100,7 +124,7 @@ inproceedings:
     (ICASSP)
   keywords: Echoes,Multi-channel,NMF,Room geometry,Source separation
   pages: 6897--6901
-  title: 'Separake: Source Separation with a Little Help from Echoes'
+  title: 'SEPARAKE: Source Separation with a Little Help from Echoes'
   url: https://github.com/fakufaku/separake
   year: 2018
 - abstract: This short paper presents an efficient, flexible implementation of the

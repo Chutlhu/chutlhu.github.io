@@ -1,9 +1,13 @@
 _Long version:_ My name is Diego Di Carlo and ....
 
 
-Since October 2017 I am a Ph.D. Candidate at [Inria](http://www.inria.fr) in the [PANAMA team](https://team.inria.fr/panama/) of the [Inria Rennes](https://www.inria.fr/centre/rennes).
+Since October 2017 I am a Ph.D. Candidate at [Inria](http://www.inria.fr)
+in the [PANAMA team](https://team.inria.fr/panama/) of the [Inria Rennes](https://www.inria.fr/centre/rennes).
 
-focusing on data and signals.  My research interests have taken me from
+
+As in Ken the Surivor and in Sampei: **to be continued.**
+
+<!-- focusing on data and signals.  My research interests have taken me from
 [proving theorems](/sparse_hadamard) to literally jumping in a cold
 mountain lake to [sample its water](/biodesign), checking for the presence
 of arsenic. When I work on a problem, I want to take it from the idea all
@@ -27,4 +31,4 @@ that, I worked for NEC in Japan, and IBM Research in Switzerland.
 In my free time, I like to create electronics gadgets. I am an early
 member of SAFECAST Japan where I build mobile Geiger counters to
 monitor the fallout from the Fukushima Dai-Ichi nuclear accident. I
-co-founded the [biodesign for the real-world](http://biodesign.cc) project.
+co-founded the [biodesign for the real-world](http://biodesign.cc) project. -->
