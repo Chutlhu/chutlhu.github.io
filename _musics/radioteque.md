@@ -25,9 +25,10 @@ hidden: true
 - Stefano Perissinotto (Prs): Engineering
 
 
-Discography:
-- [Mandela s.t.](https://mandelastream.bandcamp.com/album/mandela-4)
-- [Paint-Sweating Hands](https://mandelastream.bandcamp.com/album/paint-sweating-hands)
-
-Live:
-- [Showcase](https://www.youtube.com/watch?v=b2UOrDglSbQ)
+Songs and live:
+- [Just - The Bends](https://www.facebook.com/watch/?v=291536494204675)
+- [15 step - In Rainbows](https://www.youtube.com/watch?v=dO5T9P10lv0)
+- [Just - The Bends](https://www.youtube.com/watch?v=opJwH1z2KW4)
+- [Fake Plastic Tree](https://www.youtube.com/watch?v=rB-8Kkz-ytU)
+- [Idioteque](https://www.youtube.com/watch?v=QBqTUqGl5wc)
+- [There There](https://www.youtube.com/watch?v=FeYYO_cnPtk)

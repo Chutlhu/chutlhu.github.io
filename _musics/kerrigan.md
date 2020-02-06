@@ -21,10 +21,9 @@ Kerrigan are an EDM band born underground. **#7** and **#9** are two electrical 
 They've been created in 2013 and their sound is a mix of Electronic, Dance, Dubstep, Hardcore, with a prominent rock attitude.
 They've opened to Tying Tiffany and they collaborate with local artists, such as **Babu$hka** and End Over End singer.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gp3w3IkXWss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Discography:
-- [Mandela s.t.](https://mandelastream.bandcamp.com/album/mandela-4)
-- [Paint-Sweating Hands](https://mandelastream.bandcamp.com/album/paint-sweating-hands)
-
-Live:
-- [Showcase](https://www.youtube.com/watch?v=b2UOrDglSbQ)
+Songs:
+- [Coincidence](https://www.youtube.com/watch?v=qUsupTZf7Bo)
+- [Can you feel it](https://www.youtube.com/watch?v=uKV7rYvPzpg)
+- [War of Nations](https://www.youtube.com/watch?v=gp3w3IkXWss)
