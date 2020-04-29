@@ -19,7 +19,12 @@ fields:
 
 <div class="row">
   <div class="medium-8 columns">
-    <p><b>{{ site.tldr_bio | markdownify }}</b>
+    <p><b>{{ site.motto | markdownify }}</b>
+
+    <p>{{ site.short_bio | markdownify }}
+
+    <h4> Interests:</h4>
+    <p>{{ site.interest | markdownify }}
 
     <h4> News: </h4>
     {% for news in site.data.news limit:5 %}

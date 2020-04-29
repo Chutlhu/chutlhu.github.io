@@ -3,16 +3,29 @@ title: Diego Di Carlo
 email: diego.di-carlo@inria.fr
 description: > # this means to ignore newlines until "baseurl:"
   My name is Diego Di Carlo and this is my site. You can find stuff about
-  the research and projects I do.
-tldr_bio: >
-  Avangarde. Post. Currently Ph.D. Student.
-  With a wholehearted taste for Brutal Avantgarde Death Metal, Breakcore,
-  beings of the subphylum Chelicerata and Lovercraft's mythology...
+  my music, my research and randomness.
+interest: >
+  - Breakcore, Technical Death, Post and Avangarde
+  - Whale, Chelicerata, and Periophthalmus
+  - Lovercraft's and King's universe
+
+motto: >
+   MeeeeeeeegaDspMachineLearningALotOfConvolutionFFTLikeItWasRainingSubitoCiao
+
+short_bio: >
+  I am a PhD candidate in Audio Signal Processing and Machine Learning
+  at INRIA in [team PANAMA](https://team.inria.fr/panama/) in Rennes, France.
+
+  Under the supervision of [Antoine Deleforge](https://members.loria.fr/ADeleforge/)
+  and [Nancy Bertin](https://people.irisa.fr/Nancy.Bertin/en),
+  I am currently working on estimating early acoustic echoes for audio inverse problem.
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: chutlhu
 github_username:  chutlhu
 linkedin_username: diegodicarlo
+gscholar_username: TZLUhuIAAAAJ
 avatar: images/avatar.jpg
 logo_header: images/logo-diego-bordered.png
 logo_footer: images/logo-diego-grey.png
