@@ -38,8 +38,11 @@ logo_header: images/logo-diego-bordered.png
 logo_footer: images/logo-diego-grey.png
 
 # Build settings
-# markdown: kramdown
 markdown: CommonMarkGhPages
+
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
 paginate: 3
 paginate_path: "blog/page:num"
