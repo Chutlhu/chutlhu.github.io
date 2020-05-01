@@ -19,14 +19,12 @@ fields:
 
 <div class="row">
   <div class="medium-8 columns">
-    <p><b>{{ site.motto | markdownify }}</b>
 
-    <p>{{ site.short_bio | markdownify }}
+    <p><b>{{ site.motto | markdownify }}</b></p>
 
-    <h4> Interests:</h4>
-    <p>{{ site.interest | markdownify }}
+    <p>{{ site.short_bio | markdownify }}</p>
 
-    <h4> News: </h4>
+    <h4>News</h4>
     {% for news in site.data.news limit:5 %}
     <div class='row'>
       <div class='small-2 columns'>
@@ -44,10 +42,17 @@ fields:
 
       <div class='spacing'></div>
       <ul class='socials'>
-        {% for social in site.socials %}
+        {% for social in site.socials_fa %}
         <li>
           <a href={{ social.url }}>
             <i class='fa fa-{{ social.icon }}'></i>
+          </a>
+        </li>
+        {% endfor %}
+        {% for social in site.socials_ai %}
+        <li>
+          <a href={{ social.url }}>
+            <i class='ai ai-{{ social.icon }}'></i>
           </a>
         </li>
         {% endfor %}

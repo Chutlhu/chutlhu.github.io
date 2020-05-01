@@ -7,8 +7,8 @@
           <img alt="" src="{{site.url}}/{{site.logo_footer}}" />
         </a>
       </h1>
-      <p>©2019 Diego Di Carlo</p>
-      <p>Based on a theme by Robin Scheibler<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a></p>
+      <p>2019 <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>
+      </p>
       <div class='spacing'></div>
       <div class='spacing'></div>
     </div>
@@ -43,15 +43,27 @@
       <div class='spacing'></div>
       <h4>Contact me</h4>
       <ul>
+        <!-- <li>{{site.address.building}}</li>
         <li>{{site.address.street}}</li>
-        <li>{{site.address.city}}</li>
+        <li>{{site.address.city}}</li> -->
+        <li>Diego DI CARLO</li>
+        <li>INRIA Rennes Bretagne Atlantique</li>
+        <li>263 Avenue Général Leclerc</li>
+        <li>35042 Rennes Cedex, FRANCE</li>
       </ul>
       <div class='spacing'></div>
       <ul class='socials'>
-        {% for social in site.socials %}
+        {% for social in site.socials_fa %}
         <li>
           <a href={{ social.url }}>
             <i class='fa fa-{{ social.icon }}'></i>
+          </a>
+        </li>
+        {% endfor %}
+        {% for social in site.socials_ai %}
+        <li>
+          <a href={{ social.url }}>
+            <i class='ai ai-{{ social.icon }}'></i>
           </a>
         </li>
         {% endfor %}
@@ -59,7 +71,14 @@
       <div class='spacing'></div>
     </div>
   </div>
+
+  <p class="centered-text">
+    Based on a theme by
+    <a href="https://github.com/fakufaku/fakufaku.github.io">Robin Scheibler</a>
+  </p>
+
   <div class='two spacing'></div>
+
 </div>
 <script src="{{ "/javascripts/jquery.countTo.js" | prepend: site.baseurl }}" type="text/javascript"></script>
 <script src="{{ "/javascripts/jquery.appear.js" | prepend: site.baseurl }}" type="text/javascript"></script>
