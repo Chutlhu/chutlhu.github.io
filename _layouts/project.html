@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-<div class='full parallax' style='background-image: url({{site.url}}/images/banner_projects.jpg); color: #fff;'>
+<div class='full parallax' style='background-image: url({{site.url}}/{{page.banner}}); color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html title=page.title tagline=page.tagline color="#fff" class="big" %}
@@ -17,7 +17,7 @@ layout: default
   <div class='row'>
     <div class='large-4 columns'>
       <div class='images'>
-        <div class='image'><img alt="" src="{{site.url}}/{{page.images}}" /></div>
+        <div class='image'><img alt="" src="{{site.url}}/{{page.image}}" /></div>
       </div>
       <div id=bio>
         <div class='spacing'></div>

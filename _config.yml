@@ -14,7 +14,7 @@ motto: >
 
 short_bio:
   I am a PhD candidate in Audio Signal Processing and Machine Learning<br/>
-  at INRIA in the [team PANAMA](https://team.inria.fr/panama/) in France.
+  at INRIA in the [team PANAMA](https://team.inria.fr/panama/) in France.<br/>
   Under the supervision of [Antoine Deleforge](https://members.loria.fr/ADeleforge/)
   and [Nancy Bertin](https://people.irisa.fr/Nancy.Bertin/en), <br/>
   I am currently working on estimating early acoustic echoes for audio inverse problem.
@@ -60,6 +60,7 @@ socials_ai:
   - icon: google-scholar
     url: https://scholar.google.fr/citations?user=TZLUhuIAAAAJ
 
+
 # I want to have a collection of projects
 collections:
   projects:
@@ -68,3 +69,6 @@ collections:
     output: true
   musics:
     output: true
+
+
+exclude: ['_old']
