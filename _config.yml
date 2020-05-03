@@ -40,14 +40,16 @@ logo_footer: images/logo-diego-grey.png
 # Build settings
 markdown: CommonMarkGhPages
 
-commonmark:
-  options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+# commonmark:
+#   options: ["SMART", "FOOTNOTES"]
+#   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
 paginate: 3
 paginate_path: "blog/page:num"
 
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  - jekyll-spaceship
 
 socials_fa:
   - icon: envelope
