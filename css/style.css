@@ -24,22 +24,97 @@
 
 /* Added by Diego */
 
-/* #pre, code {
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-left: 3px solid #f36d33;
-    color: #666;
-    page-break-inside: avoid;
-    font-family: "Source Code Pro", Consolas, monospace;
-    font-size: 12px;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1em 1.5em;
-    display: block;
-    word-wrap: break-word;
-} */
+/* BEGIN POPUP PUBS */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #fff;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #000;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* END POPUP */
+
+#pubs ul.socials li {
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 8px;
+}
+#pubs ul.socials i {
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: none;
+  color: #ccc;
+  text-align: right;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+#pubs ul.socials a:hover i {
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: #F9CE06;
+}
+
 
 
 /* Added by Robin */

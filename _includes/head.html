@@ -37,7 +37,8 @@
             application.start();
         });
     })(Tc.$);
-  </script>
+    </script>
+
   <link href="http://fonts.googleapis.com/css?family=Raleway:400,700,300" media="screen" rel="stylesheet" type="text/css" />
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   <script src="{{ "/javascripts/masonry.pkgd.js" | prepend: site.baseurl }}" type="text/javascript"></script>
@@ -46,4 +47,6 @@
   <script src="{{ "/javascripts/json2.js" | prepend: site.baseurl }}" type="text/javascript"></script>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <!-- my own scripts -->
+  <script defer src="{{ "/javascripts/popupbox.js" | prepend: site.baseurl }}" type="text/javascript"></script>
 </head>

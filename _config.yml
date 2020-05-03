@@ -73,4 +73,6 @@ collections:
     output: true
 
 
-exclude: ['_old']
+exclude:
+  - '_old'
+  - 'scripts/venv'

@@ -1,49 +1,102 @@
 article:
 - author: Deleforge, Antoine and Di Carlo, Diego and Strauss, Martin and Serizel,
     Romain and Marcenaro, Lucio
-  bibitem: "@article{Deleforge2019audio,\n author = {Deleforge, Antoine and Di Carlo,\
-    \ Diego and Strauss, Martin and Serizel, Romain and Marcenaro, Lucio},\n journal\
-    \ = {IEEE Signal Processing Magazine},\n number = {5},\n pages = {138--144},\n\
-    \ publisher = {IEEE},\n title = {Audio-Based Search and Rescue With a Drone: Highlights\
-    \ From the IEEE Signal Processing Cup 2019 Student Competition [SP Competitions]},\n\
-    \ url = {https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8827999},\n volume\
-    \ = {36},\n year = {2019}\n}\n\n"
   journal: IEEE Signal Processing Magazine
+  keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
   number: '5'
   pages: 138--144
   publisher: IEEE
-  title: 'Audio-Based Search and Rescue With a Drone: Highlights From the IEEE Signal
+  title: >
+    'Audio-Based Search and Rescue With a Drone: Highlights From the IEEE Signal
     Processing Cup 2019 Student Competition'
-  url: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8827999
-  code: https://github.com/Chutlhu/SPCUP19
   volume: '36'
   year: 2019
+  resources_link:
+    - name: IEEE
+      icon: ai ai-ieee
+      link: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8827999
+    - name: DOI
+      icon: ai ai-doi
+      link: https://doi.org/10.1109/MSP.2019.2924687
+    - name: Github
+      icon: fa fa-github
+      link: https://github.com/Chutlhu/SPCUP19
+  resources_popup:
+    - name: Bibtex
+      icon: fa fa-quote-right
+      link: www.google.com
+      text: >
+        @article{Deleforge2019audio,
+          author = {Deleforge, Antoine and Di Carlo, Diego and Strauss, Martin and Serizel, Romain and Marcenaro, Lucio},
+          journal = {IEEE Signal Processing Magazine},
+          number = {5},
+          pages = {138--144},
+          publisher = {IEEE},
+          title = {Audio-Based Search and Rescue With a Drone: Highlights From the IEEE Signal Processing Cup 2019 Student Competition [SP Competitions]},
+          url = {https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8827999},
+          volume = {36},
+          year = {2019}
+        }
+    - name: Abstract
+      icon: fa fa-align-left
+      link: www.notdefinedyet.com
+      text: >
+        Increasing interest in unmanned aerial vehicles (UAVs), commonly referred to as drones, has occurred in recent years. Search and rescue scenarios where humans in emergency situations need to be quickly found in difficult-toaccess areas constitute an important field of application for this technology. Drones have already been used by humanitarian organizations in countries such as Haiti and the Philippines to map areas after a natural disaster using high-resolution embedded cameras, as documented in a recent United Nations report [1]. Although research efforts have focused mostly on developing video-based solutions for this task [2], UAV-embedded audio-based localization has received relatively less attention [3]?[7]. However, UAVs equipped with a microphone array could be of critical help to localize people in emergency situations, especially when video sensors are limited by a lack of visual feedback due to bad lighting conditions (such as at night or in fog) or obstacles limiting the field of view (Figure 1).
+
+
 
 inproceedings:
-- abstract: 'Acoustic echoes retrieval is a research topic that is gaining importance
-  in many speech and audio signal processing applications such as speech enhancement,
-   source separation, dereverberation and room geometry estimation.
-   This work proposes a novel approach to retrieve acoustic echoes timing *off-grid* and blindly,
-   i.e., from a stereophonic recording of an unknown sound source such as speech.
-   It builds on the recent framework of continuous dictionaries.
-   In contrast with existing methods, the proposed approach does not
-   rely on parameter tuning nor peak picking techniques by working directly
-   in the parameter space of interest. The accuracy and robustness of
-   the method are assessed on challenging simulated setups with
-   varying noise and reverberation levels and are compared to two state-of-the-art methods.'
-  arxiv: ''
+- title: 'BLASTER: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval'
   author: 'Di Carlo, Diego and Elvira, Clement  and Deleforge, Antoine and Bertin, Nancy and Gibonval, Remi'
-  bibitem: ""
   booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing
     (ICASSP)
-  doi:
-  hal_id:
   keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
   pages:
-  title: 'BLASTER: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval'
-  url: https://gitlab.inria.fr/panama-team/blaster
   volume: 2020-May
   year: 2020
+
+  resources_link:
+    - name: IEEE
+      icon: ai ai-ieee
+      link: https://ieeexplore.ieee.org/document/9054647
+    - name: HAL
+      icon: ai ai-open-access
+      link: https://hal.archives-ouvertes.fr/hal-02469901/
+    - name: Code
+      icon: fa fa-github
+      link: https://gitlab.inria.fr/panama-team/blaster
+    - name: Slides
+      icon: fa fa-file-pdf-o
+      link: https://sigport.org/sites/default/files/docs/icassp2020blaster_1.pdf
+    - name: Video
+      icon: fa fa-youtube-play
+      link: https://youtu.be/rPaqZJIfpKo
+    - name: DOI
+      icon: ai ai-doi
+      link: 10.1109/ICASSP40776.2020.9054647
+
+  resources_popup:
+    - name: Bibtex
+      icon: fa fa-quote-right
+      text: >
+        @INPROCEEDINGS{9054647, author={D. D. {Carlo} and C. {Elvira} and A. {Deleforge} and N. {Bertin} and R. {Gribonval}}, booktitle={ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, title={Blaster: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval}, year={2020}, volume={}, number={}, pages={156-160},}
+    - name: Abstract
+      icon: fa fa-align-left
+      text: >
+        'Acoustic echoes retrieval is a research topic that is gaining importance
+        in many speech and audio signal processing applications such as speech enhancement,
+        source separation, dereverberation and room geometry estimation.
+        This work proposes a novel approach to retrieve acoustic echoes timing *off-grid* and blindly,
+        i.e., from a stereophonic recording of an unknown sound source such as speech.
+        It builds on the recent framework of continuous dictionaries.
+        In contrast with existing methods, the proposed approach does not
+        rely on parameter tuning nor peak picking techniques by working directly
+        in the parameter space of interest. The accuracy and robustness of
+        the method are assessed on challenging simulated setups with
+        varying noise and reverberation levels and are compared to two state-of-the-art methods.'
+
+
+
 - abstract: 'It is commonly observed that acoustic echoes hurt performance of sound
     source localization (SSL) methods.
     We introduce the concept of microphone array augmentation with echoes (MIRAGE)

@@ -27,26 +27,36 @@ file: papers
     <div class="small-1 columns" align="center">
       {{ paper.year }}
     </div>
-    <div class='large-9 columns'>
+    <div class='large-8 columns'>
       <b>{{ paper.title }}</b><br>
       <em>{{ paper.author }}</em><br>
       in {{ paper.journal }},
       Vol. {{ paper.volume }}, Num. {{ paper.number }},
-      pp. {{ paper.pages }}, {{ paper.year }}.
+      pp. {{ paper.pages }}, {{ paper.year }}.<br>
     </div>
-    <div class='large-2 columns'>
-      {% if paper.pdf %}
-      <span class="warning label">
-        <a href="{{ paper.url }}">pdf</a>
-      </span>
-      {% endif %}
-      {% if paper.code %}
-      <span class="alert label">
-        <a href="{{ paper.code }}">code</a>
-      </span>
-      {% endif %}
+
+    <div class='large-3 columns'>
+      <div id="pubs"><ul class="socials">
+          {% for res in paper.resources_link %}
+            <a title="{{res.name}}" href={{ res.link }} target="_blank"><i class='{{ res.icon }}'></i></a>
+          {% endfor %}
+
+          <!-- my popup -->
+          {% for res in paper.resources_popup %}
+          <a title="{{res.name}}"><i class='{{ res.icon }}' data-modal-target="#modal"></i></a>
+          <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title">{{ res.name }}</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+          <div class="modal-body">{{res.text}}</div>
+          </div>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
+
   <div class='one spacing'></div>
   {% endfor %}
   <div class='three spacing'></div>
@@ -64,43 +74,36 @@ file: papers
     <div class="small-1 columns" align="center">
       {{ paper.year }}
     </div>
-    <div class='large-10 columns'>
+    <div class='large-8 columns'>
       <b>{{ paper.title }}</b><br>
       <em>{{ paper.author }}</em><br>
       in {{ paper.booktitle }},
       {% if paper.pages %}
       pp. {{ paper.pages }},
       {% endif %}
-      {{ paper.year }}.
+      {{ paper.year }}.<br>
     </div>
-    <div class='large-2 columns'>
-      {% if paper.pdf %}
-      <span class="warning label">
-        <a href="{{ paper.pdf }}">pdf</a>
-      </span>
-      {% endif %}
-      {% if paper.code %}
-      <span class="alert label">
-        <a href="{{ paper.code }}">code</a>
-      </span>
-      {% endif %}
-      {% if paper.slides %}
-      <span class="secondary label">
-        <a href="{{ paper.slides }}"> slides </a>
-      </span>
-      {% endif %}
-      {% if paper.poster %}
-      <span class="secondary label">
-        <a href="{{ paper.poster }}"> poster </a>
-      </span>
-      {% endif %}
-      {% if paper.video %}
-      <span class="success label">
-        <a href="{{ paper.video }}"> video </a>
-      </span>
-      {% endif %}
+    <div class='large-3 columns'>
+      <div id="pubs">
+        <ul class="socials">
+          {% for res in paper.resources_link %}
+          <a href={{ res.link }} target="_blank"><i class='{{ res.icon }}'></i></a>
+          {% endfor %}
+          {% for res in paper.resources_popup %}
+          <a target="_blank"><i class='{{ res.icon }}' data-modal-target="#modal"></i></a>
+          <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title">{{ res.name }}</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">{{res.text}}</div>
+          </div>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </div>
+
   <div class='one spacing'></div>
   {% endfor %}
   <div class='three spacing'></div>
