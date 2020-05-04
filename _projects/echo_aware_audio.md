@@ -26,8 +26,8 @@ Deleforge (INRIA), Diego Di Carlo (INRIA).  We hope to promote further the
 appreciation for echoes by applying similar ideas to scene analysis and
 recognition tasks for example.
 
-Acoustic Rake Receivers
------------------------
+MIRAGE
+------
 
 Beamformers combine the signal from multiple microphones to focus the
 acquisition towards some regions of space. We propose a number of beamforming
@@ -44,7 +44,7 @@ domain](https://github.com/LCAV/TimeDomainAcousticRakeReceiver).  The papers
 are [here](http://ieeexplore.ieee.org/document/7065205/) and
 [here](https://github.com/LCAV/TimeDomainAcousticRakeReceiver).
 
-Separake
+BLASTER
 --------
 
 More recently, we showed similar results in the domain of
@@ -113,7 +113,7 @@ audio {
   <td><audio controls="controls" type="audio/wav" src="/assets/icassp2018/samples/separake_learn_mu_univ_sep_fq_sample2.wav"><a>play</a></audio></td>
   <td><audio controls="controls" type="audio/wav" src="/assets/icassp2018/samples/separake_learn_mu_univ_sep_fq_sample3.wav"><a>play</a></audio></td>
   </tr>
-  
+
   <tr>
   <td>0 Echoes</td>
   <td><audio controls="controls" type="audio/wav" src="/assets/icassp2018/samples/separake_learn_mu_spkr_mix_fq_sample3_fq_sample2.wav"><a>play</a></audio></td>
@@ -127,7 +127,7 @@ audio {
   <td><audio controls="controls" type="audio/wav" src="/assets/icassp2018/samples/separake_0echoes_mu_univ_sep_fq_sample2.wav"><a>play</a></audio></td>
   <td><audio controls="controls" type="audio/wav" src="/assets/icassp2018/samples/separake_0echoes_mu_univ_sep_fq_sample3.wav"><a>play</a></audio></td>
   </tr>
-  
+
   <tr>
   <td>1 Echoes</td>
   <td><audio controls="controls" type="audio/wav" src="/assets/icassp2018/samples/separake_learn_mu_spkr_mix_fq_sample3_fq_sample2.wav"><a>play</a></audio></td>

@@ -48,13 +48,9 @@ article:
 inproceedings:
 - title: 'BLASTER: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval'
   author: 'Di Carlo, Diego and Elvira, Clement  and Deleforge, Antoine and Bertin, Nancy and Gibonval, Remi'
-  booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing
-    (ICASSP)
+  booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
   keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
-  pages:
-  volume: 2020-May
   year: 2020
-
   resources_link:
     - name: IEEE
       icon: ai ai-ieee
@@ -73,8 +69,7 @@ inproceedings:
       link: https://youtu.be/rPaqZJIfpKo
     - name: DOI
       icon: ai ai-doi
-      link: 10.1109/ICASSP40776.2020.9054647
-
+      link: https://doi.org/10.1109/ICASSP40776.2020.9054647
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right
@@ -95,49 +90,71 @@ inproceedings:
         the method are assessed on challenging simulated setups with
         varying noise and reverberation levels and are compared to two state-of-the-art methods.'
 
-
-
-- abstract: 'It is commonly observed that acoustic echoes hurt performance of sound
-    source localization (SSL) methods.
-    We introduce the concept of microphone array augmentation with echoes (MIRAGE)
-    and show how estimation of early-echo  characteristics can in fact benefit SSL.
-    We propose a learning based scheme for echo estimation combined with a physics based
-    scheme for echo aggregation.
-    In a simple scenario involving 2 microphones close to a reflective surface and
-    one source,
-    we show using simulated data that the proposed approach performs similarly to
-    a correlation-based method
-    in azimuth estimation while retrieving elevation as well from 2 microphones only,
-    an impossible task in anechoic settings.'
-  arxiv: '1906.08968'
+- title: 'MIRAGE: 2D Source Localization Using Microphone Pair Augmentation with Echoes'
   author: ' Di Carlo, Diego and Deleforge, Antoine and Bertin, Nancy'
-  bibitem: "@inproceedings{DiCarlo2019,\n abstract = {It is commonly observed that\
-    \ acoustic echoes hurt performance of sound source localization (SSL) methods.\n\
-    We introduce the concept of microphone array augmentation with echoes (MIRAGE)\
-    \ and show how estimation of early-echo  characteristics can in fact benefit SSL.\n\
-    We propose a learning based scheme for echo estimation combined with a physics based\
-    \ scheme for echo aggregation.\nIn a simple scenario involving 2 microphones close\
-    \ to a reflective surface and one source,\nwe show using simulated data that the\
-    \ proposed approach performs similarly to a correlation-based method\nin azimuth\
-    \ estimation while retrieving elevation as well from 2 microphones only, an impossible\
-    \ task in anechoic settings.},\n arxiv = {1906.08968},\n author = { Di Carlo,\
-    \ Diego and Deleforge, Antoine and Bertin, Nancy},\n booktitle = {IEEE International\
-    \ Conference on Acoustics, Speech and Signal Processing (ICASSP)},\n doi = {10.1109/ICASSP.2019.8683534},\n\
-    \ hal_id = {hal-01909531},\n keywords = {Image Microphones,Sound Source Localization,Supervised\
-    \ Learning,TDOA Estimation},\n pages = {775--779},\n title = {Mirage: 2D Source\
-    \ Localization Using Microphone Pair Augmentation with Echoes},\n url = {https://github.com/Chutlhu/MIRAGE},\n\
-    \ volume = {2019-May},\n year = {2019}\n}\n\n"
   booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing
-    (ICASSP)
-  doi: 10.1109/ICASSP.2019.8683534
-  hal_id: hal-01909531
   keywords: Image Microphones,Sound Source Localization,Supervised Learning,TDOA Estimation
-  pages: 775--779
-  title: 'MIRAGE: 2D Source Localization Using Microphone Pair Augmentation with Echoes'
-  url: https://github.com/Chutlhu/MIRAGE
-  volume: 2019-May
   year: 2019
-- abstract: "It is commonly believed that multipath hurts various audio process-ing\
+  resources_link:
+    - name: IEEE
+      icon: ai ai-ieee
+      link: https://ieeexplore.ieee.org/document/9054647
+    - name: HAL
+      icon: ai ai-open-access
+      link: https://hal.archives-ouvertes.fr/hal-02469901/
+    - name: Code
+      icon: fa fa-github
+      link: https://gitlab.inria.fr/panama-team/blaster
+    - name: Poster
+      icon: fa fa-file-pdf-o
+      link: https://sigport.org/sites/default/files/docs/2019_icassp_mirage_poster.pdf
+    - name: DOI
+      icon: ai ai-doi
+      link: https://doi.org/10.1109/ICASSP.2019.8683534
+    - name: arXiv
+      icon: ai ai-arxiv
+      link: https://arxiv.org/abs/1906.08968
+  resources_popup:
+    - name: Bibtex
+      icon: fa fa-quote-right
+      text: >
+        @inproceedings{DiCarlo2019, abstract = {It is commonly observed that
+        acoustic echoes hurt performance of sound source localization (SSL) methods.
+        We introduce the concept of microphone array augmentation with echoes (MIRAGE)
+        and show how estimation of early-echo  characteristics can in fact benefit SSL.
+        We propose a learning based scheme for echo estimation combined with a physics based
+        scheme for echo aggregation.In a simple scenario involving 2 microphones close
+        to a reflective surface and one source,we show using simulated data that the
+        proposed approach performs similarly to a correlation-based methodin azimuth
+        estimation while retrieving elevation as well from 2 microphones only, an impossible
+        task in anechoic settings.}, arxiv = {1906.08968}, author = { Di Carlo,
+        Diego and Deleforge, Antoine and Bertin, Nancy}, booktitle = {IEEE International
+        Conference on Acoustics, Speech and Signal Processing (ICASSP)}, doi = {10.1109/ICASSP.2019.8683534},
+        hal_id = {hal-01909531}, keywords = {Image Microphones,Sound Source Localization,Supervised
+        Learning,TDOA Estimation}, pages = {775--779}, title = {Mirage: 2D Source
+        Localization Using Microphone Pair Augmentation with Echoes}, url = {https://github.com/Chutlhu/MIRAGE},
+        volume = {2019-May}, year = {2019}}
+    - name: Abstract
+      icon: fa fa-align-left
+      text: >
+        It is commonly observed that acoustic echoes hurt performance of sound
+        source localization (SSL) methods.
+        We introduce the concept of microphone array augmentation with echoes (MIRAGE)
+        and show how estimation of early-echo  characteristics can in fact benefit SSL.
+        We propose a learning based scheme for echo estimation combined with a physics based
+        scheme for echo aggregation.
+        In a simple scenario involving 2 microphones close to a reflective surface and
+        one source,
+        we show using simulated data that the proposed approach performs similarly to
+        a correlation-based method
+        in azimuth estimation while retrieving elevation as well from 2 microphones only,
+        an impossible task in anechoic settings.
+
+- title: 'SEPARAKE: Source Separation with a Little Help from Echoes'
+  booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+  year: 2018
+  keywords: Echoes,Multi-channel,NMF,Room geometry,Source separation
+  abstract: "It is commonly believed that multipath hurts various audio process-ing\
     \ algorithms.\nAt odds with this belief, we show that multipath infact helps sound\
     \ source separation,\neven with very simple propagation models.\nUnlike most existing\
     \ methods, we neither ignore theroom impulse responses, nor we attempt to estimate\
@@ -173,13 +190,9 @@ inproceedings:
     \ year = {2018}\n}\n\n"
   doi: 10.1109/ICASSP.2018.8461345
   hal_id: hal-01909531
-  booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing
-    (ICASSP)
-  keywords: Echoes,Multi-channel,NMF,Room geometry,Source separation
   pages: 6897--6901
-  title: 'SEPARAKE: Source Separation with a Little Help from Echoes'
   url: https://github.com/fakufaku/separake
-  year: 2018
+
 - abstract: This short paper presents an efficient, flexible implementation of the
     SRP-PHAT  multichannel  sound  source  localization  method.   Themethod is evaluated
     on the single-source tasks of the LOCATA 2018development  dataset,  and  an  associated  Matlab  toolbox  is  madeavailable
