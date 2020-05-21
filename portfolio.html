@@ -2,13 +2,14 @@
 layout: default
 title: Portfolio
 section_id: portfolio
+image : images/banners/arm-banner.jpg
 ---
 
 
-<div class='full parallax' style='background-image: url(images/banner_5.jpg); color: #fff;'>
+<div class='full parallax' style='background-image: url({{page.image}}); color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>
-      {% include section-header.html title="Portfolio" tagline="Things I made" color="#fff" class="big" %}
+      {% include section-header.html title="Portfolio" tagline="Things made of me" color="#fff" class="big" %}
     </div>
   </div>
   <div class='four spacing'></div>

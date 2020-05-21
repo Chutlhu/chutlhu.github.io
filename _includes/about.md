@@ -6,17 +6,60 @@ My name is Diego Di Carlo. Since October 2017 I am a Ph.D. Candidate at [Inria](
 
 Under the supervision of [Antoine Deleforge](https://members.loria.fr/ADeleforge/) and [Nancy Bertin](https://people.irisa.fr/Nancy.Bertin/en), we are shedding light on how **acoustic echoes** helps **indoor audio signal processing** and how (and if) it is possible to estimated them.
 
-#### Research Interest
-to be continued
 
-#### Other Interest
-to bo continued
+<table style="border-collapse: collapse; border: none;"><tbody>
+    <tr style="border-collapse: collapse; border: none;">
+        <td width=50%% style="border: none; vertical-align:top">
+            <h4>Research Interest</h4>
+            Machine Learning and Signal Models
+            <ul>
+            <li> <i>Deep Learning for regression & denoising</i>
+            <li> <i>Latent variable & Generative models</i>
+            <li> <i>Low-rank models (NMF)</i>
+            <li> <i>Optimization: Continuous Dictionary</i>
+            </ul>
+            Applications to Audio Inverse Problems
+            <ul>
+            <li> <i>Channel estimation: RIR, RTF & RETF estimation</i>
+            <li> <i>Sound Source Separation & Localization</i>
+            <li> <i>Room Geometry Reconstruction</i>
+            <li> <i>(Off-grid) spike retrieval</i>
+            </ul>
+        </td>
+        <td width=50% style="border: none; vertical-align:top">
+            <h4>Passions</h4>
+            Music
+            <ul>
+            <li> <i>Play bass and NIME</i>
+            <li> <i>Several music projects in {death-black metal, jazz, pop, hip hop, rock, post/doom/drone, grind-core, post, prog, dubstep, EDM and IDM}<i>
+            </ul>
+            Computer
+            <ul>
+            <li> <i>Linux customization (Unixporn)</i>
+            <li> <i>LateX aesthetics</i>
+            <li> <i>Python workflow (Confugue, Sacred, MLFLow ...)</i>
+            <li> <i>Fervent believer in reproducible research and open-source code</i>
+            <li> <i>Lot of year in playing MMORPG</i>
+            </ul>
+            Complementary
+            <ul>
+            <li> Cooking and implementing Pellegrino Artusi's recipes
+            <li> DIY footpedal effect
+            <li> Technical, narrative and horrible books
+            <li> Mountain, snowboarding and sunsets
+            </ul>
+        </td>
+</tr></tbody></table>
 
 #### Primordial Soup
 
 I graduated in Compute Engineering in 2017 from [Universitá degli Studi di Padova](https://www.dei.unipd.it/) with a thesis on [*Music Interference Reduction with Gaussian Process*](https://hal.inria.fr/hal-01515971/document). This worked was supervided by Nicola Orio and Antoine Liutkus and it was conducted while I was at Multispeech Team in INIRA Nancy France.
 
-Before of this... where *Hic Sunt Dracones*.
+Before of this... well *Hic Sunt Dracones*.
+
+#### Acknowledgment (or, currently worshipping)
+
+*Pellegrino Artusi, Aaron Funk, Richard David James, August Dvorak, Edward Tufte, Michael Bulkakov, Neil Gaiman, Piero Scaruffi, Blackmoon and Lord Ahriman, Oxxo Xoox, Justin Chancellor, Colin Greenwood, Stephen King, Devin Townsend, Leo Ortolani and Chutlhu. Nyarlathotep as well.*
 
 <!-- I always tired to combine my passion for music with a passion for engineering..
  -->
