@@ -15,20 +15,38 @@ links:
 hidden: true
 ---
 
-*N'Ilazo* **are**
+#### Radioteque are
+
+- Riccardo Maggiolo: Voice
 - Matteo Scalchi: Guitar
-- Marco Billo: Keyboard/Synth
-- Sean Lucariello: Trumpet
-- Elia Gamba: Piano/Keyboard
 - Diego Di Carlo: Bass
 - Edoardo Maggiolo: Drums/Percussions
-- Stefano Perissinotto (Prs): Engineering
+- Alberto Di Carlo: Atmosphere and Factotum
+- Il Bullo: Guitar and Wellness
+- Simo: Guitar and Happiness
 
 
-Songs and live:
-- [Just - The Bends](https://www.facebook.com/watch/?v=291536494204675)
-- [15 step - In Rainbows](https://www.youtube.com/watch?v=dO5T9P10lv0)
-- [Just - The Bends](https://www.youtube.com/watch?v=opJwH1z2KW4)
-- [Fake Plastic Tree](https://www.youtube.com/watch?v=rB-8Kkz-ytU)
-- [Idioteque](https://www.youtube.com/watch?v=QBqTUqGl5wc)
-- [There There](https://www.youtube.com/watch?v=FeYYO_cnPtk)
+#### Video and live:
+
+##### 15 step
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dO5T9P10lv0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+##### Just
+<iframe width="560" height="315" src="https://www.youtube.com/embed/opJwH1z2KW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+##### Fake Plastic Tree
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rB-8Kkz-ytU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+##### Idioteque
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QBqTUqGl5wc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+##### There There
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FeYYO_cnPtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!--
+##### Just (just... the ending)
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fradiotequeband%2Fvideos%2F291536494204675%2F&show_text=0&width=560" width="560" height="313" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->

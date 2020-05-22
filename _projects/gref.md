@@ -1,19 +1,20 @@
 ---
 title: gRef
 layout: project
-tagline: "Everythin is connected"
-description: "We explore prototypes of hardware, software, and wetware in the design of a practical water quality sensors."
-permalink: /biodesign
-klass: hardware
-avatar: images/music/gref_avatar.jpg
-banner: images/music/gref_banner.jpg
+tagline: "Everything is connected"
+description: "Hierachical Visualization of Bibliography."
+permalink: /projects/gref
+klass: software
+image: images/projects/gref/gref_banner.jpg
+banner: images/projects/gref/gref_banner.jpg
+thumbnail: images/projects/gref/gref_avatar.jpg
 links:
-  - icon: home
-    url: http://biodesign.cc
-  - icon: wikipedia
-    url: http://wiki.biodesign.cc
   - icon: github
-    url: https://github.com/BioDesignRealWorld
+    url: https://github.com/
+  - icon: youtube
+    url: http://www.youtube.com/
 hidden: true
 ---
+
+BLABLABLA
 

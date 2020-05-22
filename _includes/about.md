@@ -1,10 +1,13 @@
-_Short bio... Long version:_
+_Short bio... but now a bit longer_
 
 #### As you may have noticed
 
-My name is Diego Di Carlo. Since October 2017 I am a Ph.D. Candidate at [Inria](https://www.inria.fr/centre/rennes) in the [PANAMA team](https://team.inria.fr/panama/) in the beautiful city of Rennes, France.
+My name is Diego <span style="font-variant: small-caps;">Di Carlo</span> and I come from [Vicenza](https://en.wikipedia.org/wiki/Vicenza).<br>
+Since October 2017 I am a Ph.D. Candidate at [Inria](https://www.inria.fr/centre/rennes) in the [PANAMA team](https://team.inria.fr/panama/) in the beautiful city of Rennes, France.
 
-Under the supervision of [Antoine Deleforge](https://members.loria.fr/ADeleforge/) and [Nancy Bertin](https://people.irisa.fr/Nancy.Bertin/en), we are shedding light on how **acoustic echoes** helps **indoor audio signal processing** and how (and if) it is possible to estimated them.
+Under the supervision of [Antoine <span style="font-variant: small-caps;">Deleforge</span>](https://members.loria.fr/ADeleforge/) and [Nancy <span style="font-variant: small-caps;">Bertin</span>](https://people.irisa.fr/Nancy.Bertin/en), we are shedding light on how **acoustic echoes helps indoor audio signal processing** and how (and if) it is possible to estimated them.
+
+my 2-page curriculum vitae is available [here]({{site.url}}/pdf/cv.pdf).
 
 
 <table style="border-collapse: collapse; border: none;"><tbody>
@@ -31,7 +34,7 @@ Under the supervision of [Antoine Deleforge](https://members.loria.fr/ADeleforge
             Music
             <ul>
             <li> <i>Play bass and NIME</i>
-            <li> <i>Several music projects in {death-black metal, jazz, pop, hip hop, rock, post/doom/drone, grind-core, post, prog, dubstep, EDM and IDM}<i>
+            <li> <i>Several music projects in {death-black metal, jazz, pop, hip hop, post/doom/drone, grind-core, post, prog, dubstep, IDM & EDM}<i>
             </ul>
             Computer
             <ul>
@@ -45,21 +48,38 @@ Under the supervision of [Antoine Deleforge](https://members.loria.fr/ADeleforge
             <ul>
             <li> Cooking and implementing Pellegrino Artusi's recipes
             <li> DIY footpedal effect
-            <li> Technical, narrative and horrible books
-            <li> Mountain, snowboarding and sunsets
+            <li> Mountain, hiking, snowboarding and sunsets
+            <li> Horrible/horror, fantasy and semiotics books & comics
             </ul>
         </td>
 </tr></tbody></table>
 
 #### Primordial Soup
 
-I graduated in Compute Engineering in 2017 from [Universitá degli Studi di Padova](https://www.dei.unipd.it/) with a thesis on [*Music Interference Reduction with Gaussian Process*](https://hal.inria.fr/hal-01515971/document). This worked was supervided by Nicola Orio and Antoine Liutkus and it was conducted while I was at Multispeech Team in INIRA Nancy France.
+I graduated in Compute Engineering in 2017 from [Universitá degli Studi di Padova](https://www.dei.unipd.it/) with a thesis on [*Music Interference Reduction with Gaussian Process*](https://hal.inria.fr/hal-01515971/document). This worked was supervided by Nicola <span style="font-variant: small-caps;">Orio</span> and Antoine <span style="font-variant: small-caps;">Liutkus</span> and it was conducted while I was at Multispeech Team in INIRA Nancy France.
 
 Before of this... well *Hic Sunt Dracones*.
 
 #### Acknowledgment (or, currently worshipping)
 
-*Pellegrino Artusi, Aaron Funk, Richard David James, August Dvorak, Edward Tufte, Michael Bulkakov, Neil Gaiman, Piero Scaruffi, Blackmoon and Lord Ahriman, Oxxo Xoox, Justin Chancellor, Colin Greenwood, Stephen King, Devin Townsend, Leo Ortolani and Chutlhu. Nyarlathotep as well.*
+*Pellegrino <span style="font-variant: small-caps;">Artusi</span>,
+Aaron <span style="font-variant: small-caps;">Funk</span>,
+Richard <span style="font-variant: small-caps;">David James</span>,
+August <span style="font-variant: small-caps;">Dvorak</span>,
+Edward <span style="font-variant: small-caps;">Tufte</span>,
+Michael <span style="font-variant: small-caps;">Bulkakov</span>,
+Neil <span style="font-variant: small-caps;">Gaiman</span>,
+Piero <span style="font-variant: small-caps;">Scaruffi</span>,
+Blackmoon and Lord <span style="font-variant: small-caps;">Ahriman</span>,
+Oxxo <span style="font-variant: small-caps;">Xoox</span>,
+Justin <span style="font-variant: small-caps;">Chancellor</span>,
+Colin <span style="font-variant: small-caps;">Greenwood</span>,
+Stephen <span style="font-variant: small-caps;">King</span>,
+Italo <span style="font-variant: small-caps;">Calvino</span>,
+Devin <span style="font-variant: small-caps;">Townsend</span>,
+Leo <span style="font-variant: small-caps;">Ortolani</span>
+and Chutlhu.
+And <span style="font-variant: small-caps;">Nyarlathotep</span>.*
 
 <!-- I always tired to combine my passion for music with a passion for engineering..
  -->

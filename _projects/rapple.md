@@ -1,14 +1,13 @@
 ---
 title: Rapple
-desc: Smart Rap Battle Opponent
 layout: project
-tagline: "Prototyping bacteria-based Arsenic detection sensors"
-description: "We explore prototypes of hardware, software, and wetware in the design of a practical water quality sensors."
+tagline: "Smart Rap Battle Opponent"
+description: ""
 permalink: /projects/rapple
 klass: software
-thumbnail: images/rapple/abbey_thumbnail.jpg
-image: images/rapple/abbey_thumbnail.jpg
-banner: images/rapple/abbey_banner.jpg
+thumbnail: images/projects/rapple/rapple_thumbnail.jpg
+image: images/projects/rapple/rapple_thumbnail.jpg
+banner: images/projects/rapple/rapple_banner3.jpg
 links:
   - icon: github
     url: https://github.com/cifkao/rapple
@@ -20,7 +19,7 @@ hidden: true
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/tp1LaoNjXm8/0.jpg)](http://www.youtube.com/watch?v=tp1LaoNjXm8 "Video Title")
 
-BIODESIGN for the REAL WORLD is a transdisciplinary and collaborative research
+<!-- BIODESIGN for the REAL WORLD is a transdisciplinary and collaborative research
 project addressing water quality with partners in Switzerland,
 [(Art)ScienceBLR](http://artscienceblr.org/) in India, and
 [Lifepatch](http://lifepatch.org/) in Indonesia.
@@ -37,4 +36,4 @@ We are interested in
 * Horizontal exchange
 * Open and transdisciplinary approach
 
-Read more about our interests, funding, press on the [biodesign wiki](http://wiki.biodesign.cc),
+Read more about our interests, funding, press on the [biodesign wiki](http://wiki.biodesign.cc), -->

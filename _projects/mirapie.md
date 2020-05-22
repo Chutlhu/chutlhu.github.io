@@ -1,14 +1,13 @@
 ---
-title: Rapple
-desc: Smart Rap Battle Opponent
+title: mirapie
 layout: project
-tagline: "Prototyping bacteria-based Arsenic detection sensors"
-description: "We explore prototypes of hardware, software, and wetware in the design of a practical water quality sensors."
-permalink: /projects/rapple
+tagline: "Multichannel Interference Reduction Algorithm in Python"
+description: "Blablabla"
+permalink: /projects/mirapie
 klass: software
-thumbnail: images/rapple/abbey_thumbnail.jpg
-image: images/rapple/abbey_thumbnail.jpg
-banner: images/rapple/abbey_banner.jpg
+image: images/projects/mirapie/mirapie_thumbnail.jpg
+banner: images/projects/mirapie/mirapie_banner.jpg
+thumbnail: images/projects/mirapie/mirapie_thumbnail.jpg
 links:
   - icon: github
     url: https://github.com/cifkao/rapple

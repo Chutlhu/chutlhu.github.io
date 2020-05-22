@@ -1,8 +1,8 @@
 ---
-title: Chut~hWh~alE
+title: Chut~hWh~4l3
 layout: music_project
-tagline: "Digital Whale parasite"
-description: "We explore prototypes of hardware, software, and wetware in the design of a practical water quality sensors."
+tagline: "Alpha Stable Whale Parasite"
+description: "Alpha Stable Whale Parasite"
 permalink: /chutwhale
 klass: feelings
 avatar: images/music/chutwhale_avatar.jpg
@@ -13,3 +13,6 @@ links:
 hidden: true
 ---
 
+{{page.tagline}}
+
+Ergodic Parasyte with Alpha Stable Heavy Tail on the Whale swimming backwards on the waterfall

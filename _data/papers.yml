@@ -190,7 +190,6 @@ inproceedings:
     \ year = {2018}\n}\n\n"
   doi: 10.1109/ICASSP.2018.8461345
   hal_id: hal-01909531
-  pages: 6897--6901
   url: https://github.com/fakufaku/separake
 
 - abstract: This short paper presents an efficient, flexible implementation of the
@@ -213,10 +212,10 @@ inproceedings:
   booktitle: LOCATA Challenge Workshop - a satellite event of International Workshop
     on Acoustic Signal Enhancement (IWAENC)
   hal_id: hal-02187964
-  pages: 2--3
   title: Evaluation of an Open-Source Implementation of the SPR-PHAT Algorithm Within
     the 2018 Locata Challenge
   year: 2018
+
 - abstract: 'Live concert recordings consist in long multitrack audio samples with
     significant interferences between channels.
     For audio engineering purposes, it is desirable to attenuate those interferences.
@@ -263,11 +262,11 @@ inproceedings:
   hal_verision: v1
   keywords: Compressive sensing,Interference reduction,Microphone leakage,Random projection,Source
     separation
-  pages: 736--740
   title: Interference reduction on full-length live recordings
   url: https://github.com/Chutlhu/mirapie
   volume: 2018-April
   year: 2018
+
 - abstract: In live multitrack recordings, each voice is usually captured by dedicated
     close microphones. Unfortunately, it is also captured in practice by other microphones
     intended for other sources, leading to so-called "interferences". Reducing this
@@ -301,8 +300,8 @@ inproceedings:
   hal_verision: v1
   title: Gaussian framework for interference reduction in live recordings
   url: https://github.com/Chutlhu/mirapie
-  volume: 22-24-June
   year: 2017
+
 - author: Grani, Francesco and Di Carlo, Diego and Portillo, Jorge Madrid and Girardi,
     Matteo and Paisa, Razvan and Banas, Jian Stian and Vogiatzoglou, Iakovos and Overholt,
     Dan and Serafin, Stefania
@@ -313,10 +312,10 @@ inproceedings:
     \ = {185--192},\n title = {Gestural Control Of Wavefield synthesis},\n url = {https://vbn.aau.dk/ws/portalfiles/portal/244887082/2016_Gestural_Control_Of_Wavefield_synthesis_SMC2016.pdf},\n\
     \ year = {2016}\n}\n\n"
   booktitle: Sound and Music Computing Conference (SMC)
-  pages: 185--192
   title: Gestural Control Of Wavefield synthesis
   url: https://vbn.aau.dk/ws/portalfiles/portal/244887082/2016_Gestural_Control_Of_Wavefield_synthesis_SMC2016.pdf
   year: 2016
+
 - address: Venice
   author: Di Carlo, Diego and Rodá, Antonio
   bibitem: "@inproceedings{DiCarlo2014,\n address = {Venice},\n author = {Di Carlo,\
@@ -327,7 +326,6 @@ inproceedings:
     \ = {2014}\n}\n\n"
   booktitle: Proceedings of the 1st International Workshop on Computer and Robotic
     Systems for Automatic Music Performance (SAMP 14)
-  pages: 1--8
   title: "Automatic music \u201Clistening\u201D for automatic music performance: a\
     \ grandpiano dynamics classifier,\u201D"
   year: 2014
@@ -352,6 +350,7 @@ thesis:
   code: https://github.com/Chutlhu/mirapie
   url: https://hal.inria.fr/hal-01515971
   year: 2017
+
 - author: Di Carlo, Diego
   advisor: Antonio Rodá
   bibitem: "@mastersthesis{DiCarlo2014bachelor,\n author = {Di Carlo, Diego},\n school\
@@ -362,3 +361,22 @@ thesis:
   title: 'Sequential Feature Selection: Algorithm and Applications for Audio Information
     Retrieval'
   year: 2014
+
+
+other:
+- title: Etude des propriétés acoustiques de la guitare Black Flag
+  author: Denis Thouret, Loïc Le Marrec, Diego Di Carlo, Ewen Camberlein, Clements Gaultier and Frédéric Bimbot
+  bibitem: >
+    "@unknown{Thouret2010etude,
+      author = {Thouret, Denis and Le Marrec, Loïc and Di Carlo, Diego and Camberlein, Ewen and Gaultier, Clement and Bimbot, Frédéric},
+      year = {2019},
+      month = {10},
+      pages = {},
+      title = {Etude des propriétés acoustiques de la guitare Black Flag},
+      doi = {10.13140/RG.2.2.26251.03368}
+    }"
+  link: https://www.researchgate.net/publication/337328411_Etude_des_proprietes_acoustiques_de_la_guitare_Black_Flag
+  link: https://www.ouest-france.fr/bretagne/rennes-35000/video-rennes-il-fabrique-une-guitare-unique-au-monde-en-materiaux-spatiaux-6366368
+  link: https://jsm.irisa.fr/2018/06/27/la-harpe-electronique/
+  doi: 10.13140/RG.2.2.26251.03368
+  year: 2018

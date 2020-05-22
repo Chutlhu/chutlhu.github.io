@@ -16,7 +16,7 @@ hidden: true
 *Billion Ocean Lifeforms* **are**
 - Jorge Madrid Portillo: Guitar/Voice
 - Diego Di Carlo: Bass
-- Computer: other
+- Windows x86: other
 
 ### Quite Light
 

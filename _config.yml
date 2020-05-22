@@ -28,6 +28,7 @@ address:
 
 
 # stuff for the website
+tbc: "Hic sunt Dracones"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site

@@ -1,14 +1,13 @@
 ---
-title: Rapple
-desc: Smart Rap Battle Opponent
+title: spAAce
 layout: project
-tagline: "Prototyping bacteria-based Arsenic detection sensors"
+tagline: "Interface for Spatial Composition"
 description: "We explore prototypes of hardware, software, and wetware in the design of a practical water quality sensors."
-permalink: /projects/rapple
+permalink: /projects/spaace
 klass: software
-thumbnail: images/rapple/abbey_thumbnail.jpg
-image: images/rapple/abbey_thumbnail.jpg
-banner: images/rapple/abbey_banner.jpg
+thumbnail: images/projects/spaace/spaace_thumbnail.jpg
+image: images/projects/spaace/spaace_thumbnail.jpg
+banner: images/projects/spaace/spaace_banner.jpg
 links:
   - icon: github
     url: https://github.com/cifkao/rapple

@@ -16,14 +16,18 @@ hidden: true
 ---
 
 *N'Ilazo* **are**
-- Cortez: N'ilazo member #*Bass*
-- Piertagnar: N'ilazo member #*Drums*
-- El Cartago: N'ilazo member #*Guitar*
-- Rtno: N'ilazo member #*Guitar*
-- Tia: N'ilazo member #*voice*
-- Jaegermaister: Fuel
+- Cortez: N'ilazo member <span style="font-variant: small-caps;">#Bass</span>
+- Piertagnar: N'ilazo member <span style="font-variant: small-caps;">#Drums</span>
+- El Cartago: N'ilazo member <span style="font-variant: small-caps;">#Guitar</span>
+- Rtno: N'ilazo member <span style="font-variant: small-caps;">#Guitar</span>
+- Tia: N'ilazo member <span style="font-variant: small-caps;">#voice</span>
 
-DiscoGrindPopCoreSwingDeath'N'Step
+
+<span style="font-variant: small-caps;">DiscoGrindPopCoreSwingDeath'N'Step</span>
+
+
+Acknowledgment: Jaegermaister
+
 
 Discography:
 - [2010] [T.V.T.B. (Total Violence Terrific Banana){Violenza Totale Banana Eccezionale}](https://myspace.com/n39ilazo/music/songs)

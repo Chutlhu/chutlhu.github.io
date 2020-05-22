@@ -17,13 +17,27 @@ links:
 hidden: true
 ---
 
-Kerrigan are an EDM band born underground. **#7** and **#9** are two electrical chemists that generate noise while **Ens** and **Charlie** create the vibes.
-They've been created in 2013 and their sound is a mix of Electronic, Dance, Dubstep, Hardcore, with a prominent rock attitude.
-They've opened to Tying Tiffany and they collaborate with local artists, such as **Babu$hka** and End Over End singer.
+#### Kerrigan are
 
+an <span style="font-variant: small-caps;">EDM</span> band born underground.<br>
+**#7** and **#9** are two electrical chemists that generate noise while **Ens** and **Charlie** create the vibes.
+
+They've been created in 2013 and their sound is a mix of
+<span style="font-variant: small-caps;">Electronic</span>,
+<span style="font-variant: small-caps;">Dance</span>,
+<span style="font-variant: small-caps;">Dubstep</span>,
+<span style="font-variant: small-caps;">Hardcore</span>
+with a prominent rock attitude.
+
+They've opened to Tying Tiffany and they collaborate with local artists, such as **Babu$hka** and **End Over End** singer.
+
+
+#### WAR OF NATIONS (music video)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gp3w3IkXWss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Songs:
-- [Coincidence](https://www.youtube.com/watch?v=qUsupTZf7Bo)
-- [Can you feel it](https://www.youtube.com/watch?v=uKV7rYvPzpg)
-- [War of Nations](https://www.youtube.com/watch?v=gp3w3IkXWss)
+#### CAN YOU FEEL IT (music video)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uKV7rYvPzpg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+#### COINCIDENCE (excerpt live)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qUsupTZf7Bo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

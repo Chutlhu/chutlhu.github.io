@@ -1,11 +1,13 @@
 ---
-title: Echo-aware Audio Processing
+title: Mirage
 layout: project
 tagline: "Echoes are our friends"
 description: "Like in human audition, early echoes improve the output from audio processing algorithms."
-klass: audio
-permalink: /raking
-images: images/rake.png
+permalink: /projects/echoaware
+klass: software
+image: images/projects/echoaware/echoaware_image.png
+banner: images/projects/echoaware/echoaware_banner.png
+thumbnail: images/projects/echoaware/echoaware_thumbnail.png
 links:
   - icon: book
     url: http://ieeexplore.ieee.org/document/7065205/
