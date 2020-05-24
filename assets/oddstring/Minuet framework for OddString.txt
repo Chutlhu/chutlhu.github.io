@@ -1,0 +1,23 @@
+Minuet framework for OddString
+
+GOAL: OddString is designed expecially for Guitar and Bass players to give them the possibilites to extend they sounds they made and to control them without learning new difficult techniques.
+People: every guitar-like instruments (Player). The role of the audience is quite relevant, because this device should add more transparency to the performance of the guitar players that use some wierd effects.
+Activities: OddString is designed to let musician trigger digital effects without altering their basic techinques to much.
+	Motivation: guitars-like instruments players are often limited in using digital effect because they have their both hands most of the time on the instruments.
+	Collaboration: Useful for live performance
+	Learning curve: there is just an initial complexitiy to become familiar with this device, but this device is designed to be controlled using the familiar techniques of the musicians.
+Contexs:
+	Music style: every music genres that fit with the players creativity
+	Physical Envirionment: Just have a guitar. This interface is designed for live performance.
+	Social Environment: individual experience, but it makes some guitarists and bassists' dream come true, the rest of the band will enjoy it (maybe not). Audience will enjoy the transparency of the performance.
+
+
+SPECIFICATIONS: 
+control:  	according to the patch, it can provide every type of control. However in its basic form, it should provide low and mid level
+Mapping: 	1xRibbond potentiomiter = continuous scale range of value.
+			3xTouchpad: trigger
+Operational Freedom: there no limits because it is just a controller
+Embodied Facilitation: to be designed to let the musician performs which much freedom as possibile without altering its techniques too much.
+Input: 		players could interact on a semantic level, through visual, tactile or semiotic gestures, knowing what kind of sound they are controlling.
+Feedback: 	F1-feedback: visual, tactile
+			F2-feedack: auditory

@@ -10,16 +10,16 @@ interest: >
   - Lovercraft's and King's universe
 
 motto: >
-  Monochromatic sky sucks and is overrated. Better when it supercollides with the world and glitches arise.<br>
+  Monochromatic sky is overrated. Better when it supercollides with the world and glitches arise.<br>
+  Or when clouds spit on it.<br>
   Ufourk!
 
 short_bio:
   I am a PhD candidate in Audio Signal Processing and Machine Learning
-  at INRIA in the [team PANAMA](https://team.inria.fr/panama/) in France.<br>
+  at INRIA within the [team PANAMA](https://team.inria.fr/panama/) in France.<br>
   Under the supervision of [Antoine Deleforge](https://members.loria.fr/ADeleforge/)
   and [Nancy Bertin](https://people.irisa.fr/Nancy.Bertin/en),
-  I am currently working on estimating early acoustic echoes for audio inverse problem.<br>
-  Ah! I come from [Vicenza](https://en.wikipedia.org/wiki/Vicenza) and I type [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout).
+  I am currently working on estimating early acoustic echoes for audio inverse problem.
 
 address:
   - building: INRIA Rennes Bretagne Atlantique
@@ -78,4 +78,4 @@ collections:
 
 exclude:
   - '_old'
-  - 'scripts/venv'
+  - 'scripts/venv/'

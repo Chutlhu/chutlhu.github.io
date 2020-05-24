@@ -12,3 +12,6 @@ Thumbs.db
 .psd
 
 scripts/venv
+
+*.mp4
+*.wma

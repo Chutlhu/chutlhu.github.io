@@ -2,13 +2,10 @@ _Short bio... but now a bit longer_
 
 #### As you may have noticed
 
-My name is Diego <span style="font-variant: small-caps;">Di Carlo</span> and I come from [Vicenza](https://en.wikipedia.org/wiki/Vicenza).<br>
-Since October 2017 I am a Ph.D. Candidate at [Inria](https://www.inria.fr/centre/rennes) in the [PANAMA team](https://team.inria.fr/panama/) in the beautiful city of Rennes, France.
+My name is Diego <span style="font-variant: small-caps;">Di Carlo</span> and I come from [Vicenza](https://en.wikipedia.org/wiki/Vicenza).
 
+Since October 2017 I am a Ph.D. Candidate at [Inria](https://www.inria.fr/centre/rennes) in the [PANAMA team](https://team.inria.fr/panama/) in the beautiful city of Rennes, France.<br>
 Under the supervision of [Antoine <span style="font-variant: small-caps;">Deleforge</span>](https://members.loria.fr/ADeleforge/) and [Nancy <span style="font-variant: small-caps;">Bertin</span>](https://people.irisa.fr/Nancy.Bertin/en), we are shedding light on how **acoustic echoes helps indoor audio signal processing** and how (and if) it is possible to estimated them.
-
-my 2-page curriculum vitae is available [here]({{site.url}}/pdf/cv.pdf).
-
 
 <table style="border-collapse: collapse; border: none;"><tbody>
     <tr style="border-collapse: collapse; border: none;">
