@@ -16,3 +16,5 @@ hidden: true
 {{page.tagline}}
 
 Ergodic Parasyte with Alpha Stable Heavy Tail on the Whale swimming backwards on the waterfall
+
+My personal project... waiting for inspiration for uploading my stuff.

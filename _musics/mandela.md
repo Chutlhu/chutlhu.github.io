@@ -1,7 +1,7 @@
 ---
 title: Mandela
 layout: music_project
-tagline: "Strumentalmente di colore"
+tagline: "Musically Black"
 description: "We explore prototypes of hardware, software, and wetware in the design of a practical water quality sensors."
 permalink: /mandela
 klass: jazz

@@ -1,17 +1,17 @@
 ---
 title: mirapie
 layout: project
-tagline: "Multichannel Interference Reduction Algorithm in Python"
+tagline: "Music Interference RemoAl in Python"
 description: "Blablabla"
 permalink: /projects/mirapie
 klass: software
 image: images/projects/mirapie/mirapie_thumbnail.jpg
-banner: images/projects/mirapie/mirapie_banner.png
+banner: images/banners/arm-banner.jpg
 thumbnail: images/projects/mirapie/mirapie_thumbnail.jpg
 links:
   - icon: github
-    url: https://github.com/cifkao/rapple
-  - icon: youtube
-    url: http://www.youtube.com/watch?v=tp1LaoNjXm8
+    url: https://github.com/Chutlhu/mirapie
 hidden: true
 ---
+
+Music Interference RemovAl for full-length live recordings

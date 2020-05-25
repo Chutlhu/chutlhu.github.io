@@ -1,8 +1,8 @@
 ---
 title: Kerrigan
 layout: music_project
-tagline: "Strumentalmente di colore"
-description: "We explore prototypes of hardware, software, and wetware in the design of a practical water quality sensors."
+tagline: "Bleach or Shampoo?"
+description: "Bleach or Shampoo?"
 permalink: /kerrigan
 klass: electro
 avatar: images/music/kerrigan_avatar.jpg

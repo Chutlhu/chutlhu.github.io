@@ -16,24 +16,29 @@ links:
 hidden: true
 ---
 
+# Rapple
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/tp1LaoNjXm8/0.jpg)](http://www.youtube.com/watch?v=tp1LaoNjXm8 "Video Title")
+RAPPLE received the *Main Prize from Microsoft for the best use of AI*.
 
-<!-- BIODESIGN for the REAL WORLD is a transdisciplinary and collaborative research
-project addressing water quality with partners in Switzerland,
-[(Art)ScienceBLR](http://artscienceblr.org/) in India, and
-[Lifepatch](http://lifepatch.org/) in Indonesia.
+![Winner]({{site.url}}/images/projects/rapple/rapple_winner.jpg)
 
-BIO-DESIGN for the REAL WORLD explores how biology and biotechnology can be designed within social contexts.
+It is an AI-powered Rap Battle Opponent, which listens to your freestyle on a beat and responds to you with a punch line to the same line.
+Not only it does it work in real time, but it also relates the punch line to your freestyle and gets better during the battle.
 
-As a powerful technological medium after industrial and digital revolutions,
-implementation and design solutions for biology and biotechnology must reflect
-a diversity of voices to be meaningful in society, not only to be guided by
-concerns of a few.
+Resources:
 
-We are interested in
-* Real world problems
-* Horizontal exchange
-* Open and transdisciplinary approach
+- [2018 Abbey Road's RED Hackathon](https://www.abbeyroad.com/hackathon-2018)
+- [Presentation](https://docs.google.com/presentation/d/e/2PACX-1vTOXDVfgKSB0l4Yed031R6SMdCYqGYTCJ33RgTiQG9im4AdBogvX9cy5tQOFyAZQb6psR9QD-SfQMgF/pub?start=true&loop=true&delayms=3000)
+- [Code](https://github.com/cifkao/rapple) (may be private)
 
-Read more about our interests, funding, press on the [biodesign wiki](http://wiki.biodesign.cc), -->
+
+RAPPLE team members:
+
+- Giorgia Cantisani
+- Ondrej Cifka
+- Diego Di Carlo
+- Kilian Schulze-Forster
+- Tim Christian Kirby
+- Alejandro Delgado Luezas
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tp1LaoNjXm8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
