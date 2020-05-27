@@ -13,17 +13,22 @@ Under the supervision of [Antoine <span style="font-variant: small-caps;">Delefo
             <h4>Research Interest</h4>
             Machine Learning and Signal Models
             <ul>
-            <li> <i>Deep Learning for regression & denoising</i>
+            <li> <i>Deep Learning for Regression & Denoising</i>
             <li> <i>Latent variable & Generative models</i>
             <li> <i>Low-rank models (NMF)</i>
             <li> <i>Optimization: Continuous Dictionary</i>
             </ul>
-            Applications to Audio Inverse Problems
+            Audio Inverse Problems
             <ul>
             <li> <i>Channel estimation: RIR, RTF & RETF estimation</i>
             <li> <i>Sound Source Separation & Localization</i>
-            <li> <i>Room Geometry Reconstruction</i>
-            <li> <i>(Off-grid) spike retrieval</i>
+            <li> <i>Room Geometry Reconstruction and Source Calibration</i>
+            </ul>
+            Other Fundamental Problems:
+            <ul>
+            <li> <i>(Off-grid) Spike Retrieval</i>
+            <li> <i>Multilateration, MDS & EDM</i>
+            <li> <i>Alignment, Stretching & Warping</i>
             </ul>
         </td>
         <td width=50% style="border: none; vertical-align:top">
@@ -31,22 +36,23 @@ Under the supervision of [Antoine <span style="font-variant: small-caps;">Delefo
             Music
             <ul>
             <li> <i>Play bass and NIME</i>
-            <li> <i>Several music projects in {death-black metal, jazz, pop, hip hop, post/doom/drone, grind-core, post, prog, dubstep, IDM & EDM}<i>
+            <li> <i>Several music projects in {death-black metal, jazz, pop, hip hop, post/doom/drone, grind-core, post, prog, dubstep, IDM & EDM}</i>
             </ul>
             Computer
             <ul>
             <li> <i>Linux customization (Unixporn)</i>
             <li> <i>LateX aesthetics</i>
+            <li> <i>Data aesthetics</i>
             <li> <i>Python workflow (Confugue, Sacred, MLFLow ...)</i>
             <li> <i>Fervent believer in reproducible research and open-source code</i>
             <li> <i>Lot of year in playing MMORPG</i>
             </ul>
             Complementary
             <ul>
-            <li> Cooking and implementing Pellegrino Artusi's recipes
-            <li> DIY footpedal effect
-            <li> Mountain, hiking, snowboarding and sunsets
-            <li> Horrible/horror, fantasy and semiotics books & comics
+            <li> <i>Cooking and implementing Pellegrino Artusi's recipes</i>
+            <li> <i>DIY footpedal effect</i>
+            <li> <i>Mountain, hiking, snowboarding and sunsets</i>
+            <li> <i>Horrible/horror, fantasy and semiotics books & comics</i>
             </ul>
         </td>
 </tr></tbody></table>
@@ -56,6 +62,12 @@ Under the supervision of [Antoine <span style="font-variant: small-caps;">Delefo
 I graduated in Compute Engineering in 2017 from [Universitá degli Studi di Padova](https://www.dei.unipd.it/) with a thesis on [*Music Interference Reduction with Gaussian Process*](https://hal.inria.fr/hal-01515971/document). This worked was supervided by Nicola <span style="font-variant: small-caps;">Orio</span> and Antoine <span style="font-variant: small-caps;">Liutkus</span> and it was conducted while I was at Multispeech Team in INIRA Nancy France.
 
 Before of this... well *Hic Sunt Dracones*.
+
+<!-- ![cetipede]({{site.url}}/images/centipede_rot.png) -->
+<div style="text-align:center"><img src="{{site.url}}/images/centipede_rot.png" width=70/></div>
+<br>
+<br>
+
 
 #### Acknowledgment (or, currently worshipping)
 
@@ -77,19 +89,3 @@ Devin <span style="font-variant: small-caps;">Townsend</span>,
 Leo <span style="font-variant: small-caps;">Ortolani</span>
 and Chutlhu.
 And <span style="font-variant: small-caps;">Nyarlathotep</span>.*
-
-<!-- I always tired to combine my passion for music with a passion for engineering..
- -->
-
-
-
-<!-- In my thesis I am exploring the indoor environment wearing a blindfold asking myself:
-
-1. _Where does this sound comes from?_
-2. _Can I better focus on this sound?_
-3. _What is the shape of the room around me_
-4. _How can I hone these skills?_
-
-The key object to answer this question if the **room impulse response**, a filter, -->
-
-

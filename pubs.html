@@ -144,7 +144,7 @@ file: papers
   <div class='three spacing'></div>
 </div>
 
-<div class='full parallax' style='background: #f5f5f5'>
+<div class='full parallax' style='background-image: url(images/banners/projects.jpg);'>
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html title="Miscellaneous" %}
@@ -159,7 +159,7 @@ file: papers
     <div class='large-9 columns'>
       <b>{{ paper.title }}</b><br>
       <em>{{ paper.author }}</em> - supervised by <em>{{ paper.advisor }}</em><br>
-      {{ paper.school }}, {{ paper.year }}.
+      {{ paper.where }}, {{ paper.year }}.
     </div>
     <div class='large-2 columns'>
       {% if paper.url %}
@@ -178,59 +178,3 @@ file: papers
   {% endfor %}
   <div class='three spacing'></div>
 </div>
-
-<!-- <div class='full parallax' style='background-image: url(images/bicycle_patent.jpg); color: #000;'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Patents" %}
-      <div class='spacing'></div>
-    </div>
-  </div>
-  {% for paper in site.data.pubs.patents %}
-  <div class='row'>
-    <div class='large-10 columns'>
-      {% for author in paper.authors %}
-      {{ author}},
-      {% endfor %}
-      <i>{{ paper.title }}</i>, {{ paper.number }}, {{ paper.year }}
-    </div>
-    <div class='large-2 columns'>
-      {% if paper.pdf %}
-      <span class="warning label">
-        <a href="{{ paper.pdf }}">pdf</a>
-      </span>
-      {% endif %}
-    </div>
-  </div>
-  <div class='one spacing'></div>
-  {% endfor %}
-  <div class='three spacing'></div>
-</div> -->
-
-<!-- <div class='full parallax' style='background: #f5f5f5'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Technical Reports" %}
-      <div class='spacing'></div>
-    </div>
-  </div>
-  {% for paper in site.data.pubs.techreps %}
-  <div class='row'>
-    <div class='large-10 columns'>
-      {% for author in paper.authors %}
-      {{ author}},
-      {% endfor %}
-      <i>{{ paper.title }}</i>, {{ paper.type }}, {{ paper.institution }}, {{ paper.year }}
-    </div>
-    <div class='large-2 columns'>
-      {% if paper.pdf %}
-      <span class="warning label">
-        <a href="{{ paper.pdf }}">pdf</a>
-      </span>
-      {% endif %}
-    </div>
-  </div>
-  <div class='one spacing'></div>
-  {% endfor %}
-  <div class='three spacing'></div>
-</div> -->

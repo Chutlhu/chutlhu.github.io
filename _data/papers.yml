@@ -344,11 +344,11 @@ thesis:
   hal_verision: v1
   keywords: interference reduction, microphone leakage, bleeding, source separation,
     random projection, Non negative matrix factorisation NMF
-  link: http://tesi.cab.unipd.it/56327/
+  link: https://hal.inria.fr/hal-01870918
   school: Universitá degli Studi di Padova
   title: Gaussian Framework for Interference Reduction in Live Recordings
   code: https://github.com/Chutlhu/mirapie
-  url: https://hal.inria.fr/hal-01515971
+  url: http://tesi.cab.unipd.it/56327/
   year: 2017
 
 - author: Di Carlo, Diego
@@ -379,4 +379,5 @@ other:
   link: https://www.ouest-france.fr/bretagne/rennes-35000/video-rennes-il-fabrique-une-guitare-unique-au-monde-en-materiaux-spatiaux-6366368
   link: https://jsm.irisa.fr/2018/06/27/la-harpe-electronique/
   doi: 10.13140/RG.2.2.26251.03368
+  where: Journee Science et Musique, Rennes (Fr)
   year: 2018
