@@ -93,14 +93,14 @@ file: papers
         <br>
         <!-- my popup -->
         {% for res in paper.resources_popup %}
-        <a title="{{res.name}}"><i class='{{ res.icon }}' data-modal-target="#modal"></i></a>
-        <div class="modal" id="modal">
+        <a title="{{res.name}}"><i class='{{res.icon}}' data-modal-target="#modal"></i></a>
+        <div class="modal" id="modal_{{res.name}}_{{paper.title}}">
           <div class="modal-header">
-            <div class="title">{{ res.name }}</div>
+            <div class="title">{{res.name}}</div>
             <button data-close-button class="close-button">&times;</button>
           </div>
-          <!-- <div class="modal-body">{{res.text}}</div> -->
-          <div class="modal-body">Function Not working yet</div>
+          <div class="modal-body">{{res.text}}</div>
+          <!-- <div class="modal-body">Function Not working yet</div> -->
         </div>
         {% endfor %}
         </ul>
