@@ -11,20 +11,18 @@ article:
     Processing Cup 2019 Student Competition'
   volume: '36'
   year: 2019
+  doi: https://doi.org/10.1109/MSP.2019.2924687
   resources_link:
     - name: IEEE
       icon: ai ai-ieee
       link: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8827999
-    - name: DOI
-      icon: ai ai-doi
-      link: https://doi.org/10.1109/MSP.2019.2924687
     - name: Github
       icon: fa fa-github
       link: https://github.com/Chutlhu/SPCUP19
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right
-      link: www.google.com
+      link: www.notdefinedyet.com
       text: >
         @article{Deleforge2019audio,
           author = {Deleforge, Antoine and Di Carlo, Diego and Strauss, Martin and Serizel, Romain and Marcenaro, Lucio},
@@ -41,7 +39,17 @@ article:
       icon: fa fa-align-left
       link: www.notdefinedyet.com
       text: >
-        Increasing interest in unmanned aerial vehicles (UAVs), commonly referred to as drones, has occurred in recent years. Search and rescue scenarios where humans in emergency situations need to be quickly found in difficult-toaccess areas constitute an important field of application for this technology. Drones have already been used by humanitarian organizations in countries such as Haiti and the Philippines to map areas after a natural disaster using high-resolution embedded cameras, as documented in a recent United Nations report [1]. Although research efforts have focused mostly on developing video-based solutions for this task [2], UAV-embedded audio-based localization has received relatively less attention [3]?[7]. However, UAVs equipped with a microphone array could be of critical help to localize people in emergency situations, especially when video sensors are limited by a lack of visual feedback due to bad lighting conditions (such as at night or in fog) or obstacles limiting the field of view (Figure 1).
+        Increasing interest in unmanned aerial vehicles (UAVs), commonly referred to as drones, has occurred in recent years.
+        Search and rescue scenarios where humans in emergency situations need to be quickly found in difficult to access areas constitute
+        an important field of application for this technology.
+        Drones have already been used by humanitarian organizations in countries such as Haiti and
+        the Philippines to map areas after a natural disaster using high-resolution embedded cameras,
+        as documented in a recent United Nations report [1].
+        Although research efforts have focused mostly on developing video-based solutions for this task [2],
+        UAV-embedded audio-based localization has received relatively less attention [3-7].
+        However, UAVs equipped with a microphone array could be of critical help to localize people in emergency situations,
+        especially when video sensors are limited by a lack of visual feedback due to bad lighting conditions
+        (such as at night or in fog) or obstacles limiting the field of view (Figure 1).
 
 
 
@@ -51,6 +59,7 @@ inproceedings:
   booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
   keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
   year: 2020
+  doi: https://doi.org/10.1109/ICASSP40776.2020.9054647
   resources_link:
     - name: IEEE
       icon: ai ai-ieee
@@ -61,15 +70,12 @@ inproceedings:
     - name: Code
       icon: fa fa-github
       link: https://gitlab.inria.fr/panama-team/blaster
-    - name: Slides
-      icon: fa fa-file-pdf-o
-      link: https://sigport.org/sites/default/files/docs/icassp2020blaster_1.pdf
+    - name: Resources
+      icon: fa fa-paperclip
+      link: http://sigport.org/5117
     - name: Video
       icon: fa fa-youtube-play
       link: https://youtu.be/rPaqZJIfpKo
-    - name: DOI
-      icon: ai ai-doi
-      link: https://doi.org/10.1109/ICASSP40776.2020.9054647
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right
@@ -95,6 +101,7 @@ inproceedings:
   booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing
   keywords: Image Microphones,Sound Source Localization,Supervised Learning,TDOA Estimation
   year: 2019
+  doi: https://doi.org/10.1109/ICASSP.2019.8683534
   resources_link:
     - name: IEEE
       icon: ai ai-ieee
@@ -105,15 +112,9 @@ inproceedings:
     - name: Code
       icon: fa fa-github
       link: https://github.com/Chutlhu/MIRAGE
-    - name: Poster
-      icon: fa fa-file-pdf-o
-      link: https://sigport.org/sites/default/files/docs/2019_icassp_mirage_poster.pdf
-    - name: DOI
-      icon: ai ai-doi
-      link: https://doi.org/10.1109/ICASSP.2019.8683534
-    - name: arXiv
-      icon: ai ai-arxiv
-      link: https://arxiv.org/abs/1906.08968
+    - name: Resources
+      icon: fa fa-paperclip
+      link: http://sigport.org/4164
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right

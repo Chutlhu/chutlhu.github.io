@@ -18,6 +18,13 @@ work:
     supervisors:
     - Francesco DeLuca.
 
+  - company: Acropark
+    url: https://www.acropark.it/
+    location: Trento, Italy
+    dates: Summers 2009 - 2014
+    position: Rescuer and Instructors
+    description: (Summer work) rope climbing guide and animator
+
 education:
   - institution: INRIA
     location: Rennes, France

@@ -38,18 +38,19 @@ file: papers
     <div class='large-3 columns'>
       <div id="pubs"><ul class="socials">
           {% for res in paper.resources_link %}
-            <a title="{{res.name}}" href={{ res.link }} target="_blank"><i class='{{ res.icon }}'></i></a>
+            <a title="{{res.name}}" href="{{ res.link }}" target="_blank"><i class='{{ res.icon }}'></i></a>
           {% endfor %}
-
+          <br>
           <!-- my popup -->
           {% for res in paper.resources_popup %}
-          <a title="{{res.name}}"><i class='{{ res.icon }}' data-modal-target="#modal"></i></a>
+          <a title="{{res.name}}"><i class="{{ res.icon }}" data-modal-target="#modal"></i></a>
           <div class="modal" id="modal">
             <div class="modal-header">
               <div class="title">{{ res.name }}</div>
               <button data-close-button class="close-button">&times;</button>
             </div>
-          <div class="modal-body">{{res.text}}</div>
+          <!-- <div class="modal-body">{{res.text}}</div> -->
+          <div class="modal-body">Function Not working yet</div>
           </div>
           {% endfor %}
           </ul>
@@ -86,19 +87,22 @@ file: papers
     <div class='large-3 columns'>
       <div id="pubs">
         <ul class="socials">
-          {% for res in paper.resources_link %}
-          <a href={{ res.link }} target="_blank"><i class='{{ res.icon }}'></i></a>
-          {% endfor %}
-          {% for res in paper.resources_popup %}
-          <a target="_blank"><i class='{{ res.icon }}' data-modal-target="#modal"></i></a>
-          <div class="modal" id="modal">
-            <div class="modal-header">
-              <div class="title">{{ res.name }}</div>
-              <button data-close-button class="close-button">&times;</button>
-            </div>
-            <div class="modal-body">{{res.text}}</div>
+        {% for res in paper.resources_link %}
+        <a title="{{res.name}}" href="{{ res.link }}" target="_blank"><i class='{{ res.icon }}'></i></a>
+        {% endfor %}
+        <br>
+        <!-- my popup -->
+        {% for res in paper.resources_popup %}
+        <a title="{{res.name}}"><i class='{{ res.icon }}' data-modal-target="#modal"></i></a>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div class="title">{{ res.name }}</div>
+            <button data-close-button class="close-button">&times;</button>
           </div>
-          {% endfor %}
+          <!-- <div class="modal-body">{{res.text}}</div> -->
+          <div class="modal-body">Function Not working yet</div>
+        </div>
+        {% endfor %}
         </ul>
       </div>
     </div>
