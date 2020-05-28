@@ -44,6 +44,7 @@ image : images/banners/arm-banner.jpg
         {% for work in site.projects %}
 
         <li class="{{ work.klass }}">
+          {% if work.redirect == null %}
           <a href='{{ work.url }}'>
             <img alt="" src="{{ work.thumbnail }}" />
             <div class='overlay'>
@@ -53,7 +54,18 @@ image : images/banners/arm-banner.jpg
                 </div>
               </div>
             </a>
+          {% else %}
+          <a href='{{ work.redirect }}'>
+            <img alt="" src="{{ work.thumbnail }}" />
+            <div class='overlay'>
+              <div class='thumb-info'>
+                <h3>{{ work.title }}</h3>
+                <p style="font-variant: small-caps;">{{ work.tagline }}</p>
+              </div>
+            </div>
+          </a>
           </li>
+        {% endif %}
         {% endfor %}
 
       </ul>

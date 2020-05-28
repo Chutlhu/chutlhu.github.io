@@ -17,7 +17,6 @@ links:
 hidden: true
 ---
 
-
 http://dregon.inria.fr/datasets/signal-processing-cup-2019/
 
  https://members.loria.fr/ADeleforge/signal-processing-cup-2019/
