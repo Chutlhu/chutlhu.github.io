@@ -1,6 +1,4 @@
-_Short bio... but now a bit longer_
-
-#### As you may have noticed
+_As you may have noticed..._
 
 My name is Diego <span style="font-variant: small-caps;">Di Carlo</span> and I come from [Vicenza](https://en.wikipedia.org/wiki/Vicenza).
 
@@ -31,28 +29,26 @@ Under the supervision of [Antoine <span style="font-variant: small-caps;">Delefo
             <li> <i>Alignment, Stretching & Warping</i>
             </ul>
         </td>
-        <td width=50% style="border: none; vertical-align:top">
+        <td width=50% style="border: none; vertical-align:top;">
             <h4>Passions</h4>
-            Music
+            Musical space
             <ul>
             <li> <i>Play bass and NIME</i>
-            <li> <i>Several music projects in {death-black metal, jazz, pop, hip hop, post/doom/drone, grind-core, post, prog, dubstep, IDM & EDM}</i>
+            <li> <i>Several music projects in {death-black metal, jazz, funk, pop, hip hop, post/doom/drone, grind-core, post, prog, dubstep, IDM & EDM}</i>
             </ul>
-            Computer
+            Digital space
             <ul>
             <li> <i>Linux customization (Unixporn)</i>
-            <li> <i>LateX aesthetics</i>
-            <li> <i>Data aesthetics</i>
-            <li> <i>Python workflow (Confugue, Sacred, MLFLow ...)</i>
-            <li> <i>Fervent believer in reproducible research and open-source code</i>
+            <li> <i>LateX & Data aesthetics</i>
+            <li> <i>Coding workflow and reproducible research</i>
             <li> <i>Lot of year in playing MMORPG</i>
             </ul>
-            Complementary
+            Complementary space
             <ul>
-            <li> <i>Cooking and implementing Pellegrino Artusi's recipes</i>
+            <li> <i>Exectuting <span style="font-variant: small-caps;">Artusi</span>'s recipes</i>
             <li> <i>DIY footpedal effect</i>
+            <li> <i>Horrible/horror, fantasy and semiotics readings</i>
             <li> <i>Mountain, hiking, snowboarding and sunsets</i>
-            <li> <i>Horrible/horror, fantasy and semiotics books & comics</i>
             </ul>
         </td>
 </tr></tbody></table>

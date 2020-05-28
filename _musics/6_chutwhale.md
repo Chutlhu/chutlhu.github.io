@@ -4,7 +4,7 @@ layout: music_project
 tagline: "Alpha Stable Whale Parasite"
 description: "Alpha Stable Whale Parasite"
 permalink: /chutwhale
-klass: feelings
+klass: electro
 avatar: images/music/chutwhale_avatar.jpg
 banner: images/music/chutwhale_banner.jpg
 links:

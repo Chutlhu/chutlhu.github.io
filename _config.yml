@@ -14,7 +14,9 @@ motto: >
   Or when clouds spit on it.<br>
   Ufourk!
 
-short_bio:
+short_bio: ''
+
+short_bio2:
   I am a PhD candidate in Audio Signal Processing and Machine Learning
   at INRIA within the [team PANAMA](https://team.inria.fr/panama/) in France.<br>
   Under the supervision of [Antoine Deleforge](https://members.loria.fr/ADeleforge/)

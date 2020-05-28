@@ -101,10 +101,10 @@ inproceedings:
       link: https://ieeexplore.ieee.org/document/9054647
     - name: HAL
       icon: ai ai-open-access
-      link: https://hal.archives-ouvertes.fr/hal-02469901/
+      link: https://hal.archives-ouvertes.fr/hal-02160940v1
     - name: Code
       icon: fa fa-github
-      link: https://gitlab.inria.fr/panama-team/blaster
+      link: https://github.com/Chutlhu/MIRAGE
     - name: Poster
       icon: fa fa-file-pdf-o
       link: https://sigport.org/sites/default/files/docs/2019_icassp_mirage_poster.pdf

@@ -28,7 +28,12 @@ It is based on on the expression of interference reduction as source separation 
 
 The code is available on [github](https://github.com/Chutlhu/mirapie).
 
+**Partnerships**
+- [DYCI2 Project](http://repmus.ircam.fr/dyci2/home)
+- [Montreux Jazz Festivals Archive](https://www.montreuxjazzfestival.com/)
+
 ![Pipeline]({{site.url}}/images/projects/mirapie/mirapie_pipeline.png)
+
 
 ##### Related publications
 
