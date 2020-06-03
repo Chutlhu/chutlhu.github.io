@@ -55,6 +55,7 @@ article:
 
 inproceedings:
 - title: 'BLASTER: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval'
+  id: blaster
   author: 'Di Carlo, Diego and Elvira, Clement  and Deleforge, Antoine and Bertin, Nancy and Gibonval, Remi'
   booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
   keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
@@ -97,6 +98,7 @@ inproceedings:
         varying noise and reverberation levels and are compared to two state-of-the-art methods.'
 
 - title: 'MIRAGE: 2D Source Localization Using Microphone Pair Augmentation with Echoes'
+  id: mirage
   author: ' Di Carlo, Diego and Deleforge, Antoine and Bertin, Nancy'
   booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing
   keywords: Image Microphones,Sound Source Localization,Supervised Learning,TDOA Estimation
@@ -152,6 +154,7 @@ inproceedings:
         an impossible task in anechoic settings.
 
 - title: 'SEPARAKE: Source Separation with a Little Help from Echoes'
+  id: separake
   booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
   year: 2018
   keywords: Echoes,Multi-channel,NMF,Room geometry,Source separation
@@ -234,21 +237,9 @@ inproceedings:
     approach on
     real full-length live recordings from the Montreux Jazz Festival and also provide
     an implementation of the method.'
+  id: mirapie
   author: Di Carlo, Diego and Liutkus, Antoine and Déguernel, Ken
-  bibitem: "@inproceedings{DiCarlo2018,\n abstract = {Live concert recordings consist\
-    \ in long multitrack audio samples with significant interferences between channels.\n\
-    For audio engineering purposes, it is desirable to attenuate those interferences.\n\
-    Recently, we proposed an algorithm to this end based on Non-negative Matrix Factorization,\n\
-    that iteratively estimate the clean power spectral densities of the sources\n\
-    and the strength of each in each microphone signal, encoded in an interference\
-    \ matrix.\nAlthough it behaves well, this method is too demanding computationally\n\
-    for full-length concerts lasting more than one hour.\nIn this paper, we show how\
-    \ random projections of the data can be leveraged\nfor effective estimation of\
-    \ the parameters. Interference reduction with these ideas\ncan be achieved on\
-    \ full-length live multi-track recordings in an acceptable\ntime and could be\
-    \ used by sound engineers. We demonstrate the efficiency of this approach on\n\
-    real full-length live recordings from the Montreux Jazz Festival and also provide\
-    \ an implementation of the method.},\n author = {Di Carlo, Diego and Liutkus,\
+  bibitem: "@inproceedings{DiCarlo2018mirapie,\n author = {Di Carlo, Diego and Liutkus,\
     \ Antoine and D{\\'e}guernel, Ken},\n booktitle = {IEEE International Conference\
     \ on Acoustics, Speech and Signal Processing (ICASSP)},\n doi = {10.1109/ICASSP.2018.8462621},\n\
     \ hal_id = {hal-01713889},\n hal_verision = {v1},\n keywords = {Compressive sensing,Interference\
