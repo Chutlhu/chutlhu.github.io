@@ -43,13 +43,13 @@ file: papers
           <br>
           <!-- my popup -->
           {% for res in paper.resources_popup %}
-          <a title="{{res.name}}"><i class="{{res.icon}}" data-modal-target="#modal"></i></a>
-          <div class="modal" id="modal">
+          <a title="{{res.name}}"><i class='{{res.icon}}' data-modal-target="#paperModal_{{paper.id | slugify}}_{{res.name}}"></i></a>
+          <div class="modal" id="paperModal_{{paper.id | slugify}}_{{res.name}}">
             <div class="modal-header">
-              <div class="title">{{ res.name }}</div>
+              <div class="title">{{res.name}}</div>
               <button data-close-button class="close-button">&times;</button>
             </div>
-          <div class="modal-body">{{res.text}}</div>
+            <div class="modal-body">{{res.text | markdownify}}</div>
           </div>
           {% endfor %}
           </ul>
@@ -98,7 +98,7 @@ file: papers
             <div class="title">{{res.name}}</div>
             <button data-close-button class="close-button">&times;</button>
           </div>
-          <div class="modal-body">{{res.text}}</div>
+          <div class="modal-body">{{res.text | markdownify}}</div>
         </div>
         {% endfor %}
         </ul>

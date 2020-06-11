@@ -83,5 +83,5 @@ Stephen <span style="font-variant: small-caps;">King</span>,
 Italo <span style="font-variant: small-caps;">Calvino</span>,
 Devin <span style="font-variant: small-caps;">Townsend</span>,
 Leo <span style="font-variant: small-caps;">Ortolani</span>
-and Chutlhu.
+and Cthulhu.
 And <span style="font-variant: small-caps;">Nyarlathotep</span>.*
