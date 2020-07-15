@@ -2,8 +2,12 @@ _As you may have noticed..._
 
 My name is Diego <span style="font-variant: small-caps;">Di Carlo</span> and I come from [Vicenza](https://en.wikipedia.org/wiki/Vicenza).
 
-Since October 2017 I am a Ph.D. Candidate at [Inria](https://www.inria.fr/centre/rennes) in the [PANAMA team](https://team.inria.fr/panama/) in the beautiful city of Rennes, France.<br>
-Under the supervision of [Antoine <span style="font-variant: small-caps;">Deleforge</span>](https://members.loria.fr/ADeleforge/) and [Nancy <span style="font-variant: small-caps;">Bertin</span>](https://people.irisa.fr/Nancy.Bertin/en), we are shedding light on how **acoustic echoes helps indoor audio signal processing** and how (and if) it is possible to estimated them.
+Since October 2017, I am a Ph.D. candidate at [Inria](https://www.inria.fr/centre/rennes) in the [PANAMA team](https://team.inria.fr/panama/) in the beautiful city of Rennes (Fr) and in the [Multispeech team](https://team.inria.fr/multispeech/) in Nancy (Fr).<br>
+Under the supervision of [Antoine <span style="font-variant: small-caps;">Deleforge</span>](https://members.loria.fr/ADeleforge/) and [Nancy <span style="font-variant: small-caps;">Bertin</span>](https://people.irisa.fr/Nancy.Bertin/en), we are shedding light on how
+**acoustic echoes helps indoor audio signal processing** and how (and if) it is possible to estimated them.
+
+Previously, I visited prof. [Sharon Gannot](https://www.eng.biu.ac.il/gannot/) at University of Bar-Ilan
+and [Antoine Liuktus](https://cv.archives-ouvertes.fr/antoine-liutkus) at INRIA Nancy.
 
 <table style="border-collapse: collapse; border: none;"><tbody>
     <tr style="border-collapse: collapse; border: none;">
