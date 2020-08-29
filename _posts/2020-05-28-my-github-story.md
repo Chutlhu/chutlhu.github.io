@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Github Repo life
+title:  Git life of this website
 author: Diego
 description: Git commits visualization
 ---
