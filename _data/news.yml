@@ -1,3 +1,9 @@
+- date: 2021-01-09
+  text: >
+    My Ph.D. thesis available on [HAL](https://tel.archives-ouvertes.fr/tel-03133271v1)
+- date: 2020-12-04
+  text: >
+    New achievement: Ph.D. in... Echo-aware Signal Processing for Audio Scene Analysis.
 - date: 2020-05-28
   text: >
     *For the sailors:* I am adding important changes to the website. Some page may be unstable.
@@ -10,13 +16,11 @@
     and [video](https://youtu.be/rPaqZJIfpKo).
 - date: 2020-02-24
   text: "Our paper [BLASTER: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval](www.google.com) has been accepted for publication at [ICASSP`20](2020.ieeeicassp.org)"
-# - date: 2020-01-30
-#   text: "I will attend [iTWIST’20](https://itwist20.ls2n.fr/) (workshop + doctoral school). Nantes, France, June 22-26th 2020"
 - date: 2020-01-12
   text: "Summoning [Hχώ](https://en.wikipedia.org/wiki/Echo_(mythology)) in [Sharon Gannot](www.eng.biu.ac.il/gannot/)'s lab"
-# - date: 2019-12-27
-#   text: >
-#     "Will ever lady [Ælfgifu of Northampton](https://en.wikipedia.org/wiki/%C3%86lfgifu_of_Northampton)
-#     be hear behind [Knuth](https://youtu.be/GijiGwHLFnA) in [Sharon Gannot](www.eng.biu.ac.il/gannot/)'s lab?"
+- date: 2019-12-27
+  text: >
+    "Will ever lady [Ælfgifu of Northampton](https://en.wikipedia.org/wiki/%C3%86lfgifu_of_Northampton)
+    be hear behind [Knuth](https://youtu.be/GijiGwHLFnA) in [Sharon Gannot](www.eng.biu.ac.il/gannot/)'s lab?"
 - date: 2019-10-01
   text: "Winter is not coming. I am currently visiting prof. [Sharon Gannot](www.eng.biu.ac.il/gannot/) in his lab. In Israel."

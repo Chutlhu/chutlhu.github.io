@@ -29,18 +29,19 @@ education:
   - institution: INRIA
     location: Rennes, France
     degree: Ph.D. in Signal Processing
-    thesis: Work in progress
-    thesis_url: www.notavailableyet.com
+    thesis: Echo-aware Signal Processing for Audio Scene Analysis
+    thesis_url: https://tel.archives-ouvertes.fr/tel-03133271v1
     supervisors:
       - Antoine Deleforge,
       - Nancy Bertin.
     keywords:
-      - Auditory scene analysis,
-      - room impulse response,
-      - channel estimation,
-      - supervised learning,
-      - neural networks.
-    year: 3099
+      - Acoustic Echoes,
+      - Audio scene analysis,
+      - Room impulse response,
+      - Channel estimation,
+      - Supervised learning,
+      - Deep Neural Networks.
+    year: 2020
 
   - institution: Bar-Ilan University
     location: Tel Aviv, Isreal

@@ -3,13 +3,13 @@ article:
     Romain and Marcenaro, Lucio
   journal: IEEE Signal Processing Magazine
   keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
-  number: '5'
+  number: 5
   pages: 138--144
   publisher: IEEE
   title: >
-    'Audio-Based Search and Rescue With a Drone: Highlights From the IEEE Signal
-    Processing Cup 2019 Student Competition'
-  volume: '36'
+    Audio-Based Search and Rescue With a Drone: Highlights From the IEEE Signal
+    Processing Cup 2019 Student Competition
+  volume: 36
   year: 2019
   doi: https://doi.org/10.1109/MSP.2019.2924687
   resources_link:
@@ -25,7 +25,7 @@ article:
       link: www.notdefinedyet.com
       text: >
         @article{Deleforge2019audio,
-          author = {Deleforge, Antoine and Di Carlo, Diego and Strauss, Martin and Serizel, Romain and Marcenaro, Lucio},
+          author = {Deleforge, Antoine and {Di Carlo}, Diego and Strauss, Martin and Serizel, Romain and Marcenaro, Lucio},
           journal = {IEEE Signal Processing Magazine},
           number = {5},
           pages = {138--144},
@@ -81,7 +81,15 @@ inproceedings:
     - name: Bibtex
       icon: fa fa-quote-right
       text: >
-        @INPROCEEDINGS{9054647, author={D. D. {Carlo} and C. {Elvira} and A. {Deleforge} and N. {Bertin} and R. {Gribonval}}, booktitle={ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, title={Blaster: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval}, year={2020}, volume={}, number={}, pages={156-160},}
+        @inproceedings{dicarlo2020blaster,
+        author={Diego {Di Carlo} and Clement {Elvira} and Antoine {Deleforge} and Nancy {Bertin} and Remi {Gribonval}},
+        booktitle={ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+        title={Blaster: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval},
+        year={2020},
+        volume={},
+        number={},
+        pages={156-160}
+        }
     - name: Abstract
       icon: fa fa-align-left
       text: >
@@ -298,7 +306,8 @@ inproceedings:
   url: https://github.com/Chutlhu/mirapie
   year: 2017
 
-- author: Grani, Francesco and Di Carlo, Diego and Portillo, Jorge Madrid and Girardi,
+- title: Gestural Control Of Wavefield synthesis
+  author: Grani, Francesco and Di Carlo, Diego and Portillo, Jorge Madrid and Girardi,
     Matteo and Paisa, Razvan and Banas, Jian Stian and Vogiatzoglou, Iakovos and Overholt,
     Dan and Serafin, Stefania
   bibitem: "@inproceedings{Grani2016gestural, author = {Grani, Francesco and Di\
@@ -308,7 +317,6 @@ inproceedings:
     \ = {185--192}, title = {Gestural Control Of Wavefield synthesis}, url = {https://vbn.aau.dk/ws/portalfiles/portal/244887082/2016_Gestural_Control_Of_Wavefield_synthesis_SMC2016.pdf},\
     \ year = {2016}}"
   booktitle: Sound and Music Computing Conference (SMC)
-  title: Gestural Control Of Wavefield synthesis
   url: https://vbn.aau.dk/ws/portalfiles/portal/244887082/2016_Gestural_Control_Of_Wavefield_synthesis_SMC2016.pdf
   year: 2016
 
@@ -327,9 +335,39 @@ inproceedings:
   year: 2014
 
 thesis:
-- author: Di Carlo, Diego
+- type: PhD
+  author: Di Carlo, Diego
+  advisor: Deleforge, Antione and Bertin, Nancy
+  bibitem: >
+   "@phdthesis{dicarlo2020echo,
+    TITLE = {{Echo-aware signal processing for audio scene analysis}},
+    AUTHOR = {Di Carlo, Diego},
+    URL = {https://tel.archives-ouvertes.fr/tel-03133271},
+    SCHOOL = {{UNIVERSIT{\'E} DE RENNES 1 ; INRIA - IRISA - PANAMA}},
+    YEAR = {2020},
+    MONTH = Dec,
+    KEYWORDS = {Room Geometry Estimation ; Sound Source Localization ; Sound Source Separation ; Blind Channel Estimation ; Acoustic Echoes ; Traitement des signaux audio ; {\'e}chos acoustiques ; estimation des canaux aveugles ; s{\'e}para- tion de sources sonores ; localisation de sources sonores ; estimation de la g{\'e}om{\'e}trie d'une salle},
+    TYPE = {Theses},
+    PDF = {https://tel.archives-ouvertes.fr/tel-03133271/file/main.pdf},
+    HAL_ID = {tel-03133271},
+    HAL_VERSION = {v1},
+    }"
+  hal_id: tel-03133271
+  hal_verision: v1
+  keywords:
+  link: https://tel.archives-ouvertes.fr/tel-03133271
+  school: Université de Rennes 1 - Panama Team (INRIA/IRISA) [France]
+  title: Echo-aware signal processing for audio scene analysis
+  code: https://github.com/Chutlhu/
+  url: https://tel.archives-ouvertes.fr/tel-03133271
+  year: 2020
+  abstract: >
+    Most of audio signal processing methods regard reverberation and in particular acoustic echoes as a nuisance. However, they convey important spatial and semantic information about sound sources and, based on this, recent echo-aware methods have been proposed. In this work, we focus on two directions. First, we study how to estimate acoustic echoes blindly from microphone recordings. Two approaches are proposed, one leveraging on continuous dictionaries, one using recent deep learning techniques. Then, we focus on extending existing methods in audio scene analysis to their echo-aware forms. The Multichannel NMF framework for audio source separation, the SRP-PHAT localization method, and the MVDR beamformer for speech enhancement are all extended to their echo-aware versions.
+
+- type: master
+  author: Di Carlo, Diego
   advisor: Orio, Nicola and Liutkus, Antoine
-  bibitem: "@mastersthesis{DiCarlo2017master, author = {Di Carlo, Diego and Orio,\
+  bibitem: "@mastersthesis{DiCarlo2017gaussian, author = {Di Carlo, Diego and Orio,\
     \ Nicola}, hal_id = {hal-01870918}, hal_verision = {v1}, keywords = {interference\
     \ reduction, microphone leakage, bleeding, source separation, random projection,\
     \ Non negative matrix factorisation NMF}, link = {http://tesi.cab.unipd.it/56327/},\
@@ -341,23 +379,23 @@ thesis:
   keywords: interference reduction, microphone leakage, bleeding, source separation,
     random projection, Non negative matrix factorisation NMF
   link: https://hal.inria.fr/hal-01870918
-  school: Universitá degli Studi di Padova
+  school: Universitá degli Studi di Padova [Italy]
   title: Gaussian Framework for Interference Reduction in Live Recordings
   code: https://github.com/Chutlhu/mirapie
   url: http://tesi.cab.unipd.it/56327/
   year: 2017
 
-- author: Di Carlo, Diego
+- type: bachelor
+  author: Di Carlo, Diego
   advisor: Antonio Rodá
-  bibitem: "@mastersthesis{DiCarlo2014bachelor, author = {Di Carlo, Diego}, school\
+  bibitem: "@mastersthesis{DiCarlo2014sequential, author = {Di Carlo, Diego}, school\
     \ = {Universit{\\`a} degli Studi di Padova}, title = {Sequential Feature Selection:\
     \ Algorithm and Applications for Audio Information Retrieval}, year = {2014}\
     }"
-  school: Universitá degli Studi di Padova
-  title: 'Sequential Feature Selection: Algorithm and Applications for Audio Information
+  school: Universitá degli Studi di Padova [Italy]
+  title: 'Sequential Feature Selection: Algorithms and Applications for Audio Information
     Retrieval'
   year: 2014
-
 
 other:
 - title: Etude des propriétés acoustiques de la guitare Black Flag
