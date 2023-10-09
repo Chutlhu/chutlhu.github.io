@@ -1,13 +1,4 @@
 <head>
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34052876-1"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-34052876-1');
-  </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,6 +39,20 @@
   <script src="{{ "/javascripts/json2.js" | prepend: site.baseurl }}" type="text/javascript"></script>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  
   <!-- my own scripts -->
   <script defer src="{{ "/javascripts/popupbox.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+
+  <!-- Google analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DW8SFX0GER"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DW8SFX0GER');
+  </script>
+
+  
+
 </head>
