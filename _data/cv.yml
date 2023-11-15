@@ -1,4 +1,34 @@
+achievements:
+  - name: asd
+  - items:
+      - asd
+      - asd
 work:
+  - company: RIKEN AIP
+    url: https://letg.cnrs.fr
+    division: Sound and Music Understanding Team
+    location: Rennes, France
+    dates: May 2021 - Present
+    position: Postoctoral Researcher
+    description: Physics-Informed Neural Networks for Speech Enhancement
+    Keywords:
+    - Neural Fields
+    - Steering vectors
+    - Speech Enhancement
+    - Mixed Reality
+    supervisors:
+    - Kazuyoshi Yoshii
+
+  - company: CNRS
+    url: https://letg.cnrs.fr
+    division: LETG (UMR 6554)
+    location: Rennes, France
+    dates: May 2021 - Present
+    position: Postoctoral Researcher
+    description: Physics-Informed Neural Networks for Geophysics
+    supervisors:
+    - Thomas Corpetti
+  
   - company: INRIA
     url: https://team.inria.fr/multispeech/
     division: Multispeech Team
@@ -144,9 +174,3 @@ skills:
     - PureData,
     - Sonic Visualizer and Audacity,
     - Renoise.
-
-achievements:
-  - name: asd
-  - items:
-      - asd
-      - asd

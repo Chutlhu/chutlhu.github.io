@@ -80,7 +80,7 @@ image: images/banners/goodgod.jpg
             <i>{{keyword}}</i>
           {% endfor %}
           {% endif %}
-        {% if school.thesis_url %}<br>
+        <!-- {% if school.thesis_url %}<br>
           <span class="warning label">
             <a href="{{ school.thesis_url }}">BibTex</a>
           </span>
@@ -93,7 +93,7 @@ image: images/banners/goodgod.jpg
           <span class="warning label">
             <a href="{{ school.thesis_url }}">Code</a>
           </span>
-        {% endif %}
+        {% endif %} -->
       {% endif %}
       {% if school.supervisors %}
         {% unless school.thesis %}
