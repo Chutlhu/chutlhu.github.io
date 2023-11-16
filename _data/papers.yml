@@ -1,4 +1,43 @@
 article:
+- author: Diego Di Carlo, Pinchas Tandeitnik, Cedric Foy, Nancy Bertin, Antoine Deleforge, Sharon Gannot
+  journal: IEEE Signal Processing Magazine
+  keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
+  number: 5
+  pages: 1--15
+  publisher: Springer
+  title: >
+    dEchorate: a calibrated room impulse response dataset for echo-aware signal processing
+  volume: 2021
+  year: 2021
+  doi: https://doi.org/10.1186/s13636-021-00229-0
+  resources_link:
+    - name: Springer
+      icon: ai ai-doi
+      link: https://doi.org/10.1186/s13636-021-00229-0
+    - name: Github
+      icon: fa fa-github
+      link: https://github.com/Chutlhu/SPCUP19
+  resources_popup:
+    - name: Bibtex
+      icon: fa fa-quote-right
+      link: www.notdefinedyet.com
+      text: >
+        @article{carlo2021dechorate,
+        title={dEchorate: a calibrated room impulse response dataset for echo-aware signal processing},
+        author={Carlo, Diego Di and Tandeitnik, Pinchas and Foy, Cedri{\'c} and Bertin, Nancy and Deleforge, Antoine and Gannot, Sharon},
+        journal={EURASIP Journal on Audio, Speech, and Music Processing},
+        volume={2021},
+        pages={1--15},
+        year={2021},
+        publisher={Springer}
+        } 
+    - name: Abstract
+      icon: fa fa-align-left
+      link: www.notdefinedyet.com
+      text: >
+        This paper presents a new dataset of measured multichannel room impulse responses (RIRs) named dEchorate. 
+        It includes annotations of early echo timings and 3D positions of microphones, real sources, and image sources under different wall configurations in a cuboid room. These data provide a tool for benchmarking recent methods in echo-aware speech enhancement, room geometry estimation, RIR estimation, acoustic echo retrieval, microphone calibration, echo labeling, and reflector position estimation. The dataset is provided with software utilities to easily access, manipulate, and visualize the data as well as baseline methods for echo-related tasks.
+
 - author: Deleforge, Antoine and Di Carlo, Diego and Strauss, Martin and Serizel,
     Romain and Marcenaro, Lucio
   journal: IEEE Signal Processing Magazine
