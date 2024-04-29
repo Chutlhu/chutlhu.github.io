@@ -1,28 +1,47 @@
-# Here are a few talks given over the past years.
-- Summer 2021:
-  - title: Echo-aware Signal Processing for Audio Scene Analysis
-    abstract: blablabla
-    where: Riken AIP Center, Kyoto (Japan)
-    when: 
-  
-- Fall 2019:
-  - title: Hunting Echoes for Auditory Scene Analysis
-    abstract: blablabla
-    where:
-      - Bar-Ilan University, Israel
-  - title:
-  - title: What is an Hackathon?
-    where:
-      - Journeé Science et Musisque, BU Univ Rennes 2, Rennes
-    url: https://docs.google.com/presentation/d/e/2PACX-1vTOXDVfgKSB0l4Yed031R6SMdCYqGYTCJ33RgTiQG9im4AdBogvX9cy5tQOFyAZQb6psR9QD-SfQMgF/pub?start=true&loop=true&delayms=3000
+# Here are a few talks given over the past years
 
-- Summer 2019:
-  - title: Hunting Echoes for Auditory Scene Analysis
-    abstract: blablabla
-    where:
-      - Rosckoff, Frances
-      - IRISA, France
-  - title: My Pythonic Workflow
-    abstract: blablabla
-    where:
-      - Seminaire Au Vert (Team Building Seminar)
+
+- title: Neural Fields
+  where: Kyoto University
+  when: 
+  slides: 
+
+- title: Neural Fields
+  where: Strasbourg
+  when:
+  slides:
+
+- title: Neural Fields
+  where: Telecom
+  when: 
+  slides: 
+
+- title: Neural Fields for Urban Change detection
+  when: 
+  where: Kyoto Univesity 
+  
+- title: Echo-aware Signal Processing for Audio Scene Analysis
+  abstract: blablabla
+  where: Riken AIP Center, Kyoto (Japan)
+  when: 2021, July 
+  slides: 
+  
+- title: Hunting Echoes for Auditory Scene Analysis
+  abstract: blablabla
+  where: Bar-Ilan University, Israel
+  when: 2019, November
+
+- title: What is an Hackathon?
+  where:
+    - Journeé Science et Musisque, BU Univ Rennes 2, Rennes
+  url: https://docs.google.com/presentation/d/e/2PACX-1vTOXDVfgKSB0l4Yed031R6SMdCYqGYTCJ33RgTiQG9im4AdBogvX9cy5tQOFyAZQb6psR9QD-SfQMgF/pub?start=true&loop=true&delayms=3000
+
+- title: My Pythonic Workflow
+  abstract: blablabla
+  where: Seminaire Au Vert (Team Building Seminar)
+  when: 2019, August
+
+- title: Hunting Echoes for Auditory Scene Analysis
+  abstract: blablabla
+  where: Rosckoff, Frances
+  when: 2019, July
