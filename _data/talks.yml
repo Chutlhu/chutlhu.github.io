@@ -1,6 +1,19 @@
 # Here are a few talks given over the past years
 
+######################
+### 2024 #############
+######################
+- title: from Neural Fields to PINNs, ... and beyond.
+  when: 2024, September
+  where: Prism, CNRS, France
 
+- title: from Neural Fields to PINNs, ... and beyond.
+  when: 2024, September
+  where: Telecom Paris, France
+
+######################
+### 2023 #############
+######################
 - title: Neural Fields
   where: Kyoto University
   when: 
@@ -19,6 +32,8 @@
 - title: Neural Fields for Urban Change detection
   when: 
   where: Kyoto Univesity 
+
+# PhD ....
   
 - title: Echo-aware Signal Processing for Audio Scene Analysis
   abstract: blablabla
