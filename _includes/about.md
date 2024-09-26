@@ -2,7 +2,11 @@ _As you may have noticed..._
 
 My name is Diego <span style="font-variant: small-caps;">Di Carlo</span> and I come from [Vicenza](https://en.wikipedia.org/wiki/Vicenza).
 
-Since October 2017, I am a Ph.D. candidate at [Inria](https://www.inria.fr/centre/rennes) in the [PANAMA team](https://team.inria.fr/panama/) in the beautiful city of Rennes (Fr) and in the [Multispeech team](https://team.inria.fr/multispeech/) in Nancy (Fr).<br>
+I am a postodoctoral researcher at in the [Sound Scene Understanding Team](http://www.riken.jp/en/research/labs/aip/goalorient_tech/sound_scene_understand/),
+[Center for Advanced Intelligence Project (AIP)](https://www.riken.jp/en/research/labs/aip/index.html), [RIKEN](http://www.riken.jp/en/) and
+a visiting researcher in the [Speech and Audio Processing Group](http://sap.ist.i.kyoto-u.ac.jp/EN/), [Kyoto University](https://www.kyoto-u.ac.jp/en/).
+
+I received a Ph.D. degree form [University of Rennes 1](http://www.univ-rennes1.fr/), France for a doctorate at [Inria](https://www.inria.fr/centre/rennes) in the [PANAMA team](https://team.inria.fr/panama/) in the beautiful city of Rennes (Fr) and in the [Multispeech team](https://team.inria.fr/multispeech/) in Nancy (Fr).<br>
 Under the supervision of [Antoine <span style="font-variant: small-caps;">Deleforge</span>](https://members.loria.fr/ADeleforge/) and [Nancy <span style="font-variant: small-caps;">Bertin</span>](https://people.irisa.fr/Nancy.Bertin/en), we are shedding light on how
 **acoustic echoes helps indoor audio signal processing** and how (and if) it is possible to estimated them.
 

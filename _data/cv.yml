@@ -125,14 +125,17 @@ languages:
     level: Fluent
   - language: French
     level: Conversational
+  - language: Japanese
+    level: Beginner
 
 skills:
   - name: Expertise
     items:
+    - Machine and Deep Learning,
+    - Audio Signal Processing,
     - Signal processing,
     - Optimization,
     - Algorithms,
-    - Fourier,
     - Stochastic modeling,
     - Probability theory,
     - Information theory
