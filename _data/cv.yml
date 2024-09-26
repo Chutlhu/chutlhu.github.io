@@ -5,10 +5,10 @@ achievements:
       - asd
 work:
   - company: RIKEN AIP
-    url: https://letg.cnrs.fr
+    url: https://aip.riken.jp/labs/goalorient_tech/sound_scene_understand/?lang=en
     division: Sound and Music Understanding Team
     location: Rennes, France
-    dates: May 2021 - Present
+    dates: September 2021 - Present
     position: Postoctoral Researcher
     description: Physics-Informed Neural Networks for Speech Enhancement
     Keywords:
@@ -23,7 +23,7 @@ work:
     url: https://letg.cnrs.fr
     division: LETG (UMR 6554)
     location: Rennes, France
-    dates: May 2021 - Present
+    dates: May 2021 - July 2022
     position: Postoctoral Researcher
     description: Physics-Informed Neural Networks for Geophysics
     supervisors:
