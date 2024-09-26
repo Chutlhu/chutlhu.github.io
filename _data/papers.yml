@@ -1,4 +1,44 @@
 article:
+- author: Cedric Foy, Antoine Deleforge, and Diego Di Carlo
+  journal: The Journal of the Acoustical Society of America
+  number: 2
+  pages: 1286--1299
+  publisher: AIP Publishing
+  title: >
+    Mean absorption estimation from room impulse responses using virtually supervised learning
+  volume: 150
+  year: 2021
+  doi: https://doi-org.kyoto-u.idm.oclc.org/10.1121/10.0005888
+  resources_link:
+    - name: JASA
+      icon: ai ai-doi
+      link: https://doi-org.kyoto-u.idm.oclc.org/10.1121/10.0005888
+  resources_popup:
+    - name: Bibtex
+      icon: fa fa-quote-right
+      link: www.notdefinedyet.com
+      text: >
+        @article{foy2021mean,
+        title={Mean absorption estimation from room impulse responses using virtually supervised learning},
+        author={Foy, C{\'e}dric and Deleforge, Antoine and Di Carlo, Diego},
+        journal={The Journal of the Acoustical Society of America},
+        volume={150},
+        number={2},
+        pages={1286--1299},
+        year={2021},
+        publisher={AIP Publishing}
+        }
+    - name: Abstract
+      icon: fa fa-align-left
+      link: www.notdefinedyet.com
+      text: >
+        In the context of building acoustics and the acoustic diagnosis of an existing room, it introduces and investigates a new approach to estimate the mean absorption coefficients solely from a room impulse response (RIR). 
+        This inverse problem is tackled via virtually supervised learning, namely, the RIR-to-absorption mapping is implicitly learned by regression on a simulated dataset using artificial neural networks. 
+        Simple models based on well-understood architectures are the focus of this work. The critical choices of geometric, acoustic, and simulation parameters, which are used to train the models, are extensively discussed and studied while keeping in mind the conditions that are representative of the field of building acoustics.
+        Estimation errors from the learned neural models are compared to those obtained with classical formulas that require knowledge of the room's geometry and reverberation times. Extensive comparisons made on a variety of simulated test sets highlight different conditions under which the learned models can overcome the well-known limitations of the diffuse sound field hypothesis underlying these formulas.
+        Results obtained on real RIRs measured in an acoustically configurable room show that at 1 kHz and above, the proposed approach performs comparably to classical models when reverberation times can be reliably estimated and continues to work even when they cannot.
+
+
 - author: Diego Di Carlo, Pinchas Tandeitnik, Cedric Foy, Nancy Bertin, Antoine Deleforge, Sharon Gannot
   journal: IEEE Signal Processing Magazine
   keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
@@ -16,7 +56,7 @@ article:
       link: https://doi.org/10.1186/s13636-021-00229-0
     - name: Github
       icon: fa fa-github
-      link: https://github.com/Chutlhu/SPCUP19
+      link: https://github.com/Chutlhu/dEchorate
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right
