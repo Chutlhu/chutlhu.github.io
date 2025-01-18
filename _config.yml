@@ -4,6 +4,7 @@ email: diego.di-carlo@inria.fr
 description: > # this means to ignore newlines until "baseurl:"
   My name is Diego Di Carlo and this is my site. You can find stuff about
   my music, my research and randomness.
+
 interest: >
   - Breakcore, Technical Death, Post and Avangarde
   - Whale, Chelicerata, and Periophthalmus
@@ -14,20 +15,20 @@ motto: >
   Even better when Tiepolo's clouds spit on it.<br>
   ... "Ufourk!"
 
-short_bio: ''
+short_bio: >
+  I am a **postodoctoral researcher** at in the [Sound Scene Understanding Team](http://www.riken.jp/en/research/labs/aip/goalorient_tech/sound_scene_understand/),
+  [Center for Advanced Intelligence Project (AIP)](https://www.riken.jp/en/research/labs/aip/index.html), [RIKEN](http://www.riken.jp/en/) and
+  a visiting researcher in the [Speech and Audio Processing Group](http://sap.ist.i.kyoto-u.ac.jp/EN/), [Kyoto University](https://www.kyoto-u.ac.jp/en/).
 
-short_bio2:
-  I am a PhD candidate in Audio Signal Processing and Machine Learning
-  at INRIA within the [team PANAMA](https://team.inria.fr/panama/) in France.<br>
-  Under the supervision of [Antoine Deleforge](https://members.loria.fr/ADeleforge/)
-  and [Nancy Bertin](https://people.irisa.fr/Nancy.Bertin/en),
-  I am currently working on estimating early acoustic echoes for audio inverse problem.
+short_bio2: >
+  I am a **postodoctoral researcher** at in the [Sound Scene Understanding Team](http://www.riken.jp/en/research/labs/aip/goalorient_tech/sound_scene_understand/),
+  [Center for Advanced Intelligence Project (AIP)](https://www.riken.jp/en/research/labs/aip/index.html), [RIKEN](http://www.riken.jp/en/) and
+  a visiting researcher in the [Speech and Audio Processing Group](http://sap.ist.i.kyoto-u.ac.jp/EN/), [Kyoto University](https://www.kyoto-u.ac.jp/en/).
 
 address:
   - building: INRIA Rennes Bretagne Atlantique
   - street: Campus de Beaulieu 263 Avenue Général Leclerc
   - city: 35042 Rennes Cedex – France
-
 
 # stuff for the website
 tbc: "Hic sunt Dracones"
@@ -43,11 +44,12 @@ logo_header: images/logo-diego-bordered.png
 logo_footer: images/logo-diego-grey.png
 
 # Build settings
-markdown: CommonMarkGhPages
+# markdown: CommonMarkGhPages
+markdown: GFM
 
-# commonmark:
-#   options: ["SMART", "FOOTNOTES"]
-#   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
 paginate: 8
 paginate_path: "blog/page:num"

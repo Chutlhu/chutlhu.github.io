@@ -1,33 +1,35 @@
+- date: 2024-10-23
+  text: >
+    [pub] Our paper ["Time-Domain Audio Source Separation Based on Gaussian Processes with Deep Kernel Learning"](https://ieeexplore.ieee.org/document/10248168) was presented at IEEE WASPAA 2023. 
+    Nice collaboration with A. A. Nugraha here in RIKEN AIP.
+    Click [here](https://aanugraha.github.io/news/waspaa2023_presentation/) for more info.
 - date: 2024-01-01
   text: >
-    [publication] Our paper [Neural Steerer: Novel Steering Vector Synthesis with a Causal Neural Field over Frequency and Source Positions](https://arxiv.org/abs/2305.04447) 
+    [pub] Our paper [Neural Steerer: Novel Steering Vector Synthesis with a Causal Neural Field over Frequency and Source jobs](https://arxiv.org/abs/2305.04447) 
     has been accepted to the HSCMA workshop at ICASSP 2024 @Seoul.
 - date: 2023-03-01
   text: >
-    [publication] Our paper [Implicit Neural Representation for Change Detection](https://paperswithcode.com/paper/implicit-neural-representation-for-change) has been accepted to WAVC24 @Hawaii.
+    [pub] Our paper [Implicit Neural Representation for Change Detection](https://paperswithcode.com/paper/implicit-neural-representation-for-change) has been accepted to WAVC24 @Hawaii.
     Nice collaboration with P. Naylor and M. Fiorucci here in Kyoto.
 - date: 2023-06-21
   text: > 
-    Received certification of "Outstanding Reviewer Recognition" by IEEE ICASSP23 TCP  
+    [achiev] Received certification of "Outstanding Reviewer Recognition" by IEEE ICASSP23 TCP  
 - date: 2023-03-01
   text: >
-    [achievement] My grant proposal was accepted for **Kakenhi JSPS** (Japan Society for the Promotion of Science). About 20k EUR for 3 years.
+    [achiev] My grant proposal was accepted for **Kakenhi JSPS** (Japan Society for the Promotion of Science). About 20k EUR for 3 years.
 - date: 2022-09-01
   text: >
-    [position] Started a a new PostDoc at **RIKEN AIP** (Japan) about *Neural Fields* for speech processing in mixed reality applications.
+    [job] Started a a new PostDoc at **RIKEN AIP** (Japan) about *Neural Fields* for speech processing in mixed reality applications.
 - date: 2021-05-01
   text: >
-    [position] Started a a new PostDoc at CNRS/Université de Rennes 2 within **Dynalearn** project about *Physics-Informed Neural Networks* (PINNs).
+    [job] Started a a new PostDoc at CNRS/Université de Rennes 2 within **Dynalearn** project about *Physics-Informed Neural Networks* (PINNs).
 - date: 2021-01-09
   text: >
-    [publication] My Ph.D. thesis available on [HAL](https://tel.archives-ouvertes.fr/tel-03133271)
+    [pub] My Ph.D. thesis available on [HAL](https://tel.archives-ouvertes.fr/tel-03133271)
 - date: 2020-12-04
   text: >
-    [achievement] Ph.D. in... *"Echo-aware Signal Processing for Audio Scene Analysis"*.
+    [achiev] Ph.D. in... *"Echo-aware Signal Processing for Audio Scene Analysis"*.
     Presentation available [here](https://github.com/Chutlhu/Slides-Defense/blob/main/main.pdf)
-- date: 2020-05-28
-  text: >
-    [note] *Note for the sailors:* I am adding important changes to the website. Some page may be unstable.
 - date: 2020-05-08
   text: >
     Check out the BLASTER for Acoustic Echo Retrieval:
@@ -36,13 +38,13 @@
     [slides](http://sigport.org/5117)
     and [video](https://youtu.be/rPaqZJIfpKo).
 - date: 2020-02-24
-  text: "[publication] Our paper [BLASTER: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval](www.google.com) has been accepted for publication at [ICASSP`20](2020.ieeeicassp.org)"
+  text: "[pub] Our paper [BLASTER: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval](www.google.com) has been accepted for publication at [ICASSP`20](2020.ieeeicassp.org)"
 - date: 2020-01-12
   text: "Summoning [Hχώ](https://en.wikipedia.org/wiki/Echo_(mythology)) in [Sharon Gannot](www.eng.biu.ac.il/gannot/)'s lab"
 - date: 2019-12-27
   text: >
     Will ever lady [Ælfgifu of Northampton](https://en.wikipedia.org/wiki/%C3%86lfgifu_of_Northampton)
-    be hear behind [Knuth](https://youtu.be/GijiGwHLFnA) in [Sharon Gannot](www.eng.biu.ac.il/gannot/)'s lab?"
+    be hear behind [Knuth](https://youtu.be/GijiGwHLFnA) in [Sharon Gannot](www.eng.biu.ac.il/gannot/)'s lab?
 - date: 2019-10-01
   text: >
     [collaboration] Winter is not coming. I am currently visiting prof. [Sharon Gannot](www.eng.biu.ac.il/gannot/) in his lab. In Israel."
