@@ -38,7 +38,6 @@ article:
         Estimation errors from the learned neural models are compared to those obtained with classical formulas that require knowledge of the room's geometry and reverberation times. Extensive comparisons made on a variety of simulated test sets highlight different conditions under which the learned models can overcome the well-known limitations of the diffuse sound field hypothesis underlying these formulas.
         Results obtained on real RIRs measured in an acoustically configurable room show that at 1 kHz and above, the proposed approach performs comparably to classical models when reverberation times can be reliably estimated and continues to work even when they cannot.
 
-
 - author: Diego Di Carlo, Pinchas Tandeitnik, Cedric Foy, Nancy Bertin, Antoine Deleforge, Sharon Gannot
   journal: IEEE Signal Processing Magazine
   keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
@@ -133,29 +132,52 @@ article:
 
 
 inproceedings:
-- title: 'BLASTER: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval'
-  id: blaster
-  author: 'Di Carlo, Diego and Elvira, Clement  and Deleforge, Antoine and Bertin, Nancy and Gibonval, Remi'
-  booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
-  keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
-  year: 2020
-  doi: https://doi.org/10.1109/ICASSP40776.2020.9054647
+- title: Run-Time Adaptation of Neural Beamforming for Robust Speech Dereverberation and Denoising
+  id: runtime
+  author: 'Yoto Fujita, Aditya Arie Nugraha, Diego Di Carlo, Yoshiaki Bando, Mathieu Fontaine, and Kazuyoshi Yoshii'
+  booktitle: In Proceedings of Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA)
+  keywords: Speech enhancement, dereverberation, neural beamforming, blind source separation
+  year: 2024
   resources_link:
-    - name: IEEE
-      icon: ai ai-doi
-      link: https://doi.org/10.1109/ICASSP40776.2020.9054647
+    - name: Arxiv
+      icon: ai ai-arxiv
+      link: https://arxiv.org/abs/2410.22805
+  resources_popup:
+    - name: Bibtex
+      icon: fa fa-quote-right
+      text: >
+        @inproceedings{fujita2024runtimeadaptation,
+          abbr = {APSIPA},
+          bibtex_show = {true},
+          author = {Fujita, Yoto and Nugraha, Aditya Arie and Di Carlo, Diego and Bando, Yoshiaki and Fontaine, Mathieu and Yoshii, Kazuyoshi},
+          title = {Run-Time Adaptation of Neural Beamforming for Robust Speech Dereverberation and Denoising},
+          booktitle = {Proceedings of Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA)},
+          year = {2024},
+          month = dec,
+          pages = {},
+          address = {Macau, China},
+          preprint = {https://arxiv.org/abs/2410.22805}
+        }
+    - name: Abstract
+      icon: fa fa-align-left
+      text: >
+        This paper describes speech enhancement for realtime automatic speech recognition (ASR) in real environments. A standard approach to this task is to use neural beamforming that can work efficiently in an online manner. It estimates the masks of clean dry speech from a noisy echoic mixture spectrogram with a deep neural network (DNN) and then computes a enhancement filter used for beamforming. The performance of such a supervised approach, however, is drastically degraded under mismatched conditions. This calls for run-time adaptation of the DNN. Although the ground-truth speech spectrogram required for adaptation is not available at run time, blind dereverberation and separation methods such as weighted prediction error (WPE) and fast multichannel nonnegative matrix factorization (FastMNMF) can be used for generating pseudo groundtruth data from a mixture. Based on this idea, a prior work proposed a dual-process system based on a cascade of WPE and minimum variance distortionless response (MVDR) beamforming asynchronously fine-tuned by block-online FastMNMF. To integrate the dereverberation capability into neural beamforming and make it fine-tunable at run time, we propose to use weighted power minimization distortionless response (WPD) beamforming, a unified version of WPE and minimum power distortionless response (MPDR), whose joint dereverberation and denoising filter is estimated using a DNN. We evaluated the impact of run-time adaptation under various conditions with different numbers of speakers, reverberation times, and signal-to-noise ratios (SNRs).
+
+- title: "RIR-in-a-Box: Estimating Room Acoustics from 3D Mesh Data through Shoebox Approximation"
+  id: rirbox
+  author: Liam Kelley, Diego Di Carlo, Aditya Arie Nugraha, Mathieu Fontaine, Yoshiaki Bando, and Kazuyoshi Yoshii
+  booktitle: In Proceedings of Annual Conference of the International Speech Communication Association (Interspeech)
+  year: 2024
+  resources_link:
     - name: HAL
       icon: ai ai-open-access
-      link: https://hal.archives-ouvertes.fr/hal-02469901/
+      link: https://telecom-paris.hal.science/hal-04632526
+    - name: DOI
+      icon: ai ai-doi
+      link: https://doi.org/10.21437/Interspeech.2024-2053
     - name: Code
       icon: fa fa-github
-      link: https://gitlab.inria.fr/panama-team/blaster
-    - name: Resources
-      icon: fa fa-paperclip
-      link: https://sigport.org/documents/blaster-grid-method-blind-and-regularized-acoustic-echoes-retrieval
-    - name: Video
-      icon: fa fa-youtube-play
-      link: https://youtu.be/rPaqZJIfpKo
+      link: https://github.com/liam-kelley/RIR-in-a-Box
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right
@@ -183,6 +205,54 @@ inproceedings:
         in the parameter space of interest. The accuracy and robustness of
         the method are assessed on challenging simulated setups with
         varying noise and reverberation levels and are compared to two state-of-the-art methods.
+
+- title: 'BLASTER: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval'
+  id: blaster
+  author: 'Di Carlo, Diego and Elvira, Clement  and Deleforge, Antoine and Bertin, Nancy and Gibonval, Remi'
+  booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+  keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
+  year: 2020
+  doi: https://doi.org/10.1109/ICASSP40776.2020.9054647
+  resources_link:
+    - name: IEEE
+      icon: ai ai-doi
+      link: https://doi.org/10.1109/ICASSP40776.2020.9054647
+    - name: HAL
+      icon: ai ai-open-access
+      link: https://hal.archives-ouvertes.fr/hal-02469901/
+    - name: Code
+      icon: fa fa-github
+      link: https://gitlab.inria.fr/panama-team/blaster
+    - name: Resources
+      icon: fa fa-paperclip
+      link: https://sigport.org/documents/blaster-grid-method-blind-and-regularized-acoustic-echoes-retrieval
+    - name: Video
+      icon: fa fa-youtube-play
+      link: https://youtu.be/rPaqZJIfpKo
+  resources_popup:
+    - name: Bibtex
+      icon: fa fa-quote-right
+      text: >
+        @inproceedings{kelley2024ririnabox,
+          abbr = {Interspeech},
+          bibtex_show = {true},
+          author = {Kelley, Liam and Di Carlo, Diego and Nugraha, Aditya Arie and Fontaine, Mathieu and Bando, Yoshiaki and Yoshii, Kazuyoshi},
+          title = {RIR-in-a-Box: Estimating Room Acoustics from 3D Mesh Data through Shoebox Approximation},
+          booktitle = {Proceedings of Annual Conference of the International Speech Communication
+          Association (Interspeech)},
+          year = {2024},
+          month = sep,
+          pages = {3255-3259},
+          address = {Kos Island, Greece},
+          url = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.html},
+          html = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.html},
+          pdf = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.pdf},
+          preprint = {https://telecom-paris.hal.science/hal-04632526},
+          doi = {10.21437/Interspeech.2024-2053}
+        }
+    - name: Abstract
+      icon: fa fa-align-left
+      text: This paper describes a method for estimating the room impulse response (RIR) for a microphone and a sound source located at arbitrary positions from the 3D mesh data of the room. Simulating realistic RIRs with pure physics-driven methods often fails the balance between physical consistency and computational efficiency, hindering application to real time speech processing. Alternatively, one can use MESH2IR, a fast black-box estimator that consists of an encoder extracting latent code from mesh data with a graph convolutional network (GCN) and a decoder generating the RIR from the latent code. Combining these two approaches, we propose a fast yet physically coherent estimator with interpretable latent code based on differentiable digital signal processing (DDSP). Specifically, the encoder estimates a virtual shoebox room scene that acoustically approximates the real scene, accelerating physical simulation with the differentiable image-source model in the decoder. Our experiments showed that our method outperformed MESH2IR for real mesh data obtained with the depth scanner of Microsoft HoloLens 2, and can provide correct spatial consistency for binaural RIRs.
 
 - title: 'MIRAGE: 2D Source Localization Using Microphone Pair Augmentation with Echoes'
   id: mirage
@@ -287,7 +357,9 @@ inproceedings:
         vanilla variant of the same algorithm, and that with magnitude information only,
         echoes enable separation where it was previously impossible
 
-- abstract: This short paper presents an efficient, flexible implementation of the
+- title: Evaluation of an Open-Source Implementation of the SPR-PHAT Algorithm Within
+    the 2018 Locata Challenge
+  abstract: This short paper presents an efficient, flexible implementation of the
     SRP-PHAT  multichannel  sound  source  localization  method.   Themethod is evaluated
     on the single-source tasks of the LOCATA 2018development  dataset,  and  an  associated  Matlab  toolbox  is  madeavailable
     online
@@ -307,11 +379,10 @@ inproceedings:
   booktitle: LOCATA Challenge Workshop - a satellite event of International Workshop
     on Acoustic Signal Enhancement (IWAENC)
   hal_id: hal-02187964
-  title: Evaluation of an Open-Source Implementation of the SPR-PHAT Algorithm Within
-    the 2018 Locata Challenge
   year: 2018
 
-- abstract: 'Live concert recordings consist in long multitrack audio samples with
+- title: Interference reduction on full-length live recordings
+  abstract: 'Live concert recordings consist in long multitrack audio samples with
     significant interferences between channels.
     For audio engineering purposes, it is desirable to attenuate those interferences.
     Recently, we proposed an algorithm to this end based on Non-negative Matrix Factorization,
@@ -345,12 +416,12 @@ inproceedings:
   hal_verision: v1
   keywords: Compressive sensing,Interference reduction,Microphone leakage,Random projection,Source
     separation
-  title: Interference reduction on full-length live recordings
   url: https://github.com/Chutlhu/mirapie
   volume: 2018-April
   year: 2018
 
-- abstract: In live multitrack recordings, each voice is usually captured by dedicated
+- title: Gaussian framework for interference reduction in live recordings
+  abstract: In live multitrack recordings, each voice is usually captured by dedicated
     close microphones. Unfortunately, it is also captured in practice by other microphones
     intended for other sources, leading to so-called "interferences". Reducing this
     interference is desirable because it opens new perspectives for the engineering
@@ -381,7 +452,6 @@ inproceedings:
   booktitle: AES International Conference on Semantic Audio
   hal_id: hal-01515971
   hal_verision: v1
-  title: Gaussian framework for interference reduction in live recordings
   url: https://github.com/Chutlhu/mirapie
   year: 2017
 
@@ -399,7 +469,9 @@ inproceedings:
   url: https://vbn.aau.dk/ws/portalfiles/portal/244887082/2016_Gestural_Control_Of_Wavefield_synthesis_SMC2016.pdf
   year: 2016
 
-- address: Venice
+- title: "Automatic music \u201Clistening\u201D for automatic music performance: a\
+    \ grandpiano dynamics classifier,\u201D"
+  address: Venice
   author: Di Carlo, Diego and Rodá, Antonio
   bibitem: "@inproceedings{DiCarlo2014, address = {Venice}, author = {Di Carlo,\
     \ Diego and Rod{\\'a}, Antonio}, booktitle = {Proceedings of the 1st International\
@@ -409,8 +481,6 @@ inproceedings:
     \ = {2014}}"
   booktitle: Proceedings of the 1st International Workshop on Computer and Robotic
     Systems for Automatic Music Performance (SAMP 14)
-  title: "Automatic music \u201Clistening\u201D for automatic music performance: a\
-    \ grandpiano dynamics classifier,\u201D"
   year: 2014
 
 thesis:
