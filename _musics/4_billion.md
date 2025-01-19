@@ -8,7 +8,7 @@ klass: metal
 avatar: images/music/billion_avatar.jpg
 banner: images/music/billion_banner.jpg
 links:
-  - icon: soundcloud
+  - icon: fa fa-soundcloud
     url: https://soundcloud.com/billionoceanlifeform
 hidden: true
 ---
@@ -18,10 +18,6 @@ hidden: true
 - Diego Di Carlo: Bass
 - Windows x86: other
 
-### Quite Light
-
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/298022977&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-
-### DNNTBN
-
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/298011198&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+**Songs:**
+- [Quite Light](https://soundcloud.com/billionoceanlifeform/quiet-light?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
+- [DNNTBN](https://soundcloud.com/billionoceanlifeform/dnntbn?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)

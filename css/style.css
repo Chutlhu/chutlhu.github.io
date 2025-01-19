@@ -3973,3 +3973,13 @@ body {
 .tablelines table, .tablelines td, .tablelines th {
         border: 1px solid black;
         }
+
+/* STYLE FOR CONTAINER */
+
+.bandcamp-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}

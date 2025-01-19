@@ -8,9 +8,9 @@ klass: jazz
 avatar: images/music/mandela_avatar.jpg
 banner: images/music/mandela_banner.jpg
 links:
-  - icon: bandcamp
+  - icon: fa fa-music
     url: https://mandelastream.bandcamp.com/
-  - icon: facebook
+  - icon: fa fa-facebook
     url: https://www.facebook.com/Mandelaquintet
 hidden: true
 ---
@@ -24,11 +24,14 @@ hidden: true
 - Edoardo “Dodo” <span style="font-variant: small-caps;">Maggiolo</span>: *Drums/Percussions*
 - Stefano “Prs” <span style="font-variant: small-caps;">Perissinotto</span>: *Engineering*
 
+<center>
+<span style="font-variant: small-caps;">ElectricJazz</span>
+</center>
+
 #### Discography:
-- [2013] [Mandela s.t.](https://mandelastream.bandcamp.com/album/mandela-4)
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2945441665/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3940435628/transparent=true/" seamless><a href="http://mandelastream.bandcamp.com/album/mandela-4">Mandela by Mandela</a></iframe>
+- [2020] [The Sound Of Grass (soundtrack)](https://mandelastream.bandcamp.com/album/the-sound-of-grass)  
 - [2015] [Paint-Sweating Hands](https://mandelastream.bandcamp.com/album/paint-sweating-hands)
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1923548984/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1378335783/transparent=true/" seamless><a href="http://mandelastream.bandcamp.com/album/paint-sweating-hands">Paint-Sweating Hands by Mandela</a></iframe>
+- [2013] [Mandela s.t.](https://mandelastream.bandcamp.com/album/mandela-4)
 
 #### Live & Video
 - [Showcase](https://www.youtube.com/watch?v=b2UOrDglSbQ)
