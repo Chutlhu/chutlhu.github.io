@@ -15,6 +15,13 @@ image: images/banners/bass.jpg
   <div class='four spacing'></div>
 </div>
 
+<div class='full'></div>
+  <div class='row'>
+    <div class='large-12 columns text-center'>
+      <h2>Projects</h2>
+    </div>
+  </div>
+</div>
 
 <div class='full'>
   <div class='row'>
@@ -29,6 +36,9 @@ image: images/banners/bass.jpg
           </li>
           <li>
             <a data-cat='metal' href='#'>Metal</a>
+          </li>
+          <li>
+            <a data-cat='rap' href='#'>Rap</a>
           </li>
           <li>
             <a data-cat='electro' href='#'>Electronic</a>
@@ -54,11 +64,62 @@ image: images/banners/bass.jpg
             </a>
           </li>
         {% endfor %}
-
       </ul>
-
     </div>
   </div>
+  <div class='two spacing'></div>
+</div>
 
+<div class='full'></div>
+  <div class='row'>
+    <div class='large-12 columns text-center'>
+      <h2>Albums と Singles</h2>
+    </div>
+  </div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='mod modGallery'>
+      <div class='gallery-nav'>
+        <ul>
+          <li class='current'>
+            <a data-cat='all' href='#'>All</a>
+          </li>
+          <li>
+            <a data-cat='jazz' href='#'>Jazz</a>
+          </li>
+          <li>
+            <a data-cat='metal' href='#'>Metal</a>
+          </li>
+          <li>
+            <a data-cat='electro' href='#'>Electronic</a>
+          </li>
+          <li>
+            <a data-cat='cover' href='#'>Cover</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'> 
+
+        {% for album in site.data.albums %}
+          <li class="{{ album.klass }}">
+            <a href='{{ album.url }}'>
+              <img alt="" src="{{ album.cover }}" height="280" width="280"/>
+              <div class='overlay'>
+                <div class='thumb-info'>
+                  <h3>{{ album.title }}</h3>
+                  <p style="font-variant: small-caps;">{{ album.artist }} ( {{album.year}} )</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+  
+  </div>
   <div class='four spacing'></div>
 </div>

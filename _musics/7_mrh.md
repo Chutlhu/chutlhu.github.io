@@ -4,7 +4,7 @@ layout: music_project
 tagline: ""
 description: "Cemento armato del sistema burocratico"
 permalink: /mrh
-klass: electro
+klass: rap
 avatar: images/music/mrh_avatar.jpg
 banner: images/music/mrh_avatar.jpg
 links:

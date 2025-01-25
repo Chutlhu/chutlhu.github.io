@@ -1,0 +1,60 @@
+- title: The Sound of Grass
+  artist: Mandela
+  url: https://mandelastream.bandcamp.com/album/the-sound-of-grass
+  year: 2020
+  cover: images/music/albums/grass.jpg
+  klass: jazz
+- title: Mandela s.t.
+  artist: Mandela
+  url: https://mandelastream.bandcamp.com/album/mandela-4
+  year: 2013
+  cover: images/music/albums/mandela.jpg
+  klass: jazz
+- title: Paint-Sweating Hands
+  artist: Mandela
+  url: https://mandelastream.bandcamp.com/album/paint-sweating-hands
+  year: 2015
+  cover: images/music/albums/hands.jpg
+  klass: jazz
+- title: Tralicci di Carta
+  artist: Chut~hWh~4l3
+  year: 2025
+  cover: images/music/albums/tralicci.jpg
+  klass: electro
+  url: https://on.soundcloud.com/seYf7JVzXiJbSetYA
+- title: Total Violence Terrific Banana (TVTB)
+  artist: N'Ilazo
+  url: https://myspace.com/n39ilazo/music/albums
+  cover: images/music/albums/tvtb1.jpg
+  year: 2012
+  klass: metal
+- title: Plagiando si impara
+  artist: Mr H.
+  year: 2013
+  cover: images/music/albums/plagiando.jpg
+  klass: rap
+  url: https://soundcloud.com/mr-h-28/sets/plagiando-simpara
+- title: Billion Ocean Lifeform
+  artist: Billion Ocean Lifeform
+  url: https://soundcloud.com/billionoceanlifeform
+  year: 2016
+  cover: images/music/billion_avatar.jpg
+  klass: metal
+- title: War of Nations
+  artist: Kerrigan
+  url: https://www.youtube.com/watch?v=gp3w3IkXWss
+  year: 2016
+  cover: images/music/albums/war_of_nations.jpg
+  klass: electronic
+- title: Can you feel it?
+  artist: Kerrigan
+  url: https://www.youtube.com/watch?v=uKV7rYvPzpg
+  year: 2015
+  cover: images/music/albums/can_you_feel_it.png
+  klass: electronic
+- title: Quite Ligth (MIDI edition)
+  artist:  Chut~hWh~4l3 
+  url: https://soundcloud.com/canepazzo-cortez/quite-light-dove-i-contienti-sono-gli-occhi-e-gli-oceani-i-sorrisi-midi-edition
+  year: 2016
+  cover: images/music/albums/quite_light.jpg
+  klass: metal
