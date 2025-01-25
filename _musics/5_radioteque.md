@@ -4,7 +4,7 @@ layout: music_project
 tagline: "Radiohead Cover Band"
 description: "Radiohead Cover Band"
 permalink: /radioteque
-klass: cover
+klass: cover,rock
 avatar: images/music/radioteque_avatar.jpg
 banner: images/music/radioteque_banner.jpg
 links:
