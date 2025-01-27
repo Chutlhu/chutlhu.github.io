@@ -113,7 +113,7 @@ image: images/banners/bass.jpg
       <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'> 
 
         {% for album in site.data.albums %}
-          <li class="{{ work.klass | split: ',' | join: ' ' }}">
+          <li class="{{ album.klass | split: ',' | join: ' ' }}">
             <a href='{{ album.url }}'>
               <img alt="" src="{{ album.cover }}" height="280" width="280"/>
               <div class='overlay'>
