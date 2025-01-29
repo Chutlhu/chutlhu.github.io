@@ -4,7 +4,7 @@ layout: project
 tagline: "Dregon Chellenge"
 description: "Blablebla"
 permalink: /projects/spcup
-klass: software
+klass: dataset
 thumbnail: images/projects/spcup/spcup_thumbnail.jpg
 image: images/projects/spcup/spcup_thumbnail.jpg
 banner: images/projects/spcup/spcup_banner.jpg
