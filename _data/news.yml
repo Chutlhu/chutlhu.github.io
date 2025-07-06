@@ -1,3 +1,9 @@
+- date: 2025-05-20
+  text: >
+    [pub] Our paper ["SHAMaNS: Sound Localization with Hybrid Alpha-Stable Spatial Measure and Neural Steerer"](https://telecom-paris.hal.science/hal-05121705/) 
+    has been accepted at EUSIPCO 2025. 
+    Nice collaboration with my colleagues at RIKEN AIP and Mathieu Fontaine (LTCI, IP Paris).
+    Click [here](https://github.com/Chutlhu/shamans) for the code.
 - date: 2024-10-23
   text: >
     [pub] Our paper ["Time-Domain Audio Source Separation Based on Gaussian Processes with Deep Kernel Learning"](https://ieeexplore.ieee.org/document/10248168) was presented at IEEE WASPAA 2023. 

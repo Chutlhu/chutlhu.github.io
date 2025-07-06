@@ -132,7 +132,7 @@ inproceedings:
 - title: "SHAMaNS: Sound Localization with Hybrid Alpha-Stable Spatial Measure and Neural Steerer"
   id: shamans
   author: 'Diego Di Carlo (RIKEN AIP), Mathieu Fontaine (LTCI, IP Paris), Aditya Arie Nugraha (RIKEN AIP), Yoshiaki Bando (RIKEN AIP), Kazuyoshi Yoshii'
-  booktitle: Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA)
+  booktitle: European Signal Processing Conference (EUSIPCO)
   keywords: Speech enhancement, dereverberation, neural beamforming, blind source separation
   year: 2025
   resources_link:
