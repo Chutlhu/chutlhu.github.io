@@ -182,3 +182,45 @@ file: papers
   {% endfor %}
   <div class='three spacing'></div>
 </div>
+
+<div id="overlay"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Open modal
+  document.querySelectorAll('[data-modal-target]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      var modalId = btn.getAttribute('data-modal-target');
+      var modal = document.querySelector(modalId);
+      var overlay = document.getElementById('overlay');
+      if (modal && overlay) {
+        modal.classList.add('active');
+        overlay.classList.add('active');
+      }
+    });
+  });
+
+  // Close modal by close button
+  document.querySelectorAll('[data-close-button]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      closeModal();
+    });
+  });
+
+  // Close modal by clicking overlay
+  var overlay = document.getElementById('overlay');
+  if (overlay) {
+    overlay.addEventListener('click', function() {
+      closeModal();
+    });
+  }
+
+  function closeModal() {
+    document.querySelectorAll('.modal.active').forEach(function(modal) {
+      modal.classList.remove('active');
+    });
+    var overlay = document.getElementById('overlay');
+    if (overlay) overlay.classList.remove('active');
+  }
+});
+</script>

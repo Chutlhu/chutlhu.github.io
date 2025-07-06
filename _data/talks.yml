@@ -1,6 +1,18 @@
 # Here are a few talks given over the past years
 
 ######################
+### 2025 #############
+######################
+- title: Augmented Listening with Physics-Coherent Neural Fields
+  where: Telecom Paris, France
+  when: 2025, April 25
+  abstract:
+    This seminar explores neural fields as a framework for continuous signal representation and its application in augmented listening. 
+    These models enable infinite resolution processing and regulation using physical knowledge, addressing the limitations of traditional discrete representations. 
+    The seminar illustrates key designs, such as physics-informed and physics-constrained neural networks, and their use in practical audio applications, 
+    such as spatial filtering for speech enhancement and high-resolution sound source localization.
+
+######################
 ### 2024 #############
 ######################
 - title: from Neural Field for Augmented Listening
@@ -10,6 +22,7 @@
 - title: from Neural Fields to PINNs, ... and beyond.
   when: 2024, September
   where: Prism, CNRS, France
+  url: https://s2a.telecom-paris.fr/resources/2024-09-12-diego-di-carlo-talk/
 
 - title: from Neural Fields to PINNs, ... and beyond.
   when: 2024, September
