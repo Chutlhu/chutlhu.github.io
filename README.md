@@ -1,39 +1,53 @@
-# Joon: Roon theme for Jekyll
+# Diego Di Carlo - Personal Website
 
-Jekyll theme based on the Roon for [Ghost](http://github.com/tryghost/roon/).
+This is the source code for Diego Di Carlo's personal website, built with Jekyll and hosted on GitHub Pages.
 
-## Demo
-View this jekyll theme in action [here](https://vormwald.github.io/joon)
+## Tech Stack
 
-## Screenshot
-![screenshot](https://raw.githubusercontent.com/vormwald/joon/master/screenshot.png)
+- **Jekyll** - Static site generator
+- **Foundation CSS** - Frontend framework
+- **Ruby 3.4.1** - Runtime environment
+- **GitHub Pages** - Hosting
 
-## Font Options
+## Running Locally
 
-This theme comes with two font options; a serif and sans-serif (the default). 
-Switching between them is done in the HTML, by adding `serif` to the `class` of 
-the `<body>` element in [head.html](https://github.com/vormwald/joon/blob/master/_layouts/default.html.hbs#L6).
+### Prerequisites
 
-## Colour Options
+- Ruby 3.4.1 (or compatible version)
+- Bundler gem
 
-This theme uses an accent colour for links and the border at the top of pages.
+### Setup
 
-To change this colour, you need to edit [assets/css/screen.css](https://github.com/vormwald/joon/blob/master/assets/css/screen.css).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/chutlhu/chutlhu.github.io.git
+   cd chutlhu.github.io
+   ```
 
-There are only two values you need to change, conveniently **located at the very
-top of the file**.
+2. Install dependencies:
+   ```bash
+   bundle install
+   ```
 
-## For More Information
-For more on Jekyll, read the [documentation](http://jekyllrb.com/)
+3. Build and serve the site:
+   ```bash
+   bundle exec jekyll serve --livereload
+   ```
 
+4. Visit `http://localhost:4000` in your browser
 
-## Copyright & License
+## Project Structure
 
-Roon is Copyright (c) 2013-2015 Sam Soffes & Ghost Foundation - Released under 
-the [MIT license](LICENSE).
+- `_includes/` - Reusable HTML components
+- `_layouts/` - Page templates
+- `_posts/` - Blog posts
+- `_projects/` - Research projects
+- `_musics/` - Music projects
+- `_data/` - Data files (CV, navigation, etc.)
+- `css/`, `javascripts/`, `images/` - Assets
 
-## Serve
+## Credits
 
-Serve locally with
+Heavily inspired by the website of [Robin Scheibler](https://github.com/fakufaku/fakufaku.github.io). locally with
 
     bundle exec jekyll serve

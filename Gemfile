@@ -7,3 +7,4 @@ group :jekyll_plugins do
   gem 'jekyll-commonmark-ghpages'
 end
 gem "webrick", "~> 1.8"
+gem 'csv', "~> 3.2" # Added for Ruby 3.4 compatibility
