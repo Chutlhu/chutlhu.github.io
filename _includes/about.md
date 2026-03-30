@@ -4,7 +4,7 @@ I am a **postodoctoral researcher** at in the [Sound Scene Understanding Team](h
 [Center for Advanced Intelligence Project (AIP)](https://www.riken.jp/en/research/labs/aip/index.html), [RIKEN](http://www.riken.jp/en/) and
 a visiting researcher in the [Speech and Audio Processing Group](http://sap.ist.i.kyoto-u.ac.jp/EN/), [Kyoto University](https://www.kyoto-u.ac.jp/en/).
 
-Detailed career path on my [2-page resume]({{ site.url }}/pdf/2025_dicarlo_resume.pdf) or my [academic CV with pubs]({{ site.url }}/pdf/2025_dicarlo_CV_wPubs).
+Detailed career path on my [2-page resume]({{ site.url }}/assets/pdf/2025_dicarlo_resume.pdf) or my [academic CV with pubs]({{ site.url }}/assets/pdf/2025_dicarlo_CV_wPubs).
 
 <table style="border-collapse: collapse; border: none;"><tbody>
     <tr style="border-collapse: collapse; border: none;">
@@ -66,7 +66,7 @@ I graduated in Compute Engineering in 2017 from [Universitá degli Studi di Pado
 Before of this... well *Hic Sunt Dracones*.
 
 <!-- ![cetipede]({{site.url}}/images/centipede_rot.png) -->
-<div style="text-align:center"><img src="{{site.url}}/images/centipede_rot.png" width=70/></div>
+<div style="text-align:center"><img src="{{site.url}}/assets/images/centipede_rot.png" width=70/></div>
 <br>
 <br>
 

@@ -86,7 +86,7 @@ education:
     location: Padova, Italy
     degree: M.Sc. in Computer Engineering
     thesis: Gaussian Processes for Music Interference Reduction
-    thesis_url: /pdf/tech_2009_master_thesis.pdf
+    thesis_url: /assets/pdf/tech_2009_master_thesis.pdf
     supervisors:
       - Antoine Liuktus,
       - Nicola Orio.
@@ -115,7 +115,7 @@ education:
     thesis: "Sequential Feature Selection: Algorithms And Applications For Audio Information Retrieval"
     supervisors:
     - Antonio Rodá.
-    thesis_url: /pdf/tech_2009_master_thesis.pdf
+    thesis_url: /assets/pdf/tech_2009_master_thesis.pdf
     year: 2014
 
 languages:
