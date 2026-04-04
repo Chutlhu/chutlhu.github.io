@@ -1,3 +1,14 @@
+---
+permalink: /about.html
+layout: default
+section_id: about
+title: Diego DI CARLO
+---
+<div class="two spacing"></div>
+
+<div class="row">
+  <div class="medium-8 columns">
+    {% capture about_content %}
 _As you may have noticed..._ my name is Diego <span style="font-variant: small-caps;">Di Carlo</span> and I come from [Vicenza](https://en.wikipedia.org/wiki/Vicenza).
 
 I am a **postodoctoral researcher** at in the [Sound Scene Understanding Team](http://www.riken.jp/en/research/labs/aip/goalorient_tech/sound_scene_understand/),
@@ -65,7 +76,7 @@ I graduated in Compute Engineering in 2017 from [Universitá degli Studi di Pado
 
 Before of this... well *Hic Sunt Dracones*.
 
-<!-- ![cetipede]({{site.url}}/images/centipede_rot.png) -->
+<!-- ![cetipede]({{site.url}}/assets/images/centipede_rot.png) -->
 <div style="text-align:center"><img src="{{site.url}}/assets/images/centipede_rot.png" width=70/></div>
 <br>
 <br>
@@ -91,3 +102,33 @@ Devin <span style="font-variant: small-caps;">Townsend</span>,
 Leo <span style="font-variant: small-caps;">Ortolani</span>
 and Cthulhu.
 And <span style="font-variant: small-caps;">Nyarlathotep</span>.*
+    {% endcapture %}
+    {{ about_content | markdownify }}
+  </div>
+  <div class="medium-4 columns">
+    <div id="bio">
+      <img src="assets/images/avatar2.jpg" class="img-circle"><br>
+
+      <div class='spacing'></div>
+      <ul class='socials'>
+        {% for social in site.socials_fa %}
+        <li>
+          <a href={{ social.url }}>
+            <i class='fa fa-{{ social.icon }}'></i>
+          </a>
+        </li>
+        {% endfor %}
+        {% for social in site.socials_ai %}
+        <li>
+          <a href={{ social.url }}>
+            <i class='ai ai-{{ social.icon }}'></i>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class='spacing'></div>
+    </div>
+  </div>
+</div>
+
+<div class="four spacing"></div>

@@ -5,7 +5,7 @@ author: Diego
 description: "Counting the number of reflection in the image source model."
 excerpt: ""
 tagline: "This is the exact number of reflection."
-images: images/posts/ism_counting/oven4.jpg
+images: assets/images/posts/ism_counting/oven4.jpg
 
 ---
 
