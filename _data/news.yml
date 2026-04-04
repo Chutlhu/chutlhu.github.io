@@ -1,3 +1,20 @@
+- date: 2026-02-01
+  text: >
+    [pub] Our papers ["Physics-informed Learning Of Neural Scattering Fields Towards Measurement-free Mesh-to-HRTF Estimation"](https://hal.science/hal-05476015v1) 
+    has been accepted at ICASSP 2026. 
+    Nice work of the student Tancrede MARTINEZ (TelecomParis) at RIKEN AIP.
+  tag: conference
+- date: 2026-02-01
+  text: >
+    [pub] Our papers ["SIRUP: A diffusion-based virtual upmixer of steering vectors for highly-directive spatialization with first-order ambisonics"](https://arxiv.org/abs/2602.17732) 
+    has been accepted at ICASSP 2026. 
+    Nice collaboration of the student Emilio PICARD (TelecomParis) at RIKEN AIP.
+  tag: conference
+- date: 2025-12-01
+  text: >
+    [job] Stared a new position as a **tenured assistant professor** at [TelecomParis](https://www.telecom-paris.fr/en) 
+    in the [ADASP group](https://www.telecom-paris.fr/en/research/labs/adasp)/[S2A team](https://s2a.telecom-paris.fr/)/[IDS department](https://www.telecom-paris.fr/en/school/departments/image-data-signal).
+  tag: job
 - date: 2025-05-20
   text: >
     [pub] Our paper ["SHAMaNS: Sound Localization with Hybrid Alpha-Stable Spatial Measure and Neural Steerer"](https://telecom-paris.hal.science/hal-05121705/) 
@@ -25,7 +42,7 @@
     [achiev] My grant proposal was accepted for **Kakenhi JSPS** (Japan Society for the Promotion of Science). About 20k EUR for 3 years.
 - date: 2022-09-01
   text: >
-    [job] Started a a new PostDoc at **RIKEN AIP** (Japan) about *Neural Fields* for speech processing in mixed reality applications.
+    [job] Started a new PostDoc at **RIKEN AIP** (Japan) about *Neural Fields* for speech processing in mixed reality applications.
 - date: 2021-05-01
   text: >
     [job] Started a a new PostDoc at CNRS/Université de Rennes 2 within **Dynalearn** project about *Physics-Informed Neural Networks* (PINNs).

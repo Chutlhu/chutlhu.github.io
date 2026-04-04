@@ -25,9 +25,14 @@ fields:
     <p><b>{{ site.motto | markdownify }}</b></p>
 
     <p>{{ site.short_bio | markdownify }}</p>
+    <div class="spacing"></div>
+
+    <h4>Open positions</h4>
+    <p>Please see [this page](open-positions.html).</p>
+    <div class="spacing"></div>
 
     <h4>News</h4>
-    {% for news in site.data.news limit:5 %}
+    {% for news in site.data.news limit:3 %}
     <div class='row'>
       <div class='small-2 columns'>
         <b>{{ news.date | date: '%Y-%m-%d' }}</b>
@@ -60,7 +65,9 @@ fields:
         {% endfor %}
       </ul>
       <div class='spacing'></div>
+      <p style="text-align: center;">Tenured Assistant Professor<br>ADASP group - S2A team - IDS dept. - LTCI lab<br>Telecom Paris</p>
     </div>
+
   </div>
 </div>
 

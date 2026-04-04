@@ -4,10 +4,17 @@ achievements:
       - asd
       - asd
 work:
+  - company: Telecom Paris
+    url: https://www.telecom-paris.fr/en/
+    division: ADASP group, S2A team, IDS department, LTCI lab
+    location: Paris, France
+    dates: December 2026 - Present
+    position: Tenured Assistant Professor
+    description: Teaching and research in signal processing and machine learning for spatial audio and sound scene understanding.
   - company: RIKEN AIP
     url: https://aip.riken.jp/labs/goalorient_tech/sound_scene_understand/?lang=en
     division: Sound and Music Understanding Team
-    location: Rennes, France
+    location: Kyoto, Japan
     dates: September 2021 - Present
     position: Postoctoral Researcher
     description: Physics-Informed Neural Networks for Speech Enhancement
