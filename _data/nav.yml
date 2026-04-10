@@ -10,9 +10,9 @@
 - name: Music
   path: music.html
   section_id: music
-- name: Portfolio
-  path: portfolio.html
-  section_id: portfolio
+- name: Projects
+  path: projects.html
+  section_id: projects
 - name: CV
   path: cv.html
   section_id: cv

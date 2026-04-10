@@ -70,6 +70,23 @@
   overflow: auto;
   max-height: 60vh;
 }
+.modal-body pre {
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1em;
+  margin: 0;
+  overflow-x: auto;
+  white-space: pre;
+}
+.modal-body pre code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85em;
+  line-height: 1.5;
+  color: #333;
+  background: none;
+  padding: 0;
+}
 .close-button {
   background: none;
   border: none;

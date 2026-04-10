@@ -17,7 +17,7 @@ article:
       - name: Bibtex
         icon: fa fa-quote-right
         link: www.notdefinedyet.com
-        text: >
+        text: |
           @article{foy2021mean,
           title={Mean absorption estimation from room impulse responses using virtually supervised learning},
           author={Foy, C{\'e}dric and Deleforge, Antoine and Di Carlo, Diego},
@@ -31,7 +31,7 @@ article:
       - name: Abstract
         icon: fa fa-align-left
         link: www.notdefinedyet.com
-        text: >
+        text: |
           In the context of building acoustics and the acoustic diagnosis of an existing room, it introduces and investigates a new approach to estimate the mean absorption coefficients solely from a room impulse response (RIR). 
           This inverse problem is tackled via virtually supervised learning, namely, the RIR-to-absorption mapping is implicitly learned by regression on a simulated dataset using artificial neural networks. 
           Simple models based on well-understood architectures are the focus of this work. The critical choices of geometric, acoustic, and simulation parameters, which are used to train the models, are extensively discussed and studied while keeping in mind the conditions that are representative of the field of building acoustics.
@@ -60,7 +60,7 @@ article:
       - name: Bibtex
         icon: fa fa-quote-right
         link: www.notdefinedyet.com
-        text: >
+        text: |
           @article{carlo2021dechorate,
           title={dEchorate: a calibrated room impulse response dataset for echo-aware signal processing},
           author={Carlo, Diego Di and Tandeitnik, Pinchas and Foy, Cedri{\'c} and Bertin, Nancy and Deleforge, Antoine and Gannot, Sharon},
@@ -73,7 +73,7 @@ article:
       - name: Abstract
         icon: fa fa-align-left
         link: www.notdefinedyet.com
-        text: >
+        text: |
           This paper presents a new dataset of measured multichannel room impulse responses (RIRs) named dEchorate. 
           It includes annotations of early echo timings and 3D positions of microphones, real sources, and image sources under different wall configurations in a cuboid room. These data provide a tool for benchmarking recent methods in echo-aware speech enhancement, room geometry estimation, RIR estimation, acoustic echo retrieval, microphone calibration, echo labeling, and reflector position estimation. The dataset is provided with software utilities to easily access, manipulate, and visualize the data as well as baseline methods for echo-related tasks.
 
@@ -100,7 +100,7 @@ article:
       - name: Bibtex
         icon: fa fa-quote-right
         link: www.notdefinedyet.com
-        text: >
+        text: |
           @article{Deleforge2019audio,
             author = {Deleforge, Antoine and {Di Carlo}, Diego and Strauss, Martin and Serizel, Romain and Marcenaro, Lucio},
             journal = {IEEE Signal Processing Magazine},
@@ -115,7 +115,7 @@ article:
       - name: Abstract
         icon: fa fa-align-left
         link: www.notdefinedyet.com
-        text: >
+        text: |
           Increasing interest in unmanned aerial vehicles (UAVs), commonly referred to as drones, has occurred in recent years.
           Search and rescue scenarios where humans in emergency situations need to be quickly found in difficult to access areas constitute
           an important field of application for this technology.
@@ -149,7 +149,6 @@ inproceedings:
     - name: Bibtex
       icon: fa fa-quote-right
       text: |
-        ```
         @inproceedings{dicarlo2025shamans,
           author = {Diego Di Carlo, Mathieu Fontaine, Kouhei Sekiguchi, Aditya Arie Nugraha, Yoshiaki Bando, and Kazuyoshi Yoshii},
           title = {SHAMaNS: Sound Localization with Hybrid Alpha-Stable Spatial Measure and Neural Steerer},
@@ -157,10 +156,9 @@ inproceedings:
           year = {2025},
           preprint = {https://arxiv.org/abs/2506.18954}
         }
-        ```
     - name: Abstract
       icon: fa fa-align-left
-      text: >
+      text: |
         This paper describes speech enhancement for realtime automatic speech recognition (ASR) in real environments. A standard approach to this task is to use neural beamforming that can work efficiently in an online manner. It estimates the masks of clean dry speech from a noisy echoic mixture spectrogram with a deep neural network (DNN) and then computes a enhancement filter used for beamforming. The performance of such a supervised approach, however, is drastically degraded under mismatched conditions. This calls for run-time adaptation of the DNN. Although the ground-truth speech spectrogram required for adaptation is not available at run time, blind dereverberation and separation methods such as weighted prediction error (WPE) and fast multichannel nonnegative matrix factorization (FastMNMF) can be used for generating pseudo groundtruth data from a mixture. Based on this idea, a prior work proposed a dual-process system based on a cascade of WPE and minimum variance distortionless response (MVDR) beamforming asynchronously fine-tuned by block-online FastMNMF. To integrate the dereverberation capability into neural beamforming and make it fine-tunable at run time, we propose to use weighted power minimization distortionless response (WPD) beamforming, a unified version of WPE and minimum power distortionless response (MPDR), whose joint dereverberation and denoising filter is estimated using a DNN. We evaluated the impact of run-time adaptation under various conditions with different numbers of speakers, reverberation times, and signal-to-noise ratios (SNRs).
 
 - title: Run-Time Adaptation of Neural Beamforming for Robust Speech Dereverberation and Denoising
@@ -180,7 +178,6 @@ inproceedings:
     - name: Bibtex
       icon: fa fa-quote-right
       text: |
-        ```
         @inproceedings{fujita2024runtimeadaptation,
           author = {Fujita, Yoto and Nugraha, Aditya Arie and Di Carlo, Diego and Bando, Yoshiaki and Fontaine, Mathieu and Yoshii, Kazuyoshi},
           title = {Run-Time Adaptation of Neural Beamforming for Robust Speech Dereverberation and Denoising},
@@ -191,10 +188,9 @@ inproceedings:
           address = {Macau, China},
           preprint = {https://arxiv.org/abs/2410.22805}
         }
-        ```
     - name: Abstract
       icon: fa fa-align-left
-      text: >
+      text: |
         This paper describes speech enhancement for realtime automatic speech recognition (ASR) in real environments. A standard approach to this task is to use neural beamforming that can work efficiently in an online manner. It estimates the masks of clean dry speech from a noisy echoic mixture spectrogram with a deep neural network (DNN) and then computes a enhancement filter used for beamforming. The performance of such a supervised approach, however, is drastically degraded under mismatched conditions. This calls for run-time adaptation of the DNN. Although the ground-truth speech spectrogram required for adaptation is not available at run time, blind dereverberation and separation methods such as weighted prediction error (WPE) and fast multichannel nonnegative matrix factorization (FastMNMF) can be used for generating pseudo groundtruth data from a mixture. Based on this idea, a prior work proposed a dual-process system based on a cascade of WPE and minimum variance distortionless response (MVDR) beamforming asynchronously fine-tuned by block-online FastMNMF. To integrate the dereverberation capability into neural beamforming and make it fine-tunable at run time, we propose to use weighted power minimization distortionless response (WPD) beamforming, a unified version of WPE and minimum power distortionless response (MPDR), whose joint dereverberation and denoising filter is estimated using a DNN. We evaluated the impact of run-time adaptation under various conditions with different numbers of speakers, reverberation times, and signal-to-noise ratios (SNRs).
 
 - title: "RIR-in-a-Box: Estimating Room Acoustics from 3D Mesh Data through Shoebox Approximation"
@@ -216,7 +212,6 @@ inproceedings:
     - name: Bibtex
       icon: fa fa-quote-right
       text: |
-        ```
         @inproceedings{kelley2024ririnabox,
           abbr = {Interspeech},
           bibtex_show = {true},
@@ -234,10 +229,9 @@ inproceedings:
           preprint = {https://telecom-paris.hal.science/hal-04632526},
           doi = {10.21437/Interspeech.2024-2053}
         }
-        ```
     - name: Abstract
       icon: fa fa-align-left
-      text: >
+      text: |
         Acoustic echoes retrieval is a research topic that is gaining importance
         in many speech and audio signal processing applications such as speech enhancement,
         source separation, dereverberation and room geometry estimation.
@@ -266,7 +260,6 @@ inproceedings:
     - name: Bibtex
       icon: fa fa-quote-right
       text: |
-        ```
         @inproceedings{sumura2024jointlocalsep,
           abbr = {IWAENC},
           bibtex_show = {true},
@@ -281,10 +274,9 @@ inproceedings:
           html = {https://ieeexplore.ieee.org/document/10694042},
           doi = {10.1109/IWAENC61483.2024.10694042}
         }
-        ```
     - name: Abstract
       icon: fa fa-align-left
-      text: >
+      text: |
         This paper describes a statistically principled method that simultaneously localizes and separates multiple sound sources using multiple calibrated microphone arrays distributed in a room. Given the extensive research on direction of arrival (DOA) estimation with a single microphone array, for 3D source localization, one may attempt triangulation based on DOAs separately and egocentrically estimated by multiple arrays. However, in multiple sources scenarios, this cascading approach faces both the inter-array DOA association problem and the error accumulation problem. To solve these problems, we propose a spatially regularized extension of a versatile blind source separation method called multichannel nonnegative matrix factorization (MNMF). Our method treats multiple microphone arrays as a single big array and puts priors on the frequency-wise spatial covariance matrices (SCMs) of each source. These priors are defined using the source DOA computed from the 3D positions of the source and arrays. The power spectral densities (PSDs), SCMs, and positions of multiple sources are jointly estimated under the unified maximum-a-posteriori (MAP) principle. We show the effectiveness of the joint statistical estimation for real data recorded by four five-channel microphone arrays of Microsoft Azure Kinect.
 
 - title: "Neural Steerer: Novel Steering Vector Synthesis with a Causal Neural Field over Frequency and Direction"
@@ -311,7 +303,7 @@ inproceedings:
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right
-      text: >
+      text: |
         @inproceedings{dicarlo2024neuralsteerer,
           abbr = {ICASSPW},
           bibtex_show = {true},
@@ -329,7 +321,7 @@ inproceedings:
         }
     - name: Abstract
       icon: fa fa-align-left
-      text: >
+      text: |
         We address the problem of accurately interpolating measured anechoic steering vectors with a deep learning framework called the neural field. This task plays a pivotal role in reducing the resource-intensive measurements required for precise sound source separation and localization, essential as the front-end of speech recognition. Classical approaches to interpolation rely on linear weighting of nearby measurements in space on a fixed, discrete set of frequencies. Drawing inspiration from the success of neural fields for novel view synthesis in computer vision, we introduce the neural steerer, a continuous complex-valued function that takes both frequency and direction as input and produces the corresponding steering vector. Importantly, it incorporates inter-channel phase difference information and a regularization term enforcing filter causality, essential for accurate steering vector modeling. Our experiments, conducted using a dataset of real measured steering vectors, demonstrate the effectiveness of our resolution-free model in interpolating such measurements.
 
 - title: "Implicit neural representation for change detection"
@@ -356,7 +348,7 @@ inproceedings:
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right
-      text: >
+      text: |
         @inproceedings{naylor2024implicit,
           title={Implicit neural representation for change detection},
           author={Naylor, Peter and Di Carlo, Diego and Traviglia, Arianna and Yamada, Makoto and Fiorucci, Marco},
@@ -368,7 +360,7 @@ inproceedings:
         }
     - name: Abstract
       icon: fa fa-align-left
-      text: >
+      text: |
         Identifying changes in a pair of 3D aerial LiDAR point
         clouds, obtained during two distinct time periods over the
         same geographic region presents a significant challenge due
@@ -417,7 +409,7 @@ inproceedings:
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right
-      text: >
+      text: |
         @inproceedings{nugraha2023gpdkl,
           selected = {true},
           abbr = {WASPAA},
@@ -436,7 +428,7 @@ inproceedings:
         }
     - name: Abstract
       icon: fa fa-align-left
-      text: >
+      text: |
         This paper revisits single-channel audio source separation based on a probabilistic generative model of a mixture signal defined in the continuous time domain. We assume that each source signal follows a non-stationary Gaussian process (GP), i.e., any finite set of sampled points follows a zero-mean multivariate Gaussian distribution whose covariance matrix is governed by a kernel function over time-varying latent variables. The mixture signal composed of such source signals thus follows a GP whose covariance matrix is given by the sum of the source covariance matrices. To estimate the latent variables from the mixture signal, we use a deep neural network with an encoder-separator-decoder architecture (e.g., Conv-TasNet) that separates the latent variables in a pseudo-time-frequency space. The key feature of our method is to feed the latent variables into the kernel function for estimating the source covariance matrices, instead of using the decoder for directly estimating the time-domain source signals. This enables the decomposition of a mixture signal into the source signals with a classical yet powerful Wiener filter that considers the full covariance structure over all samples. The kernel function and the network are trained jointly in the maximum likelihood framework. Comparative experiments using two-speech mixtures under clean, noisy, and noisy-reverberant conditions from the WSJ0-2mix, WHAM!, and WHAMR! benchmark datasets demonstrated that the proposed method performed well and outperformed the baseline method under noisy and noisy-reverberant conditions.
 
 - title: "Elliptically Contoured Alpha-Stable Representation for MUSIC-Based Sound Source Localization"
@@ -454,7 +446,7 @@ inproceedings:
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right
-      text: >
+      text: |
         @inproceedings{fontaine2022alphamusic,
           abbr = {EUSIPCO},
           bibtex_show = {true},
@@ -471,7 +463,7 @@ inproceedings:
         }
     - name: Abstract
       icon: fa fa-align-left
-      text: >
+      text: |
         This paper introduces a theoretically-rigorous sound source localization (SSL) method based on a robust extension of the classical multiple signal classification (MUSIC) algorithm. The original SSL method estimates the noise eigenvectors and the MUSIC spectrum by computing the spatial covariance matrix of the observed multichannel signal and then detects the peaks from the spectrum. In this work, the covariance matrix is replaced with the positive definite shape matrix originating from the elliptically contoured α-stable model, which is more suitable under real noisy high-reverberant conditions. Evaluation on synthetic data shows that the proposed method outperforms baseline methods under such adverse conditions, while it is comparable on real data recorded in a mild acoustic condition.
 
 - title: "Post processing sparse and instantaneous 2D velocity fields using physics-informed neural networks"
@@ -495,7 +487,7 @@ inproceedings:
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right
-      text: >
+      text: |
         @inproceedings{di2022post,
           title={Post processing sparse and instantaneous 2D velocity fields using physics-informed neural networks},
           author={Di Carlo, Diego and Heitz, Dominique and Corpetti, Thomas},
@@ -505,7 +497,7 @@ inproceedings:
         }
     - name: Abstract
       icon: fa fa-align-left
-      text: >
+      text: |
         This work tackles the problem of resolving high-resolution velocity fields from a set of sparse off-grid observations. This task, crucial in many applications spanning from experimental fluiddynamics to compute vision and medicine, can be addressed with deep neural network models trained to employ physics-based constraints. This work proposes an original unsupervised deep learning framework involving sub-grid models that improve the accuracy of super-resolved instantaneous and sparse velocity fields of turbulent flows. Python code, dataset and results are available at https://github.com/Chutlhu/TurboSuperResultion/
 
 - title: "BLASTER: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval"
@@ -534,7 +526,7 @@ inproceedings:
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right
-      text: >
+      text: |
         @inproceedings{kelley2024ririnabox,
           abbr = {Interspeech},
           bibtex_show = {true},
@@ -579,7 +571,7 @@ inproceedings:
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right
-      text: >
+      text: |
         @inproceedings{DiCarlo2019mirage,
           arxiv = {1906.08968},
           author = { Di Carlo, Diego and Deleforge, Antoine and Bertin, Nancy},
@@ -595,7 +587,7 @@ inproceedings:
         }
     - name: Abstract
       icon: fa fa-align-left
-      text: >
+      text: |
         It is commonly observed that acoustic echoes hurt performance of sound
         source localization (SSL) methods.
         We introduce the concept of microphone array augmentation with echoes (MIRAGE)
@@ -630,7 +622,7 @@ inproceedings:
   resources_popup:
     - name: Bibtex
       icon: fa fa-quote-right
-      text: >
+      text: |
         @inproceedings{Scheibler2017separake,
           arxiv = {1711.06805},
           author = {Scheibler, Robin and Di Carlo, Diego and Deleforge, Antoine and Dokmanic, Ivan},
@@ -645,7 +637,7 @@ inproceedings:
         }
     - name: Abstract
       icon: fa fa-align-left
-      text: >
+      text: |
         It is commonly believed that multipath hurts various audio process-ing
         algorithms.At odds with this belief, we show that multipath in fact helps sound
         source separation,even with very simple propagation models.Unlike most existing
