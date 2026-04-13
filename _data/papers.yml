@@ -1,5 +1,26 @@
 article:
-  - author: Cedric Foy, Antoine Deleforge, and Diego Di Carlo
+  - author: Diego Di Carlo, Shoichi Koyama, Arie Aditya Nugraha, Mathieu Fontaine, Yoshiaki Bando, Kazuyoshi Yoshii
+    journal: IEEE Transactions on Audio, Speech, and Language Processing
+    number: ???
+    pages: ???
+    publisher: IEEE
+    title: >
+      Gaussian Process Regression of Steering Vectors With Physics-Aware Deep Composite Kernels for Augmented Listening
+    volume: ???
+    year: 2026
+    doi: https://doi-org.kyoto-u.idm.oclc.org/10.1121/10.0005888
+    resources_link:
+      - name: Arxiv
+        icon: ai ai-arxiv
+        link: https://arxiv.org/pdf/2509.02571
+    resources_popup:
+      - name: Abstract
+        icon: fa fa-align-left
+        link: www.notdefinedyet.com
+        text: |
+          This paper investigates continuous representations of steering vectors over frequency and position of microphone and source for augmented listening (e.g., spatial filtering and binaural rendering) with precise control of the sound field perceived by the user. Steering vectors have typically been used for representing the spatial characteristics of the sound field as a function of the listening position. The basic algebraic representation of steering vectors assuming an idealized environment cannot deal with the scattering effect of the sound field. One may thus collect a discrete set of real steering vectors measured in dedicated facilities and super-resolve (i.e., upsample) them. Recently, physics-aware deep learning methods have been effectively used for this purpose. Such deterministic super-resolution, however, suffers from the overfitting problem due to the non-uniform uncertainty over the measurement space. To solve this problem, we integrate an expressive representation based on the neural field (NF) into the principled probabilistic framework based on the Gaussian process (GP). Specifically, we propose a physics-aware composite kernel that model the directional incoming waves and the subsequent scattering effect. Our comprehensive comparative experiment showed the effectiveness of the proposed method under data insufficiency conditions. In downstream tasks such as speech enhancement and binaural rendering using the simulated data of the SPEAR challenge, the oracle performances were attained with less than ten times fewer measurements.
+
+  - author: Cedric Foy, Antoine Deleforge, Diego Di Carlo
     journal: The Journal of the Acoustical Society of America
     number: 2
     pages: 1286--1299
@@ -36,7 +57,7 @@ article:
           This inverse problem is tackled via virtually supervised learning, namely, the RIR-to-absorption mapping is implicitly learned by regression on a simulated dataset using artificial neural networks. 
           Simple models based on well-understood architectures are the focus of this work. The critical choices of geometric, acoustic, and simulation parameters, which are used to train the models, are extensively discussed and studied while keeping in mind the conditions that are representative of the field of building acoustics.
           Estimation errors from the learned neural models are compared to those obtained with classical formulas that require knowledge of the room's geometry and reverberation times. Extensive comparisons made on a variety of simulated test sets highlight different conditions under which the learned models can overcome the well-known limitations of the diffuse sound field hypothesis underlying these formulas.
-          Results obtained on real RIRs measured in an acoustically configurable room show that at 1 kHz and above, the proposed approach performs comparably to classical models when reverberation times can be reliably estimated and continues to work even when they cannot.
+          Results obtained on real RIRs measured in an acoustically configurable room show that at 1 kHz and above, the proposed approach performs comparably to classical models when reverberation times can be reliably estimated and continues to work even when they cannot.
 
   - author: Diego Di Carlo, Pinchas Tandeitnik, Cedric Foy, Nancy Bertin, Antoine Deleforge, Sharon Gannot
     journal: IEEE Signal Processing Magazine
@@ -77,7 +98,7 @@ article:
           This paper presents a new dataset of measured multichannel room impulse responses (RIRs) named dEchorate. 
           It includes annotations of early echo timings and 3D positions of microphones, real sources, and image sources under different wall configurations in a cuboid room. These data provide a tool for benchmarking recent methods in echo-aware speech enhancement, room geometry estimation, RIR estimation, acoustic echo retrieval, microphone calibration, echo labeling, and reflector position estimation. The dataset is provided with software utilities to easily access, manipulate, and visualize the data as well as baseline methods for echo-related tasks.
 
-  - author: Deleforge, Antoine and Di Carlo, Diego and Strauss, Martin and Serizel, Romain and Marcenaro, Lucio
+  - author: Antoine Deleforge, Diego Di Carlo, Martin Strauss, Romain Serizel, Lucio Marcenaro
     journal: IEEE Signal Processing Magazine
     keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
     number: 5
@@ -129,735 +150,851 @@ article:
           (such as at night or in fog) or obstacles limiting the field of view (Figure 1).
 
 inproceedings:
-- title: "SHAMaNS: Sound Localization with Hybrid Alpha-Stable Spatial Measure and Neural Steerer"
-  id: shamans
-  author: 'Diego Di Carlo (RIKEN AIP), Mathieu Fontaine (LTCI, IP Paris), Aditya Arie Nugraha (RIKEN AIP), Yoshiaki Bando (RIKEN AIP), Kazuyoshi Yoshii'
-  booktitle: European Signal Processing Conference (EUSIPCO)
-  keywords: Speech enhancement, dereverberation, neural beamforming, blind source separation
-  year: 2025
-  resources_link:
-    - name: Github
-      icon: fa fa-github
-      link: https://github.com/Chutlhu/shamans
-    - name: Arxiv
-      icon: ai ai-arxiv
-      link: https://arxiv.org/abs/2506.18954
-    - name: HL
-      icon: ai ai-open-access
-      link: https://telecom-paris.hal.science/hal-05121705/
-  resources_popup:
-    - name: Bibtex
-      icon: fa fa-quote-right
-      text: |
-        @inproceedings{dicarlo2025shamans,
-          author = {Diego Di Carlo, Mathieu Fontaine, Kouhei Sekiguchi, Aditya Arie Nugraha, Yoshiaki Bando, and Kazuyoshi Yoshii},
-          title = {SHAMaNS: Sound Localization with Hybrid Alpha-Stable Spatial Measure and Neural Steerer},
-          booktitle = {Proceedings of European Signal Processing Conference (EUSIPCO)},
-          year = {2025},
-          preprint = {https://arxiv.org/abs/2506.18954}
-        }
-    - name: Abstract
-      icon: fa fa-align-left
-      text: |
-        This paper describes speech enhancement for realtime automatic speech recognition (ASR) in real environments. A standard approach to this task is to use neural beamforming that can work efficiently in an online manner. It estimates the masks of clean dry speech from a noisy echoic mixture spectrogram with a deep neural network (DNN) and then computes a enhancement filter used for beamforming. The performance of such a supervised approach, however, is drastically degraded under mismatched conditions. This calls for run-time adaptation of the DNN. Although the ground-truth speech spectrogram required for adaptation is not available at run time, blind dereverberation and separation methods such as weighted prediction error (WPE) and fast multichannel nonnegative matrix factorization (FastMNMF) can be used for generating pseudo groundtruth data from a mixture. Based on this idea, a prior work proposed a dual-process system based on a cascade of WPE and minimum variance distortionless response (MVDR) beamforming asynchronously fine-tuned by block-online FastMNMF. To integrate the dereverberation capability into neural beamforming and make it fine-tunable at run time, we propose to use weighted power minimization distortionless response (WPD) beamforming, a unified version of WPE and minimum power distortionless response (MPDR), whose joint dereverberation and denoising filter is estimated using a DNN. We evaluated the impact of run-time adaptation under various conditions with different numbers of speakers, reverberation times, and signal-to-noise ratios (SNRs).
 
-- title: Run-Time Adaptation of Neural Beamforming for Robust Speech Dereverberation and Denoising
-  id: runtime
-  author: 'Yoto Fujita, Aditya Arie Nugraha, Diego Di Carlo, Yoshiaki Bando, Mathieu Fontaine, and Kazuyoshi Yoshii'
-  booktitle: Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA)
-  keywords: Speech enhancement, dereverberation, neural beamforming, blind source separation
-  year: 2024
-  resources_link:
-    - name: Arxiv
-      icon: ai ai-arxiv
-      link: https://arxiv.org/abs/2410.22805
-    - name: HL
-      icon: ai ai-open-access
-      link: https://hal.science/hal-04736454v1/file/apsipa2024_fujita.pdf
-  resources_popup:
-    - name: Bibtex
-      icon: fa fa-quote-right
-      text: |
-        @inproceedings{fujita2024runtimeadaptation,
-          author = {Fujita, Yoto and Nugraha, Aditya Arie and Di Carlo, Diego and Bando, Yoshiaki and Fontaine, Mathieu and Yoshii, Kazuyoshi},
-          title = {Run-Time Adaptation of Neural Beamforming for Robust Speech Dereverberation and Denoising},
-          booktitle = {Proceedings of Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA)},
-          year = {2024},
-          month = dec,
-          pages = {},
-          address = {Macau, China},
-          preprint = {https://arxiv.org/abs/2410.22805}
-        }
-    - name: Abstract
-      icon: fa fa-align-left
-      text: |
-        This paper describes speech enhancement for realtime automatic speech recognition (ASR) in real environments. A standard approach to this task is to use neural beamforming that can work efficiently in an online manner. It estimates the masks of clean dry speech from a noisy echoic mixture spectrogram with a deep neural network (DNN) and then computes a enhancement filter used for beamforming. The performance of such a supervised approach, however, is drastically degraded under mismatched conditions. This calls for run-time adaptation of the DNN. Although the ground-truth speech spectrogram required for adaptation is not available at run time, blind dereverberation and separation methods such as weighted prediction error (WPE) and fast multichannel nonnegative matrix factorization (FastMNMF) can be used for generating pseudo groundtruth data from a mixture. Based on this idea, a prior work proposed a dual-process system based on a cascade of WPE and minimum variance distortionless response (MVDR) beamforming asynchronously fine-tuned by block-online FastMNMF. To integrate the dereverberation capability into neural beamforming and make it fine-tunable at run time, we propose to use weighted power minimization distortionless response (WPD) beamforming, a unified version of WPE and minimum power distortionless response (MPDR), whose joint dereverberation and denoising filter is estimated using a DNN. We evaluated the impact of run-time adaptation under various conditions with different numbers of speakers, reverberation times, and signal-to-noise ratios (SNRs).
+  - title: "SIRUP: A diffusion-based virtual upmixer of steering vectors for highly-directive spatialization with first-order ambisonics"
+    id: sirup
+    author: 'Emilio Picard, Diego Di Carlo, Aditya Arie Nugraha, Mathieu Fontaine, Kazuyoshi Yoshii'
+    booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+    keywords: Steering vectors, virtual upmixing, latent diffusion model, sound source localization, beamforming.
+    year: 2026
+    resources_link:
+      - name: Github
+        icon: fa fa-github
+        link: https://github.com/emilio-pcrd/sirup
+      - name: Arxiv
+        icon: ai ai-arxiv
+        link: https://arxiv.org/pdf/2602.17732
+      - name: HAL
+        icon: ai ai-open-access
+        link: https://ip-paris.hal.science/hal-05516730
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{picard2026sirup,
+            title={SIRUP: A diffusion-based virtual upmixer of steering vectors for highly-directive spatialization with first-order ambisonics},
+            author={Picard, Emilio and Di Carlo, Diego and Nugraha, Aditya Arie and Fontaine, Mathieu and Yoshii, Kazuyoshi},
+            booktitle={ICASSP 2026},
+            year={2026}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          This paper presents virtual upmixing of steering vectors captured by a fewer-channel spherical microphone array. This challenge has conventionally been addressed by recovering the directions and signals of sound sources from first-order ambisonics (FOA) data, and then rendering the higher-order ambisonics (HOA) data using a physics-based acoustic simulator. This approach, however, struggles to handle the mutual dependency between the spatial directivity of source estimation and the spatial resolution of FOA ambisonics data. Our method, named SIRUP, employs a latent diffusion model architecture. Specifically, a variational autoencoder (VAE) is used to learn a compact encoding of the HOA data in a latent space and a diffusion model is then trained to generate the HOA embeddings, conditioned by the FOA data. Experimental results showed that SIRUP achieved a significant improvement compared to FOA systems for steering vector upmixing, source localization, and speech denoising.
 
-- title: "RIR-in-a-Box: Estimating Room Acoustics from 3D Mesh Data through Shoebox Approximation"
-  id: rirbox
-  author: Liam Kelley, Diego Di Carlo, Aditya Arie Nugraha, Mathieu Fontaine, Yoshiaki Bando, and Kazuyoshi Yoshii
-  booktitle: Annual Conference of the International Speech Communication Association (Interspeech)
-  year: 2024
-  resources_link:
-    - name: HAL
-      icon: ai ai-open-access
-      link: https://telecom-paris.hal.science/hal-04632526
-    - name: DOI
-      icon: ai ai-doi
-      link: https://doi.org/10.21437/Interspeech.2024-2053
-    - name: Code
-      icon: fa fa-github
-      link: https://github.com/liam-kelley/RIR-in-a-Box
-  resources_popup:
-    - name: Bibtex
-      icon: fa fa-quote-right
-      text: |
-        @inproceedings{kelley2024ririnabox,
-          abbr = {Interspeech},
-          bibtex_show = {true},
-          author = {Kelley, Liam and Di Carlo, Diego and Nugraha, Aditya Arie and Fontaine, Mathieu and Bando, Yoshiaki and Yoshii, Kazuyoshi},
-          title = {RIR-in-a-Box: Estimating Room Acoustics from 3D Mesh Data through Shoebox Approximation},
-          booktitle = {Proceedings of Annual Conference of the International Speech Communication
-          Association (Interspeech)},
-          year = {2024},
-          month = sep,
-          pages = {3255-3259},
-          address = {Kos Island, Greece},
-          url = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.html},
-          html = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.html},
-          pdf = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.pdf},
-          preprint = {https://telecom-paris.hal.science/hal-04632526},
-          doi = {10.21437/Interspeech.2024-2053}
-        }
-    - name: Abstract
-      icon: fa fa-align-left
-      text: |
-        Acoustic echoes retrieval is a research topic that is gaining importance
-        in many speech and audio signal processing applications such as speech enhancement,
-        source separation, dereverberation and room geometry estimation.
-        This work proposes a novel approach to retrieve acoustic echoes timing *off-grid* and blindly,
-        i.e., from a stereophonic recording of an unknown sound source such as speech.
-        It builds on the recent framework of continuous dictionaries.
-        In contrast with existing methods, the proposed approach does not
-        rely on parameter tuning nor peak picking techniques by working directly
-        in the parameter space of interest. The accuracy and robustness of
-        the method are assessed on challenging simulated setups with
-        varying noise and reverberation levels and are compared to two state-of-the-art methods.
+  - title: "Physics-informed Learning Of Neural Scattering Fields Towards Measurement-free Mesh-to-HRTF Estimation"
+    id: physc
+    author: 'Tancrède Martinez, Diego Di Carlo, Aditya Arie Nugraha, Mathieu Fontaine, Kazuyoshi Yoshii'
+    booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+    keywords: Scattering field, physics-informed neural network, perfectly matched layer, low-rank adaptation, head-related transfer function
+    year: 2026
+    resources_link:
+      - name: HAL
+        icon: ai ai-open-access
+        link: https://hal.science/hal-05476015v1/
+      - name: DOI
+        icon: ai ai-doi
+        link: https://ieeexplore.ieee.org/abstract/document/11230919/
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{martinez2026physics,
+            title={PHYSICS-INFORMED LEARNING OF NEURAL SCATTERING FIELDS TOWARDS MEASUREMENT-FREE MESH-TO-HRTF ESTIMATION},
+            author={Martinez, Tancr{\`e}de and Di Carlo, Diego and Nugraha, Aditya Arie and Fontaine, Mathieu and Yoshii, Kazuyoshi},
+            booktitle={ICASSP 2026},
+            year={2026}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          This paper describes neural simulation of the scattered pressure field from a plane wave around a scattering object in both continuous 2D and 3D domains. This task has typically been treated as a regression problem that aims to train a physicsinformed neural network (PINN) using pressure measurements at discrete positions. This approach, however, needs to train the whole network for each incident wave direction. To address this, we propose a measurement-free simulator based on a PINN purely driven by the Helmholtz equation with the Robin boundary condition and the Sommerfeld radiation condition with the aid of the perfectly matched layer (PML) framework. More specifically, we design a physics-informed scattering hypernetwork (PHISK) that can generalize to incident waves from any direction via low-rank adaptation (LoRA) of a PINN trained for a specific configuration. The experiment shows that the proposed method accurately simulated sound scattering around various objects, adapting to unseen incident wave directions with minimal performance loss, and realized reasonable simulation of head-related transfer functions (HRTFs) from complex mesh data of a human head.
 
-- title: "Joint Audio Source Localization and Separation with Distributed Microphone Arrays Based on Spatially-Regularized Multichannel NMF"
-  id: joint
-  author: Yoshiaki Sumura, Diego Di Carlo, Aditya Arie Nugraha, Yoshiaki Bando, and Kazuyoshi Yoshii
-  booktitle: International Workshop on Acoustic Signal Enhancement (IWAENC)
-  year: 2024
-  resources_link:
-    - name: IEEE
-      icon: ai ai-ieee
-      link: https://ieeexplore.ieee.org/document/10694042
-    - name: DOI
-      icon: ai ai-doi
-      link: https://doi.org/10.1109/IWAENC61483.2024.10694042
-  resources_popup:
-    - name: Bibtex
-      icon: fa fa-quote-right
-      text: |
-        @inproceedings{sumura2024jointlocalsep,
-          abbr = {IWAENC},
-          bibtex_show = {true},
-          author = {Sumura, Yoshiaki and Di Carlo, Diego and Nugraha, Aditya Arie and Bando, Yoshiaki and Yoshii, Kazuyoshi},
-          title = {Joint Audio Source Localization and Separation with Distributed Microphone Arrays Based on Spatially-Regularized Multichannel NMF},
-          booktitle = {Proceedings of International Workshop on Acoustic Signal Enhancement (IWAENC)},
-          year = {2024},
-          month = sep,
-          pages = {145-149},
-          address = {Aalborg, Denmark},
-          url = {https://ieeexplore.ieee.org/document/10694042},
-          html = {https://ieeexplore.ieee.org/document/10694042},
-          doi = {10.1109/IWAENC61483.2024.10694042}
-        }
-    - name: Abstract
-      icon: fa fa-align-left
-      text: |
-        This paper describes a statistically principled method that simultaneously localizes and separates multiple sound sources using multiple calibrated microphone arrays distributed in a room. Given the extensive research on direction of arrival (DOA) estimation with a single microphone array, for 3D source localization, one may attempt triangulation based on DOAs separately and egocentrically estimated by multiple arrays. However, in multiple sources scenarios, this cascading approach faces both the inter-array DOA association problem and the error accumulation problem. To solve these problems, we propose a spatially regularized extension of a versatile blind source separation method called multichannel nonnegative matrix factorization (MNMF). Our method treats multiple microphone arrays as a single big array and puts priors on the frequency-wise spatial covariance matrices (SCMs) of each source. These priors are defined using the source DOA computed from the 3D positions of the source and arrays. The power spectral densities (PSDs), SCMs, and positions of multiple sources are jointly estimated under the unified maximum-a-posteriori (MAP) principle. We show the effectiveness of the joint statistical estimation for real data recorded by four five-channel microphone arrays of Microsoft Azure Kinect.
+  - title: "Visually-Informed Multichannel Sound Source Separation Based on 3D Gaussian Primitives"
+    id: 3DGS
+    author: 'Haruaki Asano, Ryunosuke Nihei, Yoshiaki Bando, Aditya Arie Nugraha, Diego Di Carlo, Hiroyuki Ueda, Yosuke Ito, Kazuyoshi Yoshii'
+    booktitle: IEEE Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)
+    keywords: Steering vectors, virtual upmixing, latent diffusion model, sound source localization, beamforming.
+    year: 2025
+    resources_link:
+      - name: DOI
+        icon: ai ai-doi
+        link: https://ieeexplore.ieee.org/abstract/document/11249412 
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{asano2025visually,
+            title={Visually-Informed Multichannel Sound Source Separation Based on 3D Gaussian Primitives},
+            author={Asano, Haruaki and Nihei, Ryunosuke and Bando, Yoshiaki and Nugraha, Aditya Arie and Di Carlo, Diego and Ueda, Hiroyuki and Ito, Yosuke and Yoshii, Kazuyoshi},
+            booktitle={2025 Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)},
+            pages={36--41},
+            year={2025},
+            organization={IEEE}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          This paper proposes visually-informed sound source separation for audio-visual understanding of indoor scenes captured by distributed microphone arrays and cameras. Our approach leverages the 3D information of sound-emitting objects, reconstructed via 3D Gaussian splatting (3DGS), to overcome a limitation of modern blind source separation methods like multichannel nonnegative matrix factorization (MNMF). While adaptable and potentially performant, the iterative optimization of MNMF often converges to poor local minima due to the highly-expressive full-rank spatial covariance matrices (SCMs) of sources. Our key idea is to treat the set of 3D Gaussians representing a sizable sound source object as a collection of sub-sources that share an audio signal but have unique emission weights, both of which are to be estimated jointly from an observed mixture. To enforce this structure, we guide MNMF by regularizing the SCM of each source object at each frequency. Specifically, we use a prior that centers the SCM estimate around a weighted sum of theoretical SCMs, which are analytically derived from the 3D Gaussian positions. Experiments with simulated data, featuring two 3D human models, demonstrated the effectiveness of the proposed method. To our knowledge, this is the first work to use 3D Gaussians as a common primitive for joint audio-visual analysis.
 
-- title: "Neural Steerer: Novel Steering Vector Synthesis with a Causal Neural Field over Frequency and Direction"
-  id: nsteerer
-  author: Diego Di Carlo, Aditya Arie Nugraha, Mathieu Fontaine, Yoshiaki Bando, and Kazuyoshi Yoshii
-  booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing Workshops (ICASSPW),
-  year: 2024
-  resources_link:
-    - name: WEB
-      icon: fa fa-globe
-      link: https://diegodicarlo.com/nsteerer/
-    - name: Arxiv
-      icon: ai ai-arxiv
-      link: https://arxiv.org/abs/2305.04447
-    - name: HAL
-      icon: ai ai-open-access
-      link: https://hal.science/hal-04479188
-    - name : IEEE
-      icon: ai ai-ieee
-      link: https://ieeexplore.ieee.org/document/10626510
-    - name: DOI
-      icon: ai ai-doi
-      link: https://doi.org/10.1109/ICASSPW62465.2024.10626510
-  resources_popup:
-    - name: Bibtex
-      icon: fa fa-quote-right
-      text: |
-        @inproceedings{dicarlo2024neuralsteerer,
-          abbr = {ICASSPW},
-          bibtex_show = {true},
-          author = {Di Carlo, Diego and Nugraha, Aditya Arie and Fontaine, Mathieu and Bando, Yoshiaki and Yoshii, Kazuyoshi},
-          title = {Neural Steerer: Novel Steering Vector Synthesis with a Causal Neural Field over Frequency and Direction},
-          booktitle = {Proceedings of IEEE International Conference on Acoustics, Speech and Signal Processing Workshops (ICASSPW)},
-          month = apr,
-          year = {2024},
-          pages = {740-744},
-          address = {Seoul, South Korea},
-          url = {https://ieeexplore.ieee.org/document/10626510},
-          html = {https://ieeexplore.ieee.org/document/10626510},
-          preprint = {https://arxiv.org/abs/2305.04447},
-          doi = {10.1109/ICASSPW62465.2024.10626510}
-        }
-    - name: Abstract
-      icon: fa fa-align-left
-      text: |
-        We address the problem of accurately interpolating measured anechoic steering vectors with a deep learning framework called the neural field. This task plays a pivotal role in reducing the resource-intensive measurements required for precise sound source separation and localization, essential as the front-end of speech recognition. Classical approaches to interpolation rely on linear weighting of nearby measurements in space on a fixed, discrete set of frequencies. Drawing inspiration from the success of neural fields for novel view synthesis in computer vision, we introduce the neural steerer, a continuous complex-valued function that takes both frequency and direction as input and produces the corresponding steering vector. Importantly, it incorporates inter-channel phase difference information and a regularization term enforcing filter causality, essential for accurate steering vector modeling. Our experiments, conducted using a dataset of real measured steering vectors, demonstrate the effectiveness of our resolution-free model in interpolating such measurements.
+  - title: "Physically Informed Spatial Regularization for Sound Event Localization and Detection"
+    id: pidcase
+    author: 'Haocheng Liu, Diego Di Carlo, Aditya Arie Nugraha, Kazuyoshi Yoshii, Gaël Richard, Mathieu Fontaine'
+    booktitle: IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)
+    keywords: Steering vectors, virtual upmixing, latent diffusion model, sound source localization, beamforming.
+    year: 2025
+    resources_link:
+      - name: Github
+        icon: fa fa-github
+        link: https://github.com/emilio-pcrd/sirup
+      - name: HAL
+        icon: ai ai-open-access
+        link: https://telecom-paris.hal.science/hal-05244860/
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{liu2025physically,
+            title={Physically Informed Spatial Regularization for Sound Event Localization and Detection},
+            author={Liu, Haocheng and Di Carlo, Diego and Nugraha, Aditya Arie and Yoshii, Kazuyoshi and Richard, Ga{\"e}l and Fontaine, Mathieu},
+            booktitle={2025 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
+            pages={1--5},
+            year={2025},
+            organization={IEEE}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          Building Sound Event Localization and Detection (SELD) models that are robust to diverse acoustic environments remains one of the major challenges in multichannel signal processing, as reflections and reverberation can significantly confuse both the source direction and event detection. Introducing priors such as microphone geometry or room impulse response (RIR) into the model has proven effective in addressing this issue. Existing methods typically incorporate such priors in a deterministic way, often through data augmentation to enlarge data diversity. However, the uncertainty arising from the complex nature of audio acoustics remains largely underexplored in the SELD literature and naturally call for incorporating a stochastic modeling of acoustic prior. In this paper, we propose regularizing deep learning based SELD models with a physically constructed spatial covariance matrix (SCM) based on the estimated direction of arrival (DOA) and sound event detection (SED).
 
-- title: "Implicit neural representation for change detection"
-  id: implicit
-  author: Peter Naylor, Diego Di Carlo, Arianna Traviglia, Makoto Yamada, Marco Fiorucci
-  booktitle: IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
-  year: 2024
-  resources_link:
-    - name: HAL
-      icon: ai ai-open-access
-      link: https://hal.science/hal-04172863
-    - name: IEEE
-      icon: ai ai-ieee
-      link: https://ieeexplore.ieee.org/abstract/document/10483630/
-    - name: DOI
-      icon: ai ai-doi
-      link: https://doi-org.kyoto-u.idm.oclc.org/10.1109/WACV57701.2024.00098
-    - name: Code
-      icon: fa fa-github
-      link: https://github.com/PeterJackNaylor/NN-4-change-detection
-    - name: Video
-      icon: youtube-play
-      link: https://www.youtube.com/watch?v=X_EiL13I3Go
-  resources_popup:
-    - name: Bibtex
-      icon: fa fa-quote-right
-      text: |
-        @inproceedings{naylor2024implicit,
-          title={Implicit neural representation for change detection},
-          author={Naylor, Peter and Di Carlo, Diego and Traviglia, Arianna and Yamada, Makoto and Fiorucci, Marco},
-          booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
-          pages={935--945},
-          year={2024}
-          doi={10.1109/WACV57701.2024.00098}
-          html={https://ieeexplore.ieee.org/abstract/document/10483630/}
-        }
-    - name: Abstract
-      icon: fa fa-align-left
-      text: |
-        Identifying changes in a pair of 3D aerial LiDAR point
-        clouds, obtained during two distinct time periods over the
-        same geographic region presents a significant challenge due
-        to the disparities in spatial coverage and the presence of
-        noise in the acquisition system. The most commonly used
-        approaches to detecting changes in point clouds are based
-        on supervised methods which necessitate extensive labelled
-        data often unavailable in real-world applications. To ad-
-        dress these issues, we propose an unsupervised approach
-        that comprises two components: Implcit Neural Represena-
-        tion (INR) for continuous shape reconstruction and a Gaus-
-        sian Mixture Model for categorising changes. INR offers a
-        grid-agnostic representation for encoding bi-temporal point
-        clouds, with unmatched spatial support that can be regu-
-        larised to enhance high-frequency details and reduce noise.
-        The reconstructions at each timestamp are compared at ar-
-        bitrary spatial scales, leading to a significant increase in
-        detection capabilities. We apply our method to a benchmark
-        dataset comprising simulated LiDAR point clouds for ur-
-        ban sprawling. This dataset encompasses diverse challeng-
-        ing scenarios, varying in resolutions, input modalities and
-        noise levels. This enables a comprehensive multi-scenario
-        evaluation, comparing our method with the current state-of-
-        the-art approach. We outperform the previous methods by
-        a margin of 10% in the intersection over union metric. In
-        addition, we put our techniques to practical use by applying
-        them in a real-world scenario to identify instances of illicit
-        excavation of archaeological sites and validate our results
-        by comparing them with findings from field experts.
-  
-- title: "Time-Domain Audio Source Separation Based on Gaussian Processes with Deep Kernel Learning"
-  id: gpdkl
-  author: Aditya Arie Nugraha, Diego Di Carlo, Yoshiaki Bando, Mathieu Fontaine, and Kazuyoshi Yoshii
-  booktitle: IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)
-  year: 2023
-  resources_link:
-    - name: HAL
-      icon: ai ai-open-access
-      link: https://hal.science/hal-04172863
-    - name : IEEE
-      icon: ai ai-ieee
-      link: https://ieeexplore.ieee.org/document/10248168
-    - name: DOI
-      icon: ai ai-doi
-      link: https://doi.org/10.1109/WASPAA58266.2023.10248168
-  resources_popup:
-    - name: Bibtex
-      icon: fa fa-quote-right
-      text: |
-        @inproceedings{nugraha2023gpdkl,
-          selected = {true},
-          abbr = {WASPAA},
-          bibtex_show = {true},
-          author = {Nugraha, Aditya Arie and Di Carlo, Diego and Bando, Yoshiaki and Fontaine, Mathieu and Yoshii, Kazuyoshi},
-          title = {Time-Domain Audio Source Separation Based on Gaussian Processes with Deep Kernel Learning},
-          booktitle = {Proceedings of IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
-          year = {2023},
-          month = oct,
-          pages = {1--5},
-          address = {New Paltz, NY, USA},
-          url = {https://ieeexplore.ieee.org/document/10248168},
-          html = {https://ieeexplore.ieee.org/document/10248168},
-          preprint = {https://hal.science/hal-04172863},
-          doi = {10.1109/WASPAA58266.2023.10248168}
-        }
-    - name: Abstract
-      icon: fa fa-align-left
-      text: |
-        This paper revisits single-channel audio source separation based on a probabilistic generative model of a mixture signal defined in the continuous time domain. We assume that each source signal follows a non-stationary Gaussian process (GP), i.e., any finite set of sampled points follows a zero-mean multivariate Gaussian distribution whose covariance matrix is governed by a kernel function over time-varying latent variables. The mixture signal composed of such source signals thus follows a GP whose covariance matrix is given by the sum of the source covariance matrices. To estimate the latent variables from the mixture signal, we use a deep neural network with an encoder-separator-decoder architecture (e.g., Conv-TasNet) that separates the latent variables in a pseudo-time-frequency space. The key feature of our method is to feed the latent variables into the kernel function for estimating the source covariance matrices, instead of using the decoder for directly estimating the time-domain source signals. This enables the decomposition of a mixture signal into the source signals with a classical yet powerful Wiener filter that considers the full covariance structure over all samples. The kernel function and the network are trained jointly in the maximum likelihood framework. Comparative experiments using two-speech mixtures under clean, noisy, and noisy-reverberant conditions from the WSJ0-2mix, WHAM!, and WHAMR! benchmark datasets demonstrated that the proposed method performed well and outperformed the baseline method under noisy and noisy-reverberant conditions.
+  - title: "SHAMaNS: Sound Localization with Hybrid Alpha-Stable Spatial Measure and Neural Steerer"
+    id: shamans
+    author: 'Diego Di Carlo (RIKEN AIP), Mathieu Fontaine (LTCI, IP Paris), Aditya Arie Nugraha (RIKEN AIP), Yoshiaki Bando (RIKEN AIP), Kazuyoshi Yoshii'
+    booktitle: European Signal Processing Conference (EUSIPCO)
+    keywords: Speech enhancement, dereverberation, neural beamforming, blind source separation
+    year: 2025
+    resources_link:
+      - name: Github
+        icon: fa fa-github
+        link: https://github.com/Chutlhu/shamans
+      - name: Arxiv
+        icon: ai ai-arxiv
+        link: https://arxiv.org/abs/2506.18954
+      - name: HAL
+        link: https://telecom-paris.hal.science/hal-05121705/
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{dicarlo2025shamans,
+            author = {Diego Di Carlo, Mathieu Fontaine, Kouhei Sekiguchi, Aditya Arie Nugraha, Yoshiaki Bando, and Kazuyoshi Yoshii},
+            title = {SHAMaNS: Sound Localization with Hybrid Alpha-Stable Spatial Measure and Neural Steerer},
+            booktitle = {Proceedings of European Signal Processing Conference (EUSIPCO)},
+            year = {2025},
+            preprint = {https://arxiv.org/abs/2506.18954}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          This paper describes speech enhancement for realtime automatic speech recognition (ASR) in real environments. A standard approach to this task is to use neural beamforming that can work efficiently in an online manner. It estimates the masks of clean dry speech from a noisy echoic mixture spectrogram with a deep neural network (DNN) and then computes a enhancement filter used for beamforming. The performance of such a supervised approach, however, is drastically degraded under mismatched conditions. This calls for run-time adaptation of the DNN. Although the ground-truth speech spectrogram required for adaptation is not available at run time, blind dereverberation and separation methods such as weighted prediction error (WPE) and fast multichannel nonnegative matrix factorization (FastMNMF) can be used for generating pseudo groundtruth data from a mixture. Based on this idea, a prior work proposed a dual-process system based on a cascade of WPE and minimum variance distortionless response (MVDR) beamforming asynchronously fine-tuned by block-online FastMNMF. To integrate the dereverberation capability into neural beamforming and make it fine-tunable at run time, we propose to use weighted power minimization distortionless response (WPD) beamforming, a unified version of WPE and minimum power distortionless response (MPDR), whose joint dereverberation and denoising filter is estimated using a DNN. We evaluated the impact of run-time adaptation under various conditions with different numbers of speakers, reverberation times, and signal-to-noise ratios (SNRs).
 
-- title: "Elliptically Contoured Alpha-Stable Representation for MUSIC-Based Sound Source Localization"
-  id: alphaloc
-  author: Mathieu Fontaine, Diego Di Carlo, Kouhei Sekiguchi, Aditya Arie Nugraha, Yoshiaki Bando, and Kazuyoshi Yoshii
-  booktitle: European Signal Processing Conference (EUSIPCO)
-  year: 2022
-  resources_link:
-    - name: PDF
-      icon: ai ai-open-access
-      link: https://eurasip.org/Proceedings/Eusipco/Eusipco2022/pdfs/0000026.pdf
-    - name : IEEE
-      icon: ai ai-ieee
-      link: https://ieeexplore.ieee.org/document/9909944
-  resources_popup:
-    - name: Bibtex
-      icon: fa fa-quote-right
-      text: |
-        @inproceedings{fontaine2022alphamusic,
-          abbr = {EUSIPCO},
-          bibtex_show = {true},
-          author = {Fontaine, Mathieu and Di Carlo, Diego and Sekiguchi, Kouhei and Nugraha, Aditya Arie and Bando, Yoshiaki and Yoshii, Kazuyoshi},
-          title = {Elliptically Contoured Alpha-Stable Representation for MUSIC-Based Sound Source Localization},
-          booktitle = {Proceedings of European Signal Processing Conference (EUSIPCO)},
-          year = {2022},
-          month = aug,
-          pages = {26--30},
-          address = {Belgrade, Serbia},
-          url = {https://ieeexplore.ieee.org/document/9909944},
-          html = {https://ieeexplore.ieee.org/document/9909944},
-          pdf = {https://eurasip.org/Proceedings/Eusipco/Eusipco2022/pdfs/0000026.pdf}
-        }
-    - name: Abstract
-      icon: fa fa-align-left
-      text: |
-        This paper introduces a theoretically-rigorous sound source localization (SSL) method based on a robust extension of the classical multiple signal classification (MUSIC) algorithm. The original SSL method estimates the noise eigenvectors and the MUSIC spectrum by computing the spatial covariance matrix of the observed multichannel signal and then detects the peaks from the spectrum. In this work, the covariance matrix is replaced with the positive definite shape matrix originating from the elliptically contoured α-stable model, which is more suitable under real noisy high-reverberant conditions. Evaluation on synthetic data shows that the proposed method outperforms baseline methods under such adverse conditions, while it is comparable on real data recorded in a mild acoustic condition.
+  - title: Run-Time Adaptation of Neural Beamforming for Robust Speech Dereverberation and Denoising
+    id: runtime
+    author: 'Yoto Fujita, Aditya Arie Nugraha, Diego Di Carlo, Yoshiaki Bando, Mathieu Fontaine, and Kazuyoshi Yoshii'
+    booktitle: Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA)
+    keywords: Speech enhancement, dereverberation, neural beamforming, blind source separation
+    year: 2024
+    resources_link:
+      - name: Arxiv
+        icon: ai ai-arxiv
+        link: https://arxiv.org/abs/2410.22805
+      - name: HAL
+        icon: ai ai-open-access
+        link: https://hal.science/hal-04736454v1/file/apsipa2024_fujita.pdf
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{fujita2024runtimeadaptation,
+            author = {Fujita, Yoto and Nugraha, Aditya Arie and Di Carlo, Diego and Bando, Yoshiaki and Fontaine, Mathieu and Yoshii, Kazuyoshi},
+            title = {Run-Time Adaptation of Neural Beamforming for Robust Speech Dereverberation and Denoising},
+            booktitle = {Proceedings of Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA)},
+            year = {2024},
+            month = dec,
+            pages = {},
+            address = {Macau, China},
+            preprint = {https://arxiv.org/abs/2410.22805}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          This paper describes speech enhancement for realtime automatic speech recognition (ASR) in real environments. A standard approach to this task is to use neural beamforming that can work efficiently in an online manner. It estimates the masks of clean dry speech from a noisy echoic mixture spectrogram with a deep neural network (DNN) and then computes a enhancement filter used for beamforming. The performance of such a supervised approach, however, is drastically degraded under mismatched conditions. This calls for run-time adaptation of the DNN. Although the ground-truth speech spectrogram required for adaptation is not available at run time, blind dereverberation and separation methods such as weighted prediction error (WPE) and fast multichannel nonnegative matrix factorization (FastMNMF) can be used for generating pseudo groundtruth data from a mixture. Based on this idea, a prior work proposed a dual-process system based on a cascade of WPE and minimum variance distortionless response (MVDR) beamforming asynchronously fine-tuned by block-online FastMNMF. To integrate the dereverberation capability into neural beamforming and make it fine-tunable at run time, we propose to use weighted power minimization distortionless response (WPD) beamforming, a unified version of WPE and minimum power distortionless response (MPDR), whose joint dereverberation and denoising filter is estimated using a DNN. We evaluated the impact of run-time adaptation under various conditions with different numbers of speakers, reverberation times, and signal-to-noise ratios (SNRs).
 
-- title: "Post processing sparse and instantaneous 2D velocity fields using physics-informed neural networks"
-  id: postpinn
-  author: Diego Di Carlo, Dominique Heitz, Thomas Corpetti
-  booktitle: 20th International Symposium on Application of Laser and Imaging Techniques to Fluid Mechanics (LXLASER)
-  year: 2022
-  resources_link:
-    - name: code
-      icon: fa fa-github
-      link: https://github.com/Chutlhu/TurboSuperResultion/
-    - name: DOI
-      icon: ai ai-doi
-      link: https://doi.org/10.55037/lxlaser.20th.183
-    - name: HTML
-      icon: fa fa-globe
-      link: https://www.lisbonsymposia.org/20thlxsymp/piv-processing-algorithms-and-data-assimilation/183
-    - name : HAL
-      icon: ai ai-open-access
-      link: https://hal.science/hal-03843184/
-  resources_popup:
-    - name: Bibtex
-      icon: fa fa-quote-right
-      text: |
-        @inproceedings{di2022post,
-          title={Post processing sparse and instantaneous 2D velocity fields using physics-informed neural networks},
-          author={Di Carlo, Diego and Heitz, Dominique and Corpetti, Thomas},
-          booktitle={Proceedings of the 20th International Symposium on Application of Laser and Imaging Techniques to Fluid Mechanics},
-          doi={10.55037/lxlaser.20th.183},
-          year={2022}
-        }
-    - name: Abstract
-      icon: fa fa-align-left
-      text: |
-        This work tackles the problem of resolving high-resolution velocity fields from a set of sparse off-grid observations. This task, crucial in many applications spanning from experimental fluiddynamics to compute vision and medicine, can be addressed with deep neural network models trained to employ physics-based constraints. This work proposes an original unsupervised deep learning framework involving sub-grid models that improve the accuracy of super-resolved instantaneous and sparse velocity fields of turbulent flows. Python code, dataset and results are available at https://github.com/Chutlhu/TurboSuperResultion/
+  - title: "RIR-in-a-Box: Estimating Room Acoustics from 3D Mesh Data through Shoebox Approximation"
+    id: rirbox
+    author: Liam Kelley, Diego Di Carlo, Aditya Arie Nugraha, Mathieu Fontaine, Yoshiaki Bando, and Kazuyoshi Yoshii
+    booktitle: Annual Conference of the International Speech Communication Association (Interspeech)
+    year: 2024
+    resources_link:
+      - name: HAL
+        icon: ai ai-open-access
+        link: https://telecom-paris.hal.science/hal-04632526
+      - name: DOI
+        icon: ai ai-doi
+        link: https://doi.org/10.21437/Interspeech.2024-2053
+      - name: Code
+        icon: fa fa-github
+        link: https://github.com/liam-kelley/RIR-in-a-Box
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{kelley2024ririnabox,
+            abbr = {Interspeech},
+            bibtex_show = {true},
+            author = {Kelley, Liam and Di Carlo, Diego and Nugraha, Aditya Arie and Fontaine, Mathieu and Bando, Yoshiaki and Yoshii, Kazuyoshi},
+            title = {RIR-in-a-Box: Estimating Room Acoustics from 3D Mesh Data through Shoebox Approximation},
+            booktitle = {Proceedings of Annual Conference of the International Speech Communication
+            Association (Interspeech)},
+            year = {2024},
+            month = sep,
+            pages = {3255-3259},
+            address = {Kos Island, Greece},
+            url = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.html},
+            html = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.html},
+            pdf = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.pdf},
+            preprint = {https://telecom-paris.hal.science/hal-04632526},
+            doi = {10.21437/Interspeech.2024-2053}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          Acoustic echoes retrieval is a research topic that is gaining importance
+          in many speech and audio signal processing applications such as speech enhancement,
+          source separation, dereverberation and room geometry estimation.
+          This work proposes a novel approach to retrieve acoustic echoes timing *off-grid* and blindly,
+          i.e., from a stereophonic recording of an unknown sound source such as speech.
+          It builds on the recent framework of continuous dictionaries.
+          In contrast with existing methods, the proposed approach does not
+          rely on parameter tuning nor peak picking techniques by working directly
+          in the parameter space of interest. The accuracy and robustness of
+          the method are assessed on challenging simulated setups with
+          varying noise and reverberation levels and are compared to two state-of-the-art methods.
 
-- title: "BLASTER: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval"
-  id: blaster
-  author: 'Di Carlo, Diego and Elvira, Clement  and Deleforge, Antoine and Bertin, Nancy and Gibonval, Remi'
-  booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
-  keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
-  year: 2020
-  doi: https://doi.org/10.1109/ICASSP40776.2020.9054647
-  resources_link:
-    - name: IEEE
-      icon: ai ai-doi
-      link: https://doi.org/10.1109/ICASSP40776.2020.9054647
-    - name: HAL
-      icon: ai ai-open-access
-      link: https://hal.archives-ouvertes.fr/hal-02469901/
-    - name: Code
-      icon: fa fa-github
-      link: https://gitlab.inria.fr/panama-team/blaster
-    - name: Resources
-      icon: fa fa-paperclip
-      link: https://sigport.org/documents/blaster-grid-method-blind-and-regularized-acoustic-echoes-retrieval
-    - name: Video
-      icon: fa fa-youtube-play
-      link: https://youtu.be/rPaqZJIfpKo
-  resources_popup:
-    - name: Bibtex
-      icon: fa fa-quote-right
-      text: |
-        @inproceedings{kelley2024ririnabox,
-          abbr = {Interspeech},
-          bibtex_show = {true},
-          author = {Kelley, Liam and Di Carlo, Diego and Nugraha, Aditya Arie and Fontaine, Mathieu and Bando, Yoshiaki and Yoshii, Kazuyoshi},
-          title = {RIR-in-a-Box: Estimating Room Acoustics from 3D Mesh Data through Shoebox Approximation},
-          booktitle = {Proceedings of Annual Conference of the International Speech Communication
-          Association (Interspeech)},
-          year = {2024},
-          month = sep,
-          pages = {3255-3259},
-          address = {Kos Island, Greece},
-          url = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.html},
-          html = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.html},
-          pdf = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.pdf},
-          preprint = {https://telecom-paris.hal.science/hal-04632526},
-          doi = {10.21437/Interspeech.2024-2053}
-        }
-    - name: Abstract
-      icon: fa fa-align-left
-      text: This paper describes a method for estimating the room impulse response (RIR) for a microphone and a sound source located at arbitrary positions from the 3D mesh data of the room. Simulating realistic RIRs with pure physics-driven methods often fails the balance between physical consistency and computational efficiency, hindering application to real time speech processing. Alternatively, one can use MESH2IR, a fast black-box estimator that consists of an encoder extracting latent code from mesh data with a graph convolutional network (GCN) and a decoder generating the RIR from the latent code. Combining these two approaches, we propose a fast yet physically coherent estimator with interpretable latent code based on differentiable digital signal processing (DDSP). Specifically, the encoder estimates a virtual shoebox room scene that acoustically approximates the real scene, accelerating physical simulation with the differentiable image-source model in the decoder. Our experiments showed that our method outperformed MESH2IR for real mesh data obtained with the depth scanner of Microsoft HoloLens 2, and can provide correct spatial consistency for binaural RIRs.
+  - title: "Joint Audio Source Localization and Separation with Distributed Microphone Arrays Based on Spatially-Regularized Multichannel NMF"
+    id: joint
+    author: Yoshiaki Sumura, Diego Di Carlo, Aditya Arie Nugraha, Yoshiaki Bando, and Kazuyoshi Yoshii
+    booktitle: International Workshop on Acoustic Signal Enhancement (IWAENC)
+    year: 2024
+    resources_link:
+      - name: IEEE
+        icon: ai ai-ieee
+        link: https://ieeexplore.ieee.org/document/10694042
+      - name: DOI
+        icon: ai ai-doi
+        link: https://doi.org/10.1109/IWAENC61483.2024.10694042
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{sumura2024jointlocalsep,
+            abbr = {IWAENC},
+            bibtex_show = {true},
+            author = {Sumura, Yoshiaki and Di Carlo, Diego and Nugraha, Aditya Arie and Bando, Yoshiaki and Yoshii, Kazuyoshi},
+            title = {Joint Audio Source Localization and Separation with Distributed Microphone Arrays Based on Spatially-Regularized Multichannel NMF},
+            booktitle = {Proceedings of International Workshop on Acoustic Signal Enhancement (IWAENC)},
+            year = {2024},
+            month = sep,
+            pages = {145-149},
+            address = {Aalborg, Denmark},
+            url = {https://ieeexplore.ieee.org/document/10694042},
+            html = {https://ieeexplore.ieee.org/document/10694042},
+            doi = {10.1109/IWAENC61483.2024.10694042}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          This paper describes a statistically principled method that simultaneously localizes and separates multiple sound sources using multiple calibrated microphone arrays distributed in a room. Given the extensive research on direction of arrival (DOA) estimation with a single microphone array, for 3D source localization, one may attempt triangulation based on DOAs separately and egocentrically estimated by multiple arrays. However, in multiple sources scenarios, this cascading approach faces both the inter-array DOA association problem and the error accumulation problem. To solve these problems, we propose a spatially regularized extension of a versatile blind source separation method called multichannel nonnegative matrix factorization (MNMF). Our method treats multiple microphone arrays as a single big array and puts priors on the frequency-wise spatial covariance matrices (SCMs) of each source. These priors are defined using the source DOA computed from the 3D positions of the source and arrays. The power spectral densities (PSDs), SCMs, and positions of multiple sources are jointly estimated under the unified maximum-a-posteriori (MAP) principle. We show the effectiveness of the joint statistical estimation for real data recorded by four five-channel microphone arrays of Microsoft Azure Kinect.
 
-- title: 'MIRAGE: 2D Source Localization Using Microphone Pair Augmentation with Echoes'
-  id: mirage
-  author: ' Di Carlo, Diego and Deleforge, Antoine and Bertin, Nancy'
-  booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing
-  keywords: Image Microphones,Sound Source Localization,Supervised Learning,TDOA Estimation
-  year: 2019
-  doi: https://doi.org/10.1109/ICASSP.2019.8683534
-  resources_link:
-    - name: IEEE
-      icon: ai ai-doi
-      link: https://doi.org/10.1109/ICASSP.2019.8683534
-    - name: HAL
-      icon: ai ai-open-access
-      link: https://hal.archives-ouvertes.fr/hal-02160940v1
-    - name: Code
-      icon: fa fa-github
-      link: https://github.com/Chutlhu/MIRAGE
-    - name: Resources
-      icon: fa fa-paperclip
-      link: https://sigport.org/documents/mirage-2d-sound-source-localization-using-microphone-pair-augmentation-echoes
-  resources_popup:
-    - name: Bibtex
-      icon: fa fa-quote-right
-      text: |
-        @inproceedings{DiCarlo2019mirage,
-          arxiv = {1906.08968},
-          author = { Di Carlo, Diego and Deleforge, Antoine and Bertin, Nancy},
-          booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-          doi = {10.1109/ICASSP.2019.8683534},
-          hal_id = {hal-01909531},
-          keywords = {Image Microphones,Sound Source Localization,Supervised Learning,TDOA Estimation},
-          pages = {775--779},
-          title = {Mirage: 2D Source Localization Using Microphone Pair Augmentation with Echoes},
-          url = {https://github.com/Chutlhu/MIRAGE},
-          volume = {2019-May},
-          year = {2019}
-        }
-    - name: Abstract
-      icon: fa fa-align-left
-      text: |
-        It is commonly observed that acoustic echoes hurt performance of sound
-        source localization (SSL) methods.
-        We introduce the concept of microphone array augmentation with echoes (MIRAGE)
-        and show how estimation of early-echo  characteristics can in fact benefit SSL.
-        We propose a learning based scheme for echo estimation combined with a physics based
-        scheme for echo aggregation.
-        In a simple scenario involving 2 microphones close to a reflective surface and
-        one source,
-        we show using simulated data that the proposed approach performs similarly to
-        a correlation-based method
-        in azimuth estimation while retrieving elevation as well from 2 microphones only,
-        an impossible task in anechoic settings.
+  - title: "Neural Steerer: Novel Steering Vector Synthesis with a Causal Neural Field over Frequency and Direction"
+    id: nsteerer
+    author: Diego Di Carlo, Aditya Arie Nugraha, Mathieu Fontaine, Yoshiaki Bando, and Kazuyoshi Yoshii
+    booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing Workshops (ICASSPW),
+    year: 2024
+    resources_link:
+      - name: WEB
+        icon: fa fa-globe
+        link: https://diegodicarlo.com/nsteerer/
+      - name: Arxiv
+        icon: ai ai-arxiv
+        link: https://arxiv.org/abs/2305.04447
+      - name: HAL
+        icon: ai ai-open-access
+        link: https://hal.science/hal-04479188
+      - name : IEEE
+        icon: ai ai-ieee
+        link: https://ieeexplore.ieee.org/document/10626510
+      - name: DOI
+        icon: ai ai-doi
+        link: https://doi.org/10.1109/ICASSPW62465.2024.10626510
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{dicarlo2024neuralsteerer,
+            abbr = {ICASSPW},
+            bibtex_show = {true},
+            author = {Di Carlo, Diego and Nugraha, Aditya Arie and Fontaine, Mathieu and Bando, Yoshiaki and Yoshii, Kazuyoshi},
+            title = {Neural Steerer: Novel Steering Vector Synthesis with a Causal Neural Field over Frequency and Direction},
+            booktitle = {Proceedings of IEEE International Conference on Acoustics, Speech and Signal Processing Workshops (ICASSPW)},
+            month = apr,
+            year = {2024},
+            pages = {740-744},
+            address = {Seoul, South Korea},
+            url = {https://ieeexplore.ieee.org/document/10626510},
+            html = {https://ieeexplore.ieee.org/document/10626510},
+            preprint = {https://arxiv.org/abs/2305.04447},
+            doi = {10.1109/ICASSPW62465.2024.10626510}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          We address the problem of accurately interpolating measured anechoic steering vectors with a deep learning framework called the neural field. This task plays a pivotal role in reducing the resource-intensive measurements required for precise sound source separation and localization, essential as the front-end of speech recognition. Classical approaches to interpolation rely on linear weighting of nearby measurements in space on a fixed, discrete set of frequencies. Drawing inspiration from the success of neural fields for novel view synthesis in computer vision, we introduce the neural steerer, a continuous complex-valued function that takes both frequency and direction as input and produces the corresponding steering vector. Importantly, it incorporates inter-channel phase difference information and a regularization term enforcing filter causality, essential for accurate steering vector modeling. Our experiments, conducted using a dataset of real measured steering vectors, demonstrate the effectiveness of our resolution-free model in interpolating such measurements.
 
-- title: 'SEPARAKE: Source Separation with a Little Help from Echoes'
-  id: separake
-  booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
-  year: 2018
-  author: Scheibler, Robin and Di Carlo, Diego and Deleforge, Antoine and Dokmanic, Ivan
-  resources_link:
-    - name: IEEE
-      icon: ai ai-doi
-      link: https://doi.org/10.1109/ICASSP.2018.8461345
-    - name: arXiv
-      icon: ai ai-open-access
-      link: https://arxiv.org/abs/1711.06805
-    - name: Code
-      icon: fa fa-github
-      link: https://github.com/fakufaku/separake
-    - name: Resources
-      icon: fa fa-paperclip
-      link: https://sigport.org/documents/separake-source-separation-little-help-echoes
-  resources_popup:
-    - name: Bibtex
-      icon: fa fa-quote-right
-      text: |
-        @inproceedings{Scheibler2017separake,
-          arxiv = {1711.06805},
-          author = {Scheibler, Robin and Di Carlo, Diego and Deleforge, Antoine and Dokmanic, Ivan},
-          doi = {10.1109/ICASSP.2018.8461345},
-          hal_id = {hal-01909531},
-          journal = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-          keywords = {Echoes,Multi-channel,NMF,Room geometry,Source separation},
-          pages = {6897--6901},
-          title = {Separake: Source Separation with a Little Help from Echoes},
-          url = {https://github.com/fakufaku/separake},
-          year = {2018}
-        }
-    - name: Abstract
-      icon: fa fa-align-left
-      text: |
-        It is commonly believed that multipath hurts various audio process-ing
-        algorithms.At odds with this belief, we show that multipath in fact helps sound
-        source separation,even with very simple propagation models.Unlike most existing
-        methods, we neither ignore the room impulse responses, nor we attempt to estimate
-        them fully. Weather  assume  that  we  know  the  positions  of  a  few  virtual
-         micro-phones generated by echoes and we show how this gives us enough spatial
-        diversity to get a performance boost over the anechoic case.We show improvements
-        for two standard algorithms\u2014one that uses only magnitudes of the transfer
-        functions, and one that also uses the phases.Concretely, we show that multichannel
-        non-negative matrix factorization aided with a small number of echoes beats the
-        vanilla variant of the same algorithm, and that with magnitude information only,
-        echoes enable separation where it was previously impossible
+  - title: "Implicit neural representation for change detection"
+    id: implicit
+    author: Peter Naylor, Diego Di Carlo, Arianna Traviglia, Makoto Yamada, Marco Fiorucci
+    booktitle: IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
+    year: 2024
+    resources_link:
+      - name: HAL
+        icon: ai ai-open-access
+        link: https://hal.science/hal-04172863
+      - name: IEEE
+        icon: ai ai-ieee
+        link: https://ieeexplore.ieee.org/abstract/document/10483630/
+      - name: DOI
+        icon: ai ai-doi
+        link: https://doi-org.kyoto-u.idm.oclc.org/10.1109/WACV57701.2024.00098
+      - name: Code
+        icon: fa fa-github
+        link: https://github.com/PeterJackNaylor/NN-4-change-detection
+      - name: Video
+        icon: youtube-play
+        link: https://www.youtube.com/watch?v=X_EiL13I3Go
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{naylor2024implicit,
+            title={Implicit neural representation for change detection},
+            author={Naylor, Peter and Di Carlo, Diego and Traviglia, Arianna and Yamada, Makoto and Fiorucci, Marco},
+            booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+            pages={935--945},
+            year={2024}
+            doi={10.1109/WACV57701.2024.00098}
+            html={https://ieeexplore.ieee.org/abstract/document/10483630/}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          Identifying changes in a pair of 3D aerial LiDAR point
+          clouds, obtained during two distinct time periods over the
+          same geographic region presents a significant challenge due
+          to the disparities in spatial coverage and the presence of
+          noise in the acquisition system. The most commonly used
+          approaches to detecting changes in point clouds are based
+          on supervised methods which necessitate extensive labelled
+          data often unavailable in real-world applications. To ad-
+          dress these issues, we propose an unsupervised approach
+          that comprises two components: Implcit Neural Represena-
+          tion (INR) for continuous shape reconstruction and a Gaus-
+          sian Mixture Model for categorising changes. INR offers a
+          grid-agnostic representation for encoding bi-temporal point
+          clouds, with unmatched spatial support that can be regu-
+          larised to enhance high-frequency details and reduce noise.
+          The reconstructions at each timestamp are compared at ar-
+          bitrary spatial scales, leading to a significant increase in
+          detection capabilities. We apply our method to a benchmark
+          dataset comprising simulated LiDAR point clouds for ur-
+          ban sprawling. This dataset encompasses diverse challeng-
+          ing scenarios, varying in resolutions, input modalities and
+          noise levels. This enables a comprehensive multi-scenario
+          evaluation, comparing our method with the current state-of-
+          the-art approach. We outperform the previous methods by
+          a margin of 10% in the intersection over union metric. In
+          addition, we put our techniques to practical use by applying
+          them in a real-world scenario to identify instances of illicit
+          excavation of archaeological sites and validate our results
+          by comparing them with findings from field experts.
+    
+  - title: "Time-Domain Audio Source Separation Based on Gaussian Processes with Deep Kernel Learning"
+    id: gpdkl
+    author: Aditya Arie Nugraha, Diego Di Carlo, Yoshiaki Bando, Mathieu Fontaine, and Kazuyoshi Yoshii
+    booktitle: IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)
+    year: 2023
+    resources_link:
+      - name: HAL
+        icon: ai ai-open-access
+        link: https://hal.science/hal-04172863
+      - name : IEEE
+        icon: ai ai-ieee
+        link: https://ieeexplore.ieee.org/document/10248168
+      - name: DOI
+        icon: ai ai-doi
+        link: https://doi.org/10.1109/WASPAA58266.2023.10248168
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{nugraha2023gpdkl,
+            selected = {true},
+            abbr = {WASPAA},
+            bibtex_show = {true},
+            author = {Nugraha, Aditya Arie and Di Carlo, Diego and Bando, Yoshiaki and Fontaine, Mathieu and Yoshii, Kazuyoshi},
+            title = {Time-Domain Audio Source Separation Based on Gaussian Processes with Deep Kernel Learning},
+            booktitle = {Proceedings of IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
+            year = {2023},
+            month = oct,
+            pages = {1--5},
+            address = {New Paltz, NY, USA},
+            url = {https://ieeexplore.ieee.org/document/10248168},
+            html = {https://ieeexplore.ieee.org/document/10248168},
+            preprint = {https://hal.science/hal-04172863},
+            doi = {10.1109/WASPAA58266.2023.10248168}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          This paper revisits single-channel audio source separation based on a probabilistic generative model of a mixture signal defined in the continuous time domain. We assume that each source signal follows a non-stationary Gaussian process (GP), i.e., any finite set of sampled points follows a zero-mean multivariate Gaussian distribution whose covariance matrix is governed by a kernel function over time-varying latent variables. The mixture signal composed of such source signals thus follows a GP whose covariance matrix is given by the sum of the source covariance matrices. To estimate the latent variables from the mixture signal, we use a deep neural network with an encoder-separator-decoder architecture (e.g., Conv-TasNet) that separates the latent variables in a pseudo-time-frequency space. The key feature of our method is to feed the latent variables into the kernel function for estimating the source covariance matrices, instead of using the decoder for directly estimating the time-domain source signals. This enables the decomposition of a mixture signal into the source signals with a classical yet powerful Wiener filter that considers the full covariance structure over all samples. The kernel function and the network are trained jointly in the maximum likelihood framework. Comparative experiments using two-speech mixtures under clean, noisy, and noisy-reverberant conditions from the WSJ0-2mix, WHAM!, and WHAMR! benchmark datasets demonstrated that the proposed method performed well and outperformed the baseline method under noisy and noisy-reverberant conditions.
 
-- title: Evaluation of an Open-Source Implementation of the SPR-PHAT Algorithm Within
-    the 2018 Locata Challenge
-  abstract: This short paper presents an efficient, flexible implementation of the
-    SRP-PHAT  multichannel  sound  source  localization  method.   Themethod is evaluated
-    on the single-source tasks of the LOCATA 2018development  dataset,  and  an  associated  Matlab  toolbox  is  madeavailable
-    online
-  arxiv: '1812.05901'
-  author: Lebarbenchon, Romain and Camberlein, Ewen and Di Carlo, Diego and Deleforge,
-    Antoine and Bertin, Nancy
-  bibitem: "@inproceedings{Lebarbenchon2018, abstract = {This short paper presents\
-    \ an efficient, flexible implementation of the SRP-PHAT  multichannel  sound \
-    \ source  localization  method.   Themethod is evaluated on the single-source\
-    \ tasks of the LOCATA 2018development  dataset,  and  an  associated  Matlab \
-    \ toolbox  is  madeavailable online}, arxiv = {1812.05901}, author = {Lebarbenchon,\
-    \ Romain and Camberlein, Ewen and Di Carlo, Diego and Deleforge, Antoine and Bertin,\
-    \ Nancy}, booktitle = {LOCATA Challenge Workshop - a satellite event of International\
-    \ Workshop on Acoustic Signal Enhancement (IWAENC)}, hal_id = {hal-02187964},\
-    \ pages = {2--3}, title = {Evaluation of an Open-Source Implementation of the\
-    \ Srp-Phat Algorithm Within the 2018 Locata Challenge}, year = {2018}}"
-  booktitle: LOCATA Challenge Workshop - a satellite event of International Workshop
-    on Acoustic Signal Enhancement (IWAENC)
-  hal_id: hal-02187964
-  year: 2018
+  - title: "Elliptically Contoured Alpha-Stable Representation for MUSIC-Based Sound Source Localization"
+    id: alphaloc
+    author: Mathieu Fontaine, Diego Di Carlo, Kouhei Sekiguchi, Aditya Arie Nugraha, Yoshiaki Bando, and Kazuyoshi Yoshii
+    booktitle: European Signal Processing Conference (EUSIPCO)
+    year: 2022
+    resources_link:
+      - name: PDF
+        icon: ai ai-open-access
+        link: https://eurasip.org/Proceedings/Eusipco/Eusipco2022/pdfs/0000026.pdf
+      - name : IEEE
+        icon: ai ai-ieee
+        link: https://ieeexplore.ieee.org/document/9909944
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{fontaine2022alphamusic,
+            abbr = {EUSIPCO},
+            bibtex_show = {true},
+            author = {Fontaine, Mathieu and Di Carlo, Diego and Sekiguchi, Kouhei and Nugraha, Aditya Arie and Bando, Yoshiaki and Yoshii, Kazuyoshi},
+            title = {Elliptically Contoured Alpha-Stable Representation for MUSIC-Based Sound Source Localization},
+            booktitle = {Proceedings of European Signal Processing Conference (EUSIPCO)},
+            year = {2022},
+            month = aug,
+            pages = {26--30},
+            address = {Belgrade, Serbia},
+            url = {https://ieeexplore.ieee.org/document/9909944},
+            html = {https://ieeexplore.ieee.org/document/9909944},
+            pdf = {https://eurasip.org/Proceedings/Eusipco/Eusipco2022/pdfs/0000026.pdf}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          This paper introduces a theoretically-rigorous sound source localization (SSL) method based on a robust extension of the classical multiple signal classification (MUSIC) algorithm. The original SSL method estimates the noise eigenvectors and the MUSIC spectrum by computing the spatial covariance matrix of the observed multichannel signal and then detects the peaks from the spectrum. In this work, the covariance matrix is replaced with the positive definite shape matrix originating from the elliptically contoured α-stable model, which is more suitable under real noisy high-reverberant conditions. Evaluation on synthetic data shows that the proposed method outperforms baseline methods under such adverse conditions, while it is comparable on real data recorded in a mild acoustic condition.
 
-- title: Interference reduction on full-length live recordings
-  abstract: 'Live concert recordings consist in long multitrack audio samples with
-    significant interferences between channels.
-    For audio engineering purposes, it is desirable to attenuate those interferences.
-    Recently, we proposed an algorithm to this end based on Non-negative Matrix Factorization,
-    that iteratively estimate the clean power spectral densities of the sources
-    and the strength of each in each microphone signal, encoded in an interference
-    matrix.
-    Although it behaves well, this method is too demanding computationally
-    for full-length concerts lasting more than one hour.
-    In this paper, we show how random projections of the data can be leveraged
-    for effective estimation of the parameters. Interference reduction with these
-    ideas
-    can be achieved on full-length live multi-track recordings in an acceptable
-    time and could be used by sound engineers. We demonstrate the efficiency of this
-    approach on
-    real full-length live recordings from the Montreux Jazz Festival and also provide
-    an implementation of the method.'
-  id: mirapie
-  author: Di Carlo, Diego and Liutkus, Antoine and Déguernel, Ken
-  bibitem: "@inproceedings{DiCarlo2018mirapie, author = {Di Carlo, Diego and Liutkus,\
-    \ Antoine and D{\\'e}guernel, Ken}, booktitle = {IEEE International Conference\
-    \ on Acoustics, Speech and Signal Processing (ICASSP)}, doi = {10.1109/ICASSP.2018.8462621},\
-    \ hal_id = {hal-01713889}, hal_verision = {v1}, keywords = {Compressive sensing,Interference\
-    \ reduction,Microphone leakage,Random projection,Source separation}, pages =\
-    \ {736--740}, title = {Interference reduction on full-length live recordings},\
-    \ url = {https://github.com/Chutlhu/mirapie}, volume = {2018-April}, year\
-    \ = {2018}}"
-  booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing
-    (ICASSP)
-  doi: 10.1109/ICASSP.2018.8462621
-  hal_id: hal-01713889
-  hal_verision: v1
-  keywords: Compressive sensing,Interference reduction,Microphone leakage,Random projection,Source
-    separation
-  url: https://github.com/Chutlhu/mirapie
-  volume: 2018-April
-  year: 2018
+  - title: "Post processing sparse and instantaneous 2D velocity fields using physics-informed neural networks"
+    id: postpinn
+    author: Diego Di Carlo, Dominique Heitz, Thomas Corpetti
+    booktitle: 20th International Symposium on Application of Laser and Imaging Techniques to Fluid Mechanics (LXLASER)
+    year: 2022
+    resources_link:
+      - name: code
+        icon: fa fa-github
+        link: https://github.com/Chutlhu/TurboSuperResultion/
+      - name: DOI
+        icon: ai ai-doi
+        link: https://doi.org/10.55037/lxlaser.20th.183
+      - name: HTML
+        icon: fa fa-globe
+        link: https://www.lisbonsymposia.org/20thlxsymp/piv-processing-algorithms-and-data-assimilation/183
+      - name : HAL
+        icon: ai ai-open-access
+        link: https://hal.science/hal-03843184/
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{di2022post,
+            title={Post processing sparse and instantaneous 2D velocity fields using physics-informed neural networks},
+            author={Di Carlo, Diego and Heitz, Dominique and Corpetti, Thomas},
+            booktitle={Proceedings of the 20th International Symposium on Application of Laser and Imaging Techniques to Fluid Mechanics},
+            doi={10.55037/lxlaser.20th.183},
+            year={2022}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          This work tackles the problem of resolving high-resolution velocity fields from a set of sparse off-grid observations. This task, crucial in many applications spanning from experimental fluiddynamics to compute vision and medicine, can be addressed with deep neural network models trained to employ physics-based constraints. This work proposes an original unsupervised deep learning framework involving sub-grid models that improve the accuracy of super-resolved instantaneous and sparse velocity fields of turbulent flows. Python code, dataset and results are available at https://github.com/Chutlhu/TurboSuperResultion/
 
-- title: Gaussian framework for interference reduction in live recordings
-  abstract: In live multitrack recordings, each voice is usually captured by dedicated
-    close microphones. Unfortunately, it is also captured in practice by other microphones
-    intended for other sources, leading to so-called "interferences". Reducing this
-    interference is desirable because it opens new perspectives for the engineering
-    of live recordings. Hence, it has been the topic of recent research in audio processing.
-    In this paper, we show how a Gaussian probabilistic framework may be set up for
-    obtaining good isolation of the target sources. Doing so, we extend several state-of-the
-    art methods by fixing some heuristic parts of their algorithms. As we show in
-    a perceptual evaluation on real-world multitrack live recordings, the resulting
-    principled techniques yield improved quality.
-  address: Erlangen, Germany
-  author: Di Carlo, Diego and Déguernel, Ken and Liutkus, Antoine
-  bibitem: "@inproceedings{DiCarlo2017, abstract = {In live multitrack recordings,\
-    \ each voice is usually captured by dedicated close microphones. Unfortunately,\
-    \ it is also captured in practice by other microphones intended for other sources,\
-    \ leading to so-called \"interferences\". Reducing this interference is desirable\
-    \ because it opens new perspectives for the engineering of live recordings. Hence,\
-    \ it has been the topic of recent research in audio processing. In this paper,\
-    \ we show how a Gaussian probabilistic framework may be set up for obtaining good\
-    \ isolation of the target sources. Doing so, we extend several state-of-the art\
-    \ methods by fixing some heuristic parts of their algorithms. As we show in a\
-    \ perceptual evaluation on real-world multitrack live recordings, the resulting\
-    \ principled techniques yield improved quality.}, address = {Erlangen, Germany},\
-    \ author = {Di Carlo, Diego and D{\\'e}guernel, Ken and Liutkus, Antoine}, booktitle\
-    \ = {AES International Conference on Semantic Audio}, hal_id = {hal-01515971},\
-    \ hal_verision = {v1}, title = {Gaussian framework for interference reduction\
-    \ in live recordings}, url = {https://github.com/Chutlhu/mirapie}, volume\
-    \ = {22-24-June}, year = {2017}}"
-  booktitle: AES International Conference on Semantic Audio
-  hal_id: hal-01515971
-  hal_verision: v1
-  url: https://github.com/Chutlhu/mirapie
-  year: 2017
+  - title: "BLASTER: An Off-Grid Method for Blind and Regularized Acoustic Echoes Retrieval"
+    id: blaster
+    author: 'Di Carlo, Diego and Elvira, Clement  and Deleforge, Antoine and Bertin, Nancy and Gibonval, Remi'
+    booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+    keywords: Blind Channel Identification, Super Resolution, Sparsity, Acoustic Impulse Response.
+    year: 2020
+    doi: https://doi.org/10.1109/ICASSP40776.2020.9054647
+    resources_link:
+      - name: IEEE
+        icon: ai ai-doi
+        link: https://doi.org/10.1109/ICASSP40776.2020.9054647
+      - name: HAL
+        icon: ai ai-open-access
+        link: https://hal.archives-ouvertes.fr/hal-02469901/
+      - name: Code
+        icon: fa fa-github
+        link: https://gitlab.inria.fr/panama-team/blaster
+      - name: Resources
+        icon: fa fa-paperclip
+        link: https://sigport.org/documents/blaster-grid-method-blind-and-regularized-acoustic-echoes-retrieval
+      - name: Video
+        icon: fa fa-youtube-play
+        link: https://youtu.be/rPaqZJIfpKo
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{kelley2024ririnabox,
+            abbr = {Interspeech},
+            bibtex_show = {true},
+            author = {Kelley, Liam and Di Carlo, Diego and Nugraha, Aditya Arie and Fontaine, Mathieu and Bando, Yoshiaki and Yoshii, Kazuyoshi},
+            title = {RIR-in-a-Box: Estimating Room Acoustics from 3D Mesh Data through Shoebox Approximation},
+            booktitle = {Proceedings of Annual Conference of the International Speech Communication
+            Association (Interspeech)},
+            year = {2024},
+            month = sep,
+            pages = {3255-3259},
+            address = {Kos Island, Greece},
+            url = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.html},
+            html = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.html},
+            pdf = {https://www.isca-archive.org/interspeech_2024/kelley24_interspeech.pdf},
+            preprint = {https://telecom-paris.hal.science/hal-04632526},
+            doi = {10.21437/Interspeech.2024-2053}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: This paper describes a method for estimating the room impulse response (RIR) for a microphone and a sound source located at arbitrary positions from the 3D mesh data of the room. Simulating realistic RIRs with pure physics-driven methods often fails the balance between physical consistency and computational efficiency, hindering application to real time speech processing. Alternatively, one can use MESH2IR, a fast black-box estimator that consists of an encoder extracting latent code from mesh data with a graph convolutional network (GCN) and a decoder generating the RIR from the latent code. Combining these two approaches, we propose a fast yet physically coherent estimator with interpretable latent code based on differentiable digital signal processing (DDSP). Specifically, the encoder estimates a virtual shoebox room scene that acoustically approximates the real scene, accelerating physical simulation with the differentiable image-source model in the decoder. Our experiments showed that our method outperformed MESH2IR for real mesh data obtained with the depth scanner of Microsoft HoloLens 2, and can provide correct spatial consistency for binaural RIRs.
 
-- title: Gestural Control Of Wavefield synthesis
-  author: Grani, Francesco and Di Carlo, Diego and Portillo, Jorge Madrid and Girardi,
-    Matteo and Paisa, Razvan and Banas, Jian Stian and Vogiatzoglou, Iakovos and Overholt,
-    Dan and Serafin, Stefania
-  bibitem: "@inproceedings{Grani2016gestural, author = {Grani, Francesco and Di\
-    \ Carlo, Diego and Portillo, Jorge Madrid and Girardi, Matteo and Paisa, Razvan\
-    \ and Banas, Jian Stian and Vogiatzoglou, Iakovos and Overholt, Dan and Serafin,\
-    \ Stefania}, booktitle = {Sound and Music Computing Conference (SMC)}, pages\
-    \ = {185--192}, title = {Gestural Control Of Wavefield synthesis}, url = {https://vbn.aau.dk/ws/portalfiles/portal/244887082/2016_Gestural_Control_Of_Wavefield_synthesis_SMC2016.pdf},\
-    \ year = {2016}}"
-  booktitle: Sound and Music Computing Conference (SMC)
-  url: https://vbn.aau.dk/ws/portalfiles/portal/244887082/2016_Gestural_Control_Of_Wavefield_synthesis_SMC2016.pdf
-  year: 2016
+  - title: 'MIRAGE: 2D Source Localization Using Microphone Pair Augmentation with Echoes'
+    id: mirage
+    author: ' Di Carlo, Diego and Deleforge, Antoine and Bertin, Nancy'
+    booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing
+    keywords: Image Microphones,Sound Source Localization,Supervised Learning,TDOA Estimation
+    year: 2019
+    doi: https://doi.org/10.1109/ICASSP.2019.8683534
+    resources_link:
+      - name: IEEE
+        icon: ai ai-doi
+        link: https://doi.org/10.1109/ICASSP.2019.8683534
+      - name: HAL
+        icon: ai ai-open-access
+        link: https://hal.archives-ouvertes.fr/hal-02160940v1
+      - name: Code
+        icon: fa fa-github
+        link: https://github.com/Chutlhu/MIRAGE
+      - name: Resources
+        icon: fa fa-paperclip
+        link: https://sigport.org/documents/mirage-2d-sound-source-localization-using-microphone-pair-augmentation-echoes
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{DiCarlo2019mirage,
+            arxiv = {1906.08968},
+            author = { Di Carlo, Diego and Deleforge, Antoine and Bertin, Nancy},
+            booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+            doi = {10.1109/ICASSP.2019.8683534},
+            hal_id = {hal-01909531},
+            keywords = {Image Microphones,Sound Source Localization,Supervised Learning,TDOA Estimation},
+            pages = {775--779},
+            title = {Mirage: 2D Source Localization Using Microphone Pair Augmentation with Echoes},
+            url = {https://github.com/Chutlhu/MIRAGE},
+            volume = {2019-May},
+            year = {2019}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          It is commonly observed that acoustic echoes hurt performance of sound
+          source localization (SSL) methods.
+          We introduce the concept of microphone array augmentation with echoes (MIRAGE)
+          and show how estimation of early-echo  characteristics can in fact benefit SSL.
+          We propose a learning based scheme for echo estimation combined with a physics based
+          scheme for echo aggregation.
+          In a simple scenario involving 2 microphones close to a reflective surface and
+          one source,
+          we show using simulated data that the proposed approach performs similarly to
+          a correlation-based method
+          in azimuth estimation while retrieving elevation as well from 2 microphones only,
+          an impossible task in anechoic settings.
 
-- title: "Automatic music listening for automatic music performance: a grandpiano dynamics classifier"
-  address: Venice
-  author: Di Carlo, Diego and Rodá, Antonio
-  bibitem: "@inproceedings{DiCarlo2014, address = {Venice}, author = {Di Carlo,\
-    \ Diego and Rod{\\'a}, Antonio}, booktitle = {Proceedings of the 1st International\
-    \ Workshop on Computer and Robotic Systems for Automatic Music Performance (SAMP\
-    \ 14)}, pages = {1--8}, title = {Automatic music \u201Clistening\u201D for\
-    \ automatic music performance: a grandpiano dynamics classifier,\u201D}, year\
-    \ = {2014}}"
-  booktitle: Proceedings of the 1st International Workshop on Computer and Robotic
-    Systems for Automatic Music Performance (SAMP 14)
-  year: 2014
+  - title: 'SEPARAKE: Source Separation with a Little Help from Echoes'
+    id: separake
+    booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+    year: 2018
+    author: Scheibler, Robin and Di Carlo, Diego and Deleforge, Antoine and Dokmanic, Ivan
+    resources_link:
+      - name: IEEE
+        icon: ai ai-doi
+        link: https://doi.org/10.1109/ICASSP.2018.8461345
+      - name: arXiv
+        icon: ai ai-open-access
+        link: https://arxiv.org/abs/1711.06805
+      - name: Code
+        icon: fa fa-github
+        link: https://github.com/fakufaku/separake
+      - name: Resources
+        icon: fa fa-paperclip
+        link: https://sigport.org/documents/separake-source-separation-little-help-echoes
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @inproceedings{Scheibler2017separake,
+            arxiv = {1711.06805},
+            author = {Scheibler, Robin and Di Carlo, Diego and Deleforge, Antoine and Dokmanic, Ivan},
+            doi = {10.1109/ICASSP.2018.8461345},
+            hal_id = {hal-01909531},
+            journal = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+            keywords = {Echoes,Multi-channel,NMF,Room geometry,Source separation},
+            pages = {6897--6901},
+            title = {Separake: Source Separation with a Little Help from Echoes},
+            url = {https://github.com/fakufaku/separake},
+            year = {2018}
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          It is commonly believed that multipath hurts various audio process-ing
+          algorithms.At odds with this belief, we show that multipath in fact helps sound
+          source separation,even with very simple propagation models.Unlike most existing
+          methods, we neither ignore the room impulse responses, nor we attempt to estimate
+          them fully. Weather  assume  that  we  know  the  positions  of  a  few  virtual
+          micro-phones generated by echoes and we show how this gives us enough spatial
+          diversity to get a performance boost over the anechoic case.We show improvements
+          for two standard algorithms\u2014one that uses only magnitudes of the transfer
+          functions, and one that also uses the phases.Concretely, we show that multichannel
+          non-negative matrix factorization aided with a small number of echoes beats the
+          vanilla variant of the same algorithm, and that with magnitude information only,
+          echoes enable separation where it was previously impossible
+
+  - title: Evaluation of an Open-Source Implementation of the SPR-PHAT Algorithm Within
+      the 2018 Locata Challenge
+    abstract: This short paper presents an efficient, flexible implementation of the
+      SRP-PHAT  multichannel  sound  source  localization  method.   Themethod is evaluated
+      on the single-source tasks of the LOCATA 2018development  dataset,  and  an  associated  Matlab  toolbox  is  madeavailable
+      online
+    arxiv: '1812.05901'
+    author: Lebarbenchon, Romain and Camberlein, Ewen and Di Carlo, Diego and Deleforge,
+      Antoine and Bertin, Nancy
+    bibitem: "@inproceedings{Lebarbenchon2018, abstract = {This short paper presents\
+      \ an efficient, flexible implementation of the SRP-PHAT  multichannel  sound \
+      \ source  localization  method.   Themethod is evaluated on the single-source\
+      \ tasks of the LOCATA 2018development  dataset,  and  an  associated  Matlab \
+      \ toolbox  is  madeavailable online}, arxiv = {1812.05901}, author = {Lebarbenchon,\
+      \ Romain and Camberlein, Ewen and Di Carlo, Diego and Deleforge, Antoine and Bertin,\
+      \ Nancy}, booktitle = {LOCATA Challenge Workshop - a satellite event of International\
+      \ Workshop on Acoustic Signal Enhancement (IWAENC)}, hal_id = {hal-02187964},\
+      \ pages = {2--3}, title = {Evaluation of an Open-Source Implementation of the\
+      \ Srp-Phat Algorithm Within the 2018 Locata Challenge}, year = {2018}}"
+    booktitle: LOCATA Challenge Workshop - a satellite event of International Workshop
+      on Acoustic Signal Enhancement (IWAENC)
+    hal_id: hal-02187964
+    year: 2018
+
+  - title: Interference reduction on full-length live recordings
+    abstract: 'Live concert recordings consist in long multitrack audio samples with
+      significant interferences between channels.
+      For audio engineering purposes, it is desirable to attenuate those interferences.
+      Recently, we proposed an algorithm to this end based on Non-negative Matrix Factorization,
+      that iteratively estimate the clean power spectral densities of the sources
+      and the strength of each in each microphone signal, encoded in an interference
+      matrix.
+      Although it behaves well, this method is too demanding computationally
+      for full-length concerts lasting more than one hour.
+      In this paper, we show how random projections of the data can be leveraged
+      for effective estimation of the parameters. Interference reduction with these
+      ideas
+      can be achieved on full-length live multi-track recordings in an acceptable
+      time and could be used by sound engineers. We demonstrate the efficiency of this
+      approach on
+      real full-length live recordings from the Montreux Jazz Festival and also provide
+      an implementation of the method.'
+    id: mirapie
+    author: Di Carlo, Diego and Liutkus, Antoine and Déguernel, Ken
+    bibitem: "@inproceedings{DiCarlo2018mirapie, author = {Di Carlo, Diego and Liutkus,\
+      \ Antoine and D{\\'e}guernel, Ken}, booktitle = {IEEE International Conference\
+      \ on Acoustics, Speech and Signal Processing (ICASSP)}, doi = {10.1109/ICASSP.2018.8462621},\
+      \ hal_id = {hal-01713889}, hal_verision = {v1}, keywords = {Compressive sensing,Interference\
+      \ reduction,Microphone leakage,Random projection,Source separation}, pages =\
+      \ {736--740}, title = {Interference reduction on full-length live recordings},\
+      \ url = {https://github.com/Chutlhu/mirapie}, volume = {2018-April}, year\
+      \ = {2018}}"
+    booktitle: IEEE International Conference on Acoustics, Speech and Signal Processing
+      (ICASSP)
+    doi: 10.1109/ICASSP.2018.8462621
+    hal_id: hal-01713889
+    hal_verision: v1
+    keywords: Compressive sensing,Interference reduction,Microphone leakage,Random projection,Source
+      separation
+    url: https://github.com/Chutlhu/mirapie
+    volume: 2018-April
+    year: 2018
+
+  - title: Gaussian framework for interference reduction in live recordings
+    abstract: In live multitrack recordings, each voice is usually captured by dedicated
+      close microphones. Unfortunately, it is also captured in practice by other microphones
+      intended for other sources, leading to so-called "interferences". Reducing this
+      interference is desirable because it opens new perspectives for the engineering
+      of live recordings. Hence, it has been the topic of recent research in audio processing.
+      In this paper, we show how a Gaussian probabilistic framework may be set up for
+      obtaining good isolation of the target sources. Doing so, we extend several state-of-the
+      art methods by fixing some heuristic parts of their algorithms. As we show in
+      a perceptual evaluation on real-world multitrack live recordings, the resulting
+      principled techniques yield improved quality.
+    address: Erlangen, Germany
+    author: Di Carlo, Diego and Déguernel, Ken and Liutkus, Antoine
+    bibitem: "@inproceedings{DiCarlo2017, abstract = {In live multitrack recordings,\
+      \ each voice is usually captured by dedicated close microphones. Unfortunately,\
+      \ it is also captured in practice by other microphones intended for other sources,\
+      \ leading to so-called \"interferences\". Reducing this interference is desirable\
+      \ because it opens new perspectives for the engineering of live recordings. Hence,\
+      \ it has been the topic of recent research in audio processing. In this paper,\
+      \ we show how a Gaussian probabilistic framework may be set up for obtaining good\
+      \ isolation of the target sources. Doing so, we extend several state-of-the art\
+      \ methods by fixing some heuristic parts of their algorithms. As we show in a\
+      \ perceptual evaluation on real-world multitrack live recordings, the resulting\
+      \ principled techniques yield improved quality.}, address = {Erlangen, Germany},\
+      \ author = {Di Carlo, Diego and D{\\'e}guernel, Ken and Liutkus, Antoine}, booktitle\
+      \ = {AES International Conference on Semantic Audio}, hal_id = {hal-01515971},\
+      \ hal_verision = {v1}, title = {Gaussian framework for interference reduction\
+      \ in live recordings}, url = {https://github.com/Chutlhu/mirapie}, volume\
+      \ = {22-24-June}, year = {2017}}"
+    booktitle: AES International Conference on Semantic Audio
+    hal_id: hal-01515971
+    hal_verision: v1
+    url: https://github.com/Chutlhu/mirapie
+    year: 2017
+
+  - title: Gestural Control Of Wavefield synthesis
+    author: Grani, Francesco and Di Carlo, Diego and Portillo, Jorge Madrid and Girardi,
+      Matteo and Paisa, Razvan and Banas, Jian Stian and Vogiatzoglou, Iakovos and Overholt,
+      Dan and Serafin, Stefania
+    bibitem: "@inproceedings{Grani2016gestural, author = {Grani, Francesco and Di\
+      \ Carlo, Diego and Portillo, Jorge Madrid and Girardi, Matteo and Paisa, Razvan\
+      \ and Banas, Jian Stian and Vogiatzoglou, Iakovos and Overholt, Dan and Serafin,\
+      \ Stefania}, booktitle = {Sound and Music Computing Conference (SMC)}, pages\
+      \ = {185--192}, title = {Gestural Control Of Wavefield synthesis}, url = {https://vbn.aau.dk/ws/portalfiles/portal/244887082/2016_Gestural_Control_Of_Wavefield_synthesis_SMC2016.pdf},\
+      \ year = {2016}}"
+    booktitle: Sound and Music Computing Conference (SMC)
+    url: https://vbn.aau.dk/ws/portalfiles/portal/244887082/2016_Gestural_Control_Of_Wavefield_synthesis_SMC2016.pdf
+    year: 2016
+
+  - title: "Automatic music listening for automatic music performance: a grandpiano dynamics classifier"
+    address: Venice
+    author: Di Carlo, Diego and Rodá, Antonio
+    bibitem: "@inproceedings{DiCarlo2014, address = {Venice}, author = {Di Carlo,\
+      \ Diego and Rod{\\'a}, Antonio}, booktitle = {Proceedings of the 1st International\
+      \ Workshop on Computer and Robotic Systems for Automatic Music Performance (SAMP\
+      \ 14)}, pages = {1--8}, title = {Automatic music \u201Clistening\u201D for\
+      \ automatic music performance: a grandpiano dynamics classifier,\u201D}, year\
+      \ = {2014}}"
+    booktitle: Proceedings of the 1st International Workshop on Computer and Robotic
+      Systems for Automatic Music Performance (SAMP 14)
+    year: 2014
 
 thesis:
-- type: PhD
-  author: Di Carlo, Diego
-  advisor: Deleforge, Antione and Bertin, Nancy
-  bibitem: >
-   "@phdthesis{dicarlo2020echo,
-    TITLE = {{Echo-aware signal processing for audio scene analysis}},
-    AUTHOR = {Di Carlo, Diego},
-    URL = {https://tel.archives-ouvertes.fr/tel-03133271},
-    SCHOOL = {{UNIVERSIT{\'E} DE RENNES 1 ; INRIA - IRISA - PANAMA}},
-    YEAR = {2020},
-    MONTH = Dec,
-    KEYWORDS = {Room Geometry Estimation ; Sound Source Localization ; Sound Source Separation ; Blind Channel Estimation ; Acoustic Echoes ; Traitement des signaux audio ; {\'e}chos acoustiques ; estimation des canaux aveugles ; s{\'e}para- tion de sources sonores ; localisation de sources sonores ; estimation de la g{\'e}om{\'e}trie d'une salle},
-    TYPE = {Theses},
-    PDF = {https://tel.archives-ouvertes.fr/tel-03133271/file/main.pdf},
-    HAL_ID = {tel-03133271},
-    HAL_VERSION = {v1},
-    }"
-  hal_id: tel-03133271
-  hal_verision: v1
-  keywords:
-  link: https://tel.archives-ouvertes.fr/tel-03133271
-  school: Université de Rennes 1 - Panama Team (INRIA/IRISA) [France]
-  title: Echo-aware signal processing for audio scene analysis
-  code: https://github.com/Chutlhu/manuscript
-  url: https://tel.archives-ouvertes.fr/tel-03133271
-  year: 2020
-  abstract: >
-    Most of audio signal processing methods regard reverberation and in particular acoustic echoes as a nuisance. However, they convey important spatial and semantic information about sound sources and, based on this, recent echo-aware methods have been proposed. In this work, we focus on two directions. First, we study how to estimate acoustic echoes blindly from microphone recordings. Two approaches are proposed, one leveraging on continuous dictionaries, one using recent deep learning techniques. Then, we focus on extending existing methods in audio scene analysis to their echo-aware forms. The Multichannel NMF framework for audio source separation, the SRP-PHAT localization method, and the MVDR beamformer for speech enhancement are all extended to their echo-aware versions.
-  resources_link:
-    - name: slides
-      icon: fa fa-tv
-      link: https://drive.google.com/file/d/1Od1-xwtHFDlWssWz51GygQVtlE7FeIGO/view?usp=sharing
+  - type: PhD
+    author: Di Carlo, Diego
+    advisor: Deleforge, Antione and Bertin, Nancy
+    bibitem: >
+     "@phdthesis{dicarlo2020echo,
+        TITLE = {{Echo-aware signal processing for audio scene analysis}},
+        AUTHOR = {Di Carlo, Diego},
+        URL = {https://tel.archives-ouvertes.fr/tel-03133271},
+        SCHOOL = {{UNIVERSIT{\'E} DE RENNES 1 ; INRIA - IRISA - PANAMA}},
+        YEAR = {2020},
+        MONTH = Dec,
+        KEYWORDS = {Room Geometry Estimation ; Sound Source Localization ; Sound Source Separation ; Blind Channel Estimation ; Acoustic Echoes ; Traitement des signaux audio ; {\'e}chos acoustiques ; estimation des canaux aveugles ; s{\'e}para- tion de sources sonores ; localisation de sources sonores ; estimation de la g{\'e}om{\'e}trie d'une salle},
+        TYPE = {Theses},
+        PDF = {https://tel.archives-ouvertes.fr/tel-03133271/file/main.pdf},
+        HAL_ID = {tel-03133271},
+        HAL_VERSION = {v1},
+        }"
+    hal_id: tel-03133271
+    hal_verision: v1
+    keywords:
+    link: https://tel.archives-ouvertes.fr/tel-03133271
+    school: Université de Rennes 1 - Panama Team (INRIA/IRISA) [France]
+    title: Echo-aware signal processing for audio scene analysis
+    code: https://github.com/Chutlhu/manuscript
+    url: https://tel.archives-ouvertes.fr/tel-03133271
+    year: 2020
+    abstract: >
+      Most of audio signal processing methods regard reverberation and in particular acoustic echoes as a nuisance. However, they convey important spatial and semantic information about sound sources and, based on this, recent echo-aware methods have been proposed. In this work, we focus on two directions. First, we study how to estimate acoustic echoes blindly from microphone recordings. Two approaches are proposed, one leveraging on continuous dictionaries, one using recent deep learning techniques. Then, we focus on extending existing methods in audio scene analysis to their echo-aware forms. The Multichannel NMF framework for audio source separation, the SRP-PHAT localization method, and the MVDR beamformer for speech enhancement are all extended to their echo-aware versions.
+    resources_link:
+      - name: slides
+        icon: fa fa-tv
+        link: https://drive.google.com/file/d/1Od1-xwtHFDlWssWz51GygQVtlE7FeIGO/view?usp=sharing
 
-- type: master
-  author: Di Carlo, Diego
-  advisor: Orio, Nicola and Liutkus, Antoine
-  bibitem: "@mastersthesis{DiCarlo2017gaussian, author = {Di Carlo, Diego and Orio,\
-    \ Nicola}, hal_id = {hal-01870918}, hal_verision = {v1}, keywords = {interference\
-    \ reduction, microphone leakage, bleeding, source separation, random projection,\
-    \ Non negative matrix factorisation NMF}, link = {http://tesi.cab.unipd.it/56327/},\
-    \ school = {Universit{\\`a} degli Studi di Padova}, title = {Gaussian Framework\
-    \ for Interference Reduction in Live Recordings}, url = {https://github.com/Chutlhu/mirapie},\
-    \ year = {2017}}"
-  hal_id: hal-01870918
-  hal_verision: v1
-  keywords: interference reduction, microphone leakage, bleeding, source separation,
-    random projection, Non negative matrix factorisation NMF
-  link: https://hal.inria.fr/hal-01870918
-  school: Universitá degli Studi di Padova [Italy]
-  title: Gaussian Framework for Interference Reduction in Live Recordings
-  code: https://github.com/Chutlhu/mirapie
-  url: http://tesi.cab.unipd.it/56327/
-  year: 2017
+  - type: master
+    author: Di Carlo, Diego
+    advisor: Orio, Nicola and Liutkus, Antoine
+    bibitem: "@mastersthesis{DiCarlo2017gaussian, author = {Di Carlo, Diego and Orio,\
+      \ Nicola}, hal_id = {hal-01870918}, hal_verision = {v1}, keywords = {interference\
+      \ reduction, microphone leakage, bleeding, source separation, random projection,\
+      \ Non negative matrix factorisation NMF}, link = {http://tesi.cab.unipd.it/56327/},\
+      \ school = {Universit{\\`a} degli Studi di Padova}, title = {Gaussian Framework\
+      \ for Interference Reduction in Live Recordings}, url = {https://github.com/Chutlhu/mirapie},\
+      \ year = {2017}}"
+    hal_id: hal-01870918
+    hal_verision: v1
+    keywords: interference reduction, microphone leakage, bleeding, source separation,
+      random projection, Non negative matrix factorisation NMF
+    link: https://hal.inria.fr/hal-01870918
+    school: Universitá degli Studi di Padova [Italy]
+    title: Gaussian Framework for Interference Reduction in Live Recordings
+    code: https://github.com/Chutlhu/mirapie
+    url: http://tesi.cab.unipd.it/56327/
+    year: 2017
 
-- type: bachelor
-  author: Di Carlo, Diego
-  advisor: Antonio Rodá
-  bibitem: "@mastersthesis{DiCarlo2014sequential, author = {Di Carlo, Diego}, school\
-    \ = {Universit{\\`a} degli Studi di Padova}, title = {Sequential Feature Selection:\
-    \ Algorithm and Applications for Audio Information Retrieval}, year = {2014}\
-    }"
-  school: Universitá degli Studi di Padova [Italy]
-  title: 'Sequential Feature Selection: Algorithms and Applications for Audio Information
-    Retrieval'
-  year: 2014
+  - type: bachelor
+    author: Di Carlo, Diego
+    advisor: Antonio Rodá
+    bibitem: "@mastersthesis{DiCarlo2014sequential, author = {Di Carlo, Diego}, school\
+      \ = {Universit{\\`a} degli Studi di Padova}, title = {Sequential Feature Selection:\
+      \ Algorithm and Applications for Audio Information Retrieval}, year = {2014}\
+      }"
+    school: Universitá degli Studi di Padova [Italy]
+    title: 'Sequential Feature Selection: Algorithms and Applications for Audio Information
+      Retrieval'
+    year: 2014
 
 other:
-- title: Etude des propriétés acoustiques de la guitare Black Flag
-  author: Denis Thouret, Loïc Le Marrec, Diego Di Carlo, Ewen Camberlein, Clements Gaultier and Frédéric Bimbot
-  bibitem: >
-    "@unknown{Thouret2010etude,
-      author = {Thouret, Denis and Le Marrec, Loïc and Di Carlo, Diego and Camberlein, Ewen and Gaultier, Clement and Bimbot, Frédéric},
-      year = {2019},
-      month = {10},
-      pages = {},
-      title = {Etude des propriétés acoustiques de la guitare Black Flag},
-      doi = {10.13140/RG.2.2.26251.03368}
-    }"
-  link: https://www.researchgate.net/publication/337328411_Etude_des_proprietes_acoustiques_de_la_guitare_Black_Flag
-  link: https://www.ouest-france.fr/bretagne/rennes-35000/video-rennes-il-fabrique-une-guitare-unique-au-monde-en-materiaux-spatiaux-6366368
-  link: https://jsm.irisa.fr/2018/06/27/la-harpe-electronique/
-  doi: 10.13140/RG.2.2.26251.03368
-  where: Journee Science et Musique, Rennes (Fr)
-  year: 2018
+  - title: Etude des propriétés acoustiques de la guitare Black Flag
+    author: Denis Thouret, Loïc Le Marrec, Diego Di Carlo, Ewen Camberlein, Clements Gaultier and Frédéric Bimbot
+    bibitem: >
+      "@unknown{Thouret2010etude,
+        author = {Thouret, Denis and Le Marrec, Loïc and Di Carlo, Diego and Camberlein, Ewen and Gaultier, Clement and Bimbot, Frédéric},
+        year = {2019},
+        month = {10},
+        pages = {},
+        title = {Etude des propriétés acoustiques de la guitare Black Flag},
+        doi = {10.13140/RG.2.2.26251.03368}
+      }"
+    link: https://www.researchgate.net/publication/337328411_Etude_des_proprietes_acoustiques_de_la_guitare_Black_Flag
+    link: https://www.ouest-france.fr/bretagne/rennes-35000/video-rennes-il-fabrique-une-guitare-unique-au-monde-en-materiaux-spatiaux-6366368
+    link: https://jsm.irisa.fr/2018/06/27/la-harpe-electronique/
+    doi: 10.13140/RG.2.2.26251.03368
+    where: Journee Science et Musique, Rennes (Fr)
+    year: 2018

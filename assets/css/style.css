@@ -38,6 +38,14 @@
   display: block;
 }
 
+/* Publications TOC */
+#pubs-toc a:hover {
+  color: #cda907 !important;
+}
+@media (max-width: 1024px) {
+  #pubs-toc { display: none !important; }
+}
+
  /* Modal */
 .modal {
   position: fixed;
