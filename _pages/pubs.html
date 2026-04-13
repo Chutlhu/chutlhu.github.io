@@ -18,6 +18,7 @@ file: papers
 
 <nav id="pubs-toc" style="position:fixed; right:5.5em; left:auto; top:50%; transform:translateY(-50%); z-index:9999; width:110px; background:rgba(255,255,255,0.96); border:1px solid #e0e0e0; border-radius:6px; padding:0.75em 1em; box-shadow:0 2px 8px rgba(0,0,0,0.12); font-size:0.8em;">
   <ul style="list-style:none; margin:0; padding:0;">
+    <li style="margin:0.5em 0;"><a href="#chart" class="toc-link" style="color:#999; text-decoration:none;">Charts</a></li>
     <li style="margin:0.5em 0;"><a href="#journals" class="toc-link" style="color:#999; text-decoration:none;">Journals</a></li>
     <li style="margin:0.5em 0;"><a href="#conferences" class="toc-link" style="color:#999; text-decoration:none;">Conferences</a></li>
     <li style="margin:0.5em 0;"><a href="#talks" class="toc-link" style="color:#999; text-decoration:none;">Talks</a></li>
@@ -26,7 +27,163 @@ file: papers
   </ul>
 </nav>
 
-<div class='full' id="journals">
+{% assign all_years = "" %}
+{% for p in site.data.papers.article %}{% assign all_years = all_years | append: p.year | append: "," %}{% endfor %}
+{% for p in site.data.papers.inproceedings %}{% assign all_years = all_years | append: p.year | append: "," %}{% endfor %}
+{% for p in site.data.papers.thesis %}{% assign all_years = all_years | append: p.year | append: "," %}{% endfor %}
+{% for p in site.data.papers.other %}{% assign all_years = all_years | append: p.year | append: "," %}{% endfor %}
+{% for t in site.data.talks %}{% assign talk_year = t.when | split: "," | first | strip %}{% if talk_year != "" %}{% assign all_years = all_years | append: talk_year | append: "," %}{% endif %}{% endfor %}
+{% assign year_list = all_years | split: "," | uniq | sort %}
+
+<div class='full' id="chart">
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Overview" %}
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-8 columns'>
+      <canvas id="pubsChart" style="height:260px"></canvas>
+    </div>
+    <div class='large-4 columns' id="pubs-stats">
+      <canvas id="pubsStatsChart" style="height:260px"></canvas>
+    </div>
+  </div>
+  <div class='three spacing'></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<!-- Liquid-generated data (processed server-side by Jekyll) -->
+<script id="pubs-data" type="application/json">
+{
+  "labels": [{% for year in year_list %}{% unless year == "" %}"{{ year }}"{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}],
+  "journals": [{% for year in year_list %}{% unless year == "" %}{{ site.data.papers.article | where: "year", year | size }}{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}],
+  "conferences": [{% for year in year_list %}{% unless year == "" %}{{ site.data.papers.inproceedings | where: "year", year | size }}{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}],
+  "thesis": [{% for year in year_list %}{% unless year == "" %}{{ site.data.papers.thesis | where: "year", year | size }}{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}],
+  "other": [{% for year in year_list %}{% unless year == "" %}{{ site.data.papers.other | where: "year", year | size }}{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}],
+  "talks": [{% for year in year_list %}{% unless year == "" %}{% assign count = 0 %}{% for t in site.data.talks %}{% assign talk_year = t.when | split: "," | first | strip %}{% if talk_year == year %}{% assign count = count | plus: 1 %}{% endif %}{% endfor %}{{ count }}{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}]
+}
+</script>
+<script>
+(function() {
+  var data = JSON.parse(document.getElementById('pubs-data').textContent);
+  var labels = data.labels;
+
+  new Chart(document.getElementById('pubsChart'), {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: 'Journal papers',
+          data: data.journals,
+          backgroundColor: 'rgba(100,160,220,0.7)',
+          borderColor: 'rgba(100,160,220,1)',
+          borderWidth: 1
+        },
+        {
+          label: 'Conference papers',
+          data: data.conferences,
+          backgroundColor: 'rgba(240,120,130,0.7)',
+          borderColor: 'rgba(240,120,130,1)',
+          borderWidth: 1
+        },
+        {
+          label: 'Talks',
+          data: data.talks,
+          backgroundColor: 'rgba(255,180,80,0.7)',
+          borderColor: 'rgba(255,180,80,1)',
+          borderWidth: 1
+        },
+        {
+          label: 'Thesis',
+          data: data.thesis,
+          backgroundColor: 'rgba(120,200,160,0.7)',
+          borderColor: 'rgba(120,200,160,1)',
+          borderWidth: 1
+        },
+        {
+          label: 'Other',
+          data: data.other,
+          backgroundColor: 'rgba(180,150,220,0.7)',
+          borderColor: 'rgba(180,150,220,1)',
+          borderWidth: 1
+        }
+      ]
+    },
+    options: {
+      plugins: {
+        legend: { position: 'top' },
+        tooltip: {
+          callbacks: {
+            footer: function(items) {
+              var total = items.reduce(function(sum, item) { return sum + item.parsed.y; }, 0);
+              return 'Total: ' + total;
+            }
+          },
+          footerFont: { weight: 'bold' },
+          mode: 'index'
+        }
+      },
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { stacked: true },
+        y: { stacked: true, ticks: { stepSize: 1 }, title: { display: true, text: 'Count' } }
+      }
+    }
+  });
+
+  // Stats chart — total count per type
+  var sum = function(arr) { return arr.reduce(function(a, b) { return a + b; }, 0); };
+
+  new Chart(document.getElementById('pubsStatsChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Journals', 'Conferences', 'Talks', 'Thesis', 'Other'],
+      datasets: [{
+        data: [
+          sum(data.journals),
+          sum(data.conferences),
+          sum(data.talks),
+          sum(data.thesis),
+          sum(data.other)
+        ],
+        backgroundColor: [
+          'rgba(100,160,220,0.7)',
+          'rgba(240,120,130,0.7)',
+          'rgba(255,180,80,0.7)',
+          'rgba(120,200,160,0.7)',
+          'rgba(180,150,220,0.7)'
+        ],
+        borderColor: [
+          'rgba(100,160,220,1)',
+          'rgba(240,120,130,1)',
+          'rgba(255,180,80,1)',
+          'rgba(120,200,160,1)',
+          'rgba(180,150,220,1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      plugins: { legend: { display: false } },
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { ticks: { stepSize: 1 }, title: { display: true, text: 'Count' } },
+        y: { ticks: { font: { size: 11 } } }
+      }
+    }
+  });
+})();
+</script>
+
+
+
+<div class='full parallax' id="journals" style='background: #f5f5f5'>
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html title="Journal Papers" %}
@@ -74,7 +231,7 @@ file: papers
   <div class='three spacing'></div>
 </div>
 
-<div class='full parallax' id="conferences" style='background: #f5f5f5'>
+<div class='full' id="conferences">
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html title="Conference Papers" %}
@@ -124,7 +281,7 @@ file: papers
   <div class='three spacing'></div>
 </div>
 
-<div class='full' id="talks">
+<div class='full parallax' id="talks" style='background: #f5f5f5'>
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html title="Invited Talks" %}
@@ -156,7 +313,7 @@ file: papers
   <div class='three spacing'></div>
 </div>
 
-<div class='full parallax' id="thesis" style='background: #f5f5f5'>
+<div class='full' id="thesis">
   <div class='row'>
     <div class='large-12 columns'>
       {% include section-header.html title="Thesis" %}
@@ -166,24 +323,32 @@ file: papers
   {% for paper in site.data.papers.thesis %}
   <div class='row'>
     <div class="small-1 columns" align="center">
-    {{ paper.year }}
+      {{ paper.year }}
     </div>
-    <div class='large-9 columns'>
+    <div class='large-8 columns'>
       <b>{{ paper.title }}</b><br>
       <em>{{ paper.author | replace: "Diego Di Carlo", '<span style="color:#cda907">Diego Di Carlo</span>' | replace: "Di Carlo, Diego", '<span style="color:#cda907">Di Carlo, Diego</span>' }}</em> - supervised by <em>{{ paper.advisor }}</em><br>
       {{ paper.school }}, {{ paper.year }}.
     </div>
-    <div class='large-2 columns'>
-    {% if paper.url %}
-      <span class="warning label">
-        <a href="{{ paper.url }}">PDF</a>
-      </span>
-    {% endif %}
-    {% if paper.code %}
-      <span class="alert label">
-        <a href="{{ paper.code }}">Code</a>
-      </span>
-    {% endif %}
+    <div class='large-3 columns'>
+      <div><ul class="socials">
+        {% for res in paper.resources_link %}
+          <a title="{{res.name}}" href="{{ res.link }}" target="_blank"><i class='{{ res.icon }}'></i></a>
+        {% endfor %}
+        <br>
+        {% for res in paper.resources_popup %}
+        <a title="{{res.name}}"><i class='{{res.icon}}' data-modal-target="#paperModal_{{paper.title | slugify}}_{{res.name}}"></i></a>
+        <div class="modal" id="paperModal_{{paper.title | slugify}}_{{res.name}}">
+          <div class="modal-header">
+            <div class="title">{{res.name}}</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            {% if res.name == "Bibtex" %}<pre><code>{{ res.text }}</code></pre>{% else %}{{ res.text | markdownify }}{% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </ul></div>
     </div>
   </div>
   <div class='one spacing'></div>
@@ -267,7 +432,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // TOC scroll-spy
-  var sections = ['journals', 'conferences', 'talks', 'thesis', 'misc'];
+  var sections = ['chart', 'journals', 'conferences', 'talks', 'thesis', 'misc'];
   var tocLinks = {};
   sections.forEach(function(id) {
     var link = document.querySelector('#pubs-toc a[href="#' + id + '"]');

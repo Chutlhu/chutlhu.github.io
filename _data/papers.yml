@@ -916,69 +916,84 @@ inproceedings:
 thesis:
   - type: PhD
     author: Di Carlo, Diego
-    advisor: Deleforge, Antione and Bertin, Nancy
-    bibitem: >
-     "@phdthesis{dicarlo2020echo,
-        TITLE = {{Echo-aware signal processing for audio scene analysis}},
-        AUTHOR = {Di Carlo, Diego},
-        URL = {https://tel.archives-ouvertes.fr/tel-03133271},
-        SCHOOL = {{UNIVERSIT{\'E} DE RENNES 1 ; INRIA - IRISA - PANAMA}},
-        YEAR = {2020},
-        MONTH = Dec,
-        KEYWORDS = {Room Geometry Estimation ; Sound Source Localization ; Sound Source Separation ; Blind Channel Estimation ; Acoustic Echoes ; Traitement des signaux audio ; {\'e}chos acoustiques ; estimation des canaux aveugles ; s{\'e}para- tion de sources sonores ; localisation de sources sonores ; estimation de la g{\'e}om{\'e}trie d'une salle},
-        TYPE = {Theses},
-        PDF = {https://tel.archives-ouvertes.fr/tel-03133271/file/main.pdf},
-        HAL_ID = {tel-03133271},
-        HAL_VERSION = {v1},
-        }"
-    hal_id: tel-03133271
-    hal_verision: v1
-    keywords:
-    link: https://tel.archives-ouvertes.fr/tel-03133271
+    advisor: Deleforge, Antoine and Bertin, Nancy
     school: Université de Rennes 1 - Panama Team (INRIA/IRISA) [France]
     title: Echo-aware signal processing for audio scene analysis
-    code: https://github.com/Chutlhu/manuscript
-    url: https://tel.archives-ouvertes.fr/tel-03133271
     year: 2020
-    abstract: >
-      Most of audio signal processing methods regard reverberation and in particular acoustic echoes as a nuisance. However, they convey important spatial and semantic information about sound sources and, based on this, recent echo-aware methods have been proposed. In this work, we focus on two directions. First, we study how to estimate acoustic echoes blindly from microphone recordings. Two approaches are proposed, one leveraging on continuous dictionaries, one using recent deep learning techniques. Then, we focus on extending existing methods in audio scene analysis to their echo-aware forms. The Multichannel NMF framework for audio source separation, the SRP-PHAT localization method, and the MVDR beamformer for speech enhancement are all extended to their echo-aware versions.
     resources_link:
-      - name: slides
+      - name: HAL
+        icon: ai ai-hal
+        link: https://tel.archives-ouvertes.fr/tel-03133271
+      - name: Github
+        icon: fa fa-github
+        link: https://github.com/Chutlhu/manuscript
+      - name: Slides
         icon: fa fa-tv
         link: https://drive.google.com/file/d/1Od1-xwtHFDlWssWz51GygQVtlE7FeIGO/view?usp=sharing
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @phdthesis{dicarlo2020echo,
+            TITLE = {{Echo-aware signal processing for audio scene analysis}},
+            AUTHOR = {Di Carlo, Diego},
+            URL = {https://tel.archives-ouvertes.fr/tel-03133271},
+            SCHOOL = {{UNIVERSIT\'E DE RENNES 1 ; INRIA - IRISA - PANAMA}},
+            YEAR = {2020},
+            MONTH = Dec,
+            TYPE = {Theses},
+            HAL_ID = {tel-03133271},
+          }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          Most of audio signal processing methods regard reverberation and in particular acoustic echoes as a nuisance. However, they convey important spatial and semantic information about sound sources and, based on this, recent echo-aware methods have been proposed. In this work, we focus on two directions. First, we study how to estimate acoustic echoes blindly from microphone recordings. Two approaches are proposed, one leveraging on continuous dictionaries, one using recent deep learning techniques. Then, we focus on extending existing methods in audio scene analysis to their echo-aware forms. The Multichannel NMF framework for audio source separation, the SRP-PHAT localization method, and the MVDR beamformer for speech enhancement are all extended to their echo-aware versions.
 
   - type: master
     author: Di Carlo, Diego
     advisor: Orio, Nicola and Liutkus, Antoine
-    bibitem: "@mastersthesis{DiCarlo2017gaussian, author = {Di Carlo, Diego and Orio,\
-      \ Nicola}, hal_id = {hal-01870918}, hal_verision = {v1}, keywords = {interference\
-      \ reduction, microphone leakage, bleeding, source separation, random projection,\
-      \ Non negative matrix factorisation NMF}, link = {http://tesi.cab.unipd.it/56327/},\
-      \ school = {Universit{\\`a} degli Studi di Padova}, title = {Gaussian Framework\
-      \ for Interference Reduction in Live Recordings}, url = {https://github.com/Chutlhu/mirapie},\
-      \ year = {2017}}"
-    hal_id: hal-01870918
-    hal_verision: v1
-    keywords: interference reduction, microphone leakage, bleeding, source separation,
-      random projection, Non negative matrix factorisation NMF
-    link: https://hal.inria.fr/hal-01870918
     school: Universitá degli Studi di Padova [Italy]
     title: Gaussian Framework for Interference Reduction in Live Recordings
-    code: https://github.com/Chutlhu/mirapie
-    url: http://tesi.cab.unipd.it/56327/
     year: 2017
+    resources_link:
+      - name: HAL
+        icon: ai ai-hal
+        link: https://hal.inria.fr/hal-01870918
+      - name: Github
+        icon: fa fa-github
+        link: https://github.com/Chutlhu/mirapie
+      - name: PDF
+        icon: fa fa-file-pdf-o
+        link: http://tesi.cab.unipd.it/56327/
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @mastersthesis{DiCarlo2017gaussian,
+            author = {Di Carlo, Diego and Orio, Nicola},
+            title = {Gaussian Framework for Interference Reduction in Live Recordings},
+            school = {Universit\`a degli Studi di Padova},
+            year = {2017},
+            hal_id = {hal-01870918},
+          }
 
   - type: bachelor
     author: Di Carlo, Diego
     advisor: Antonio Rodá
-    bibitem: "@mastersthesis{DiCarlo2014sequential, author = {Di Carlo, Diego}, school\
-      \ = {Universit{\\`a} degli Studi di Padova}, title = {Sequential Feature Selection:\
-      \ Algorithm and Applications for Audio Information Retrieval}, year = {2014}\
-      }"
     school: Universitá degli Studi di Padova [Italy]
-    title: 'Sequential Feature Selection: Algorithms and Applications for Audio Information
-      Retrieval'
+    title: 'Sequential Feature Selection: Algorithms and Applications for Audio Information Retrieval'
     year: 2014
+    resources_link: []
+    resources_popup:
+      - name: Bibtex
+        icon: fa fa-quote-right
+        text: |
+          @mastersthesis{DiCarlo2014sequential,
+            author = {Di Carlo, Diego},
+            title = {Sequential Feature Selection: Algorithm and Applications for Audio Information Retrieval},
+            school = {Universit\`a degli Studi di Padova},
+            year = {2014},
+          }
 
 other:
   - title: Etude des propriétés acoustiques de la guitare Black Flag
