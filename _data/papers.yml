@@ -922,13 +922,13 @@ thesis:
     year: 2020
     resources_link:
       - name: HAL
-        icon: ai ai-hal
+        icon: ai ai-open-access
         link: https://tel.archives-ouvertes.fr/tel-03133271
       - name: Github
         icon: fa fa-github
         link: https://github.com/Chutlhu/manuscript
       - name: Slides
-        icon: fa fa-tv
+        icon: fa fa-file-pdf-o
         link: https://drive.google.com/file/d/1Od1-xwtHFDlWssWz51GygQVtlE7FeIGO/view?usp=sharing
     resources_popup:
       - name: Bibtex
@@ -957,7 +957,7 @@ thesis:
     year: 2017
     resources_link:
       - name: HAL
-        icon: ai ai-hal
+        icon: ai ai-open-access
         link: https://hal.inria.fr/hal-01870918
       - name: Github
         icon: fa fa-github

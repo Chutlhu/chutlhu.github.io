@@ -331,7 +331,7 @@ file: papers
       {{ paper.school }}, {{ paper.year }}.
     </div>
     <div class='large-3 columns'>
-      <div><ul class="socials">
+      <div id="pubs"><ul class="socials">
         {% for res in paper.resources_link %}
           <a title="{{res.name}}" href="{{ res.link }}" target="_blank"><i class='{{ res.icon }}'></i></a>
         {% endfor %}
