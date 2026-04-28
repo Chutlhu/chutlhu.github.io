@@ -983,7 +983,10 @@ thesis:
     school: Universitá degli Studi di Padova [Italy]
     title: 'Sequential Feature Selection: Algorithms and Applications for Audio Information Retrieval'
     year: 2014
-    resources_link: []
+    resources_link:
+      - name: PDF
+        icon: fa fa-file-pdf-o
+        link: https://drive.google.com/file/d/1EjOPrLF4EJNFpmyaMSUB7j3loflNt_pO/view?usp=sharing
     resources_popup:
       - name: Bibtex
         icon: fa fa-quote-right
@@ -994,6 +997,30 @@ thesis:
             school = {Universit\`a degli Studi di Padova},
             year = {2014},
           }
+      - name: Abstract
+        icon: fa fa-align-left
+        text: |
+          In this thesis, I present a basic machine learning algorithms to retrieve information from audio
+          signal, the Sequential Feature Selection. Combined with audio content analysis, this algorithm
+          plays an important role as a new approach to investigate the physical and perceptual proprieties
+          of audio signal. In Machine Learning method, the learner (the machine) uses a training set of ex-
+          amples in order to build a model of the world that enables plausible predictions, or classification.
+          In this context, Feature Selection is a technique for removing the irrelevant and noisy parameters
+          and selecting those which provide better predictions.
+          In this work I discuss this approach in relation with the supervised classification, in which
+          the predictor model is inferred thanks to the a-priori knowledge of the relation between the
+          training set and the classification tasks. In this sense, the machine is trained with some data to
+          classify new data similar to the ones of the training set. These methods found a great success
+          in Audio Information Retrieval. Developing accurate experiments, many high level semantic
+          concepts have been correlated to low level signal descriptors provided by audio content analysis
+          and signal processing.
+          After presenting the basic theory, I will use this approach to two real-world application.
+          I apply Feature Selection to select those descriptors which can be used to predict the music
+          dynamic of played notes. The context of the task is to provide an improvement to system for
+          automatic music performance. Then another application is discussed: I present the possibility to
+          create measuring device able to stat is the wood of utility pole is decayed or healthy.
+          Finally, results of each application are discussed and the limitation of this method are com-
+          mented in order to provide future direction to improve methods and experimental results.
 
 other:
   - title: Etude des propriétés acoustiques de la guitare Black Flag
